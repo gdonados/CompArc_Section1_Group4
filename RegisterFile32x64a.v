@@ -1,4 +1,4 @@
-//'timescale 1ns / 1ps
+
 module RegisterFile32x64a (
 	input clk,
 	input write,
