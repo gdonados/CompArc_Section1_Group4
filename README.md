@@ -1,2 +1,0 @@
-# CompArc
-ooga booga
