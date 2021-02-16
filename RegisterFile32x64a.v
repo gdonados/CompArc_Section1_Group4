@@ -1,5 +1,5 @@
-'timescale 1ns / 1ns
-module regfile16x64a (
+//'timescale 1ns / 1ps
+module RegisterFile32x64a (
 	input clk,
 	input write,
 	input [4:0] wrAddr,    //write address
