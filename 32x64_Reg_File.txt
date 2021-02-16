@@ -24,3 +24,5 @@ module regfile32x64a (input1, sel_i1, op1, sel_op1, op2, sel_op2, RD, WR, rst, c
 		begin
 
 			hftrjkdsahafkjldshakjfhdskajlfhkdjslahflkjdsahfkjadsfas EDIT
+			^whoever typed this is dumb
+			
