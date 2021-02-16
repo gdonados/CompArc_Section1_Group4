@@ -1,4 +1,4 @@
-'timescale 1ns / 1ns
+//'timescale 1ns / 1ns
 module regfile16x64a (
 	input clk,
 	input write,
