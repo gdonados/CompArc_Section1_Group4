@@ -1,3 +1,5 @@
+`timescale 1ns/1ns
+
 module RegisterFile32x64_tb();
 	reg clk;
 	reg write;

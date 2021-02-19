@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 
 module RegisterFile32x64a (
 	input clk,
