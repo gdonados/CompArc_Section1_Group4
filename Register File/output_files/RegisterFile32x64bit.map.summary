@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Feb 22 18:01:23 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : RegisterFile32x64bit
+Top-level Entity Name : RegisterFile32x64bit
+Family : MAX 10
+Total logic elements : 4,776
+    Total combinational functions : 2,728
+    Dedicated logic registers : 2,048
+Total registers : 2048
+Total pins : 210
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
