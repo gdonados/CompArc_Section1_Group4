@@ -1,3 +1,4 @@
+`timescale 10ns/10ns
 module RegisterFile32x64bit_tb();
 	reg [4:0] SA, SB, SI;
 	reg [63:0]data;

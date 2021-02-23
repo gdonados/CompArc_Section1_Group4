@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RegisterFile32x64bit
-Mon Feb 22 18:01:23 2021
+Tue Feb 23 10:43:14 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Feb 22 18:01:23 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 23 10:43:14 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; RegisterFile32x64bit                        ;
 ; Top-level Entity Name              ; RegisterFile32x64bit                        ;
@@ -279,16 +279,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Feb 22 18:01:12 2021
+    Info: Processing started: Tue Feb 23 10:43:03 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RegisterFile32x64bit -c RegisterFile32x64bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file registerfile32x64bit.v
-    Info (12023): Found entity 1: RegisterFile32x64bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit.v Line: 1
+    Info (12023): Found entity 1: RegisterFile32x64bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file registerfile32x64bit_tb.v
-    Info (12023): Found entity 1: RegisterFile32x64bit_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit_tb.v Line: 1
+    Info (12023): Found entity 1: RegisterFile32x64bit_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit_tb.v Line: 2
 Info (12127): Elaborating entity "RegisterFile32x64bit" for the top level hierarchy
-Warning (10240): Verilog HDL Always Construct warning at RegisterFile32x64bit.v(14): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at RegisterFile32x64bit.v(15): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit.v Line: 15
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -297,9 +297,9 @@ Info (21057): Implemented 4986 device resources after synthesis - the final reso
     Info (21059): Implemented 128 output pins
     Info (21061): Implemented 4776 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4786 megabytes
-    Info: Processing ended: Mon Feb 22 18:01:24 2021
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4781 megabytes
+    Info: Processing ended: Tue Feb 23 10:43:14 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:24
 
 

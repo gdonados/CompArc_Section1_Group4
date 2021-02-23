@@ -13,29 +13,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register\ File {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:02:56 on Feb 22,2021
+# Start time: 10:44:16 on Feb 23,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit.v 
 # -- Compiling module RegisterFile32x64bit
 # 
 # Top level modules:
 # 	RegisterFile32x64bit
-# End time: 18:02:56 on Feb 22,2021, Elapsed time: 0:00:00
+# End time: 10:44:16 on Feb 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register\ File {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:02:56 on Feb 22,2021
+# Start time: 10:44:16 on Feb 23,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit_tb.v 
 # -- Compiling module RegisterFile32x64bit_tb
 # 
 # Top level modules:
 # 	RegisterFile32x64bit_tb
-# End time: 18:02:56 on Feb 22,2021, Elapsed time: 0:00:00
+# End time: 10:44:16 on Feb 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  RegisterFile32x64bit_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" RegisterFile32x64bit_tb 
-# Start time: 18:02:56 on Feb 22,2021
+# Start time: 10:44:16 on Feb 23,2021
 # Loading work.RegisterFile32x64bit_tb
 # Loading work.RegisterFile32x64bit
 # 
@@ -45,8 +45,8 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit_tb.v(20)
-#    Time: 645 ps  Iteration: 0  Instance: /RegisterFile32x64bit_tb
-# Break in Module RegisterFile32x64bit_tb at C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit_tb.v line 20
-# End time: 18:03:22 on Feb 22,2021, Elapsed time: 0:00:26
+# ** Note: $stop    : C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit_tb.v(21)
+#    Time: 6450 ns  Iteration: 0  Instance: /RegisterFile32x64bit_tb
+# Break in Module RegisterFile32x64bit_tb at C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit_tb.v line 21
+# End time: 10:44:33 on Feb 23,2021, Elapsed time: 0:00:17
 # Errors: 0, Warnings: 0

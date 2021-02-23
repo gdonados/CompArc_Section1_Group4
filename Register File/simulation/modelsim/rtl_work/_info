@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/simulation/modelsim
 vRegisterFile32x64bit
-Z1 !s110 1614034976
+Z1 !s110 1614095056
 !i10b 1
-!s100 7?n^IRdm7WA1?Gj7WNL5W0
+!s100 RYE:ao^XL_E9Tf]g4INz>3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IGV@hPbi]]DQSOMg5JmBT50
+I8[ZfiHgE1`Wzg`09Zb3IF3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1614034784
+w1614094981
 8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit.v
 FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit.v
 !i122 0
-L0 1 29
+L0 2 29
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1614034976.000000
+Z5 !s108 1614095056.000000
 !s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit.v|
 !i113 1
@@ -37,16 +37,16 @@ n@register@file32x64bit
 vRegisterFile32x64bit_tb
 R1
 !i10b 1
-!s100 =TPmma4JiWb6MSNW8Q0bl1
+!s100 eC[fiUID[HK6D63b`gK9l3
 R2
-ILM[Bohk:]ITc<M8PO:A^k0
+IAz]A0C69d6h[Hj5lC:Y8M3
 R3
 R0
-w1614034872
+w1614094982
 8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit_tb.v
 FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/Register File/RegisterFile32x64bit_tb.v
 !i122 1
-L0 1 69
+L0 2 69
 R4
 r1
 !s85 0

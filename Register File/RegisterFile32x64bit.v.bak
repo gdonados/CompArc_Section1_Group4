@@ -1,4 +1,3 @@
-`timescale 10ns/10ns
 module RegisterFile32x64bit(outA, outB, in, selA, selB, selI, ld, rst, clk);
 	output [63:0] outA, outB; //A and B output buses
 	input [63:0] in; //input bus
