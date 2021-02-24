@@ -6,7 +6,7 @@ module RegisterFile32x64bit_tb();
 	reg [63:0]data;		   
 	reg load, reset, clock;
 	//create wires for the output of the DUT
-	wire [63:0]A, B; //I noticed we never actually use this value
+	wire [63:0]A, B;
 	
 	RegisterFile32x64bit dut (A, B, data, SA, SB, SI, load, reset, clock); //instantiation of RegisterFile32x64bit
 	
