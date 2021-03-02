@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Tue Mar 02 12:59:38 2021
+Tue Mar 02 13:15:26 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -46,13 +46,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 02 12:59:38 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 02 13:15:26 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 871                                         ;
-;     Total combinational functions  ; 871                                         ;
+; Total logic elements               ; 840                                         ;
+;     Total combinational functions  ; 840                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 198                                         ;
@@ -188,16 +188,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 871           ;
+; Estimated Total logic elements              ; 840           ;
 ;                                             ;               ;
-; Total combinational functions               ; 871           ;
+; Total combinational functions               ; 840           ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 548           ;
-;     -- 3 input functions                    ; 131           ;
-;     -- <=2 input functions                  ; 192           ;
+;     -- 4 input functions                    ; 546           ;
+;     -- 3 input functions                    ; 194           ;
+;     -- <=2 input functions                  ; 100           ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 744           ;
+;     -- normal mode                          ; 713           ;
 ;     -- arithmetic mode                      ; 127           ;
 ;                                             ;               ;
 ; Total registers                             ; 0             ;
@@ -209,9 +209,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; fsec[2]~input ;
-; Maximum fan-out                             ; 141           ;
-; Total fan-out                               ; 3231          ;
-; Average fan-out                             ; 2.55          ;
+; Maximum fan-out                             ; 140           ;
+; Total fan-out                               ; 3228          ;
+; Average fan-out                             ; 2.61          ;
 +---------------------------------------------+---------------+
 
 
@@ -220,8 +220,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |ALU                       ; 871 (778)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 198  ; 0            ; 0          ; |ALU                ; ALU         ; work         ;
-;    |and64:andAB|           ; 31 (31)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU|and64:andAB    ; and64       ; work         ;
+; |ALU                       ; 840 (778)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 198  ; 0            ; 0          ; |ALU                ; ALU         ; work         ;
 ;    |xor64:xorAB|           ; 62 (62)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU|xor64:xorAB    ; xor64       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -277,16 +276,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 198                         ;
-; cycloneiii_lcell_comb ; 871                         ;
+; cycloneiii_lcell_comb ; 840                         ;
 ;     arith             ; 127                         ;
 ;         3 data inputs ; 127                         ;
-;     normal            ; 744                         ;
-;         2 data inputs ; 192                         ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 548                         ;
+;     normal            ; 713                         ;
+;         2 data inputs ; 100                         ;
+;         3 data inputs ; 67                          ;
+;         4 data inputs ; 546                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 13.20                       ;
-; Average LUT depth     ; 9.32                        ;
+; Average LUT depth     ; 9.47                        ;
 +-----------------------+-----------------------------+
 
 
@@ -305,7 +304,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 02 12:59:27 2021
+    Info: Processing started: Tue Mar 02 13:15:15 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -331,21 +330,21 @@ Info (12127): Elaborating entity "ALU" for the top level hierarchy
 Info (12128): Elaborating entity "invert64" for hierarchy "invert64:invertA" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 18
 Info (12128): Elaborating entity "addition64" for hierarchy "addition64:subA" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 24
 Warning (10036): Verilog HDL or VHDL warning at addition64.v(6): object "carry_out" assigned a value but never read File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/addition64.v Line: 6
-Info (12128): Elaborating entity "and64" for hierarchy "and64:andAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 32
-Info (12128): Elaborating entity "or64" for hierarchy "or64:orAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 33
-Info (12128): Elaborating entity "xor64" for hierarchy "xor64:xorAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 34
-Info (12128): Elaborating entity "shiftLeft1" for hierarchy "shiftLeft1:shiftAl" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 38
-Info (12128): Elaborating entity "shiftRight1" for hierarchy "shiftRight1:shiftAr" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 39
+Info (12128): Elaborating entity "and64" for hierarchy "and64:andAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 28
+Info (12128): Elaborating entity "or64" for hierarchy "or64:orAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 29
+Info (12128): Elaborating entity "xor64" for hierarchy "xor64:xorAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 30
+Info (12128): Elaborating entity "shiftLeft1" for hierarchy "shiftLeft1:shiftAl" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 34
+Info (12128): Elaborating entity "shiftRight1" for hierarchy "shiftRight1:shiftAr" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 35
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1069 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1038 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 134 input pins
     Info (21059): Implemented 64 output pins
-    Info (21061): Implemented 871 logic cells
+    Info (21061): Implemented 840 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4759 megabytes
-    Info: Processing ended: Tue Mar 02 12:59:38 2021
+    Info: Peak virtual memory: 4758 megabytes
+    Info: Processing ended: Tue Mar 02 13:15:26 2021
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:23
 

@@ -1,13 +1,13 @@
 `timescale 10ns/10ns
 module ALU(A, B, fsec, carry, fout);
-	input [63:0] A, B; //data inputs
-	input [4:0] fsec;  //"opcode"
-	input carry; 		 //
-	output [63:0] fout;
+	input [63:0] A, B;   //data inputs
+	input [4:0] fsec;    //"opcode"
+	input carry; 		   //carry input
+	output [63:0] fout;  //function output
 	
-	reg [63:0] result; //chosen statement result
+	reg [63:0] result;   //chosen statement result
 	
-	assign fout = result;
+	assign fout = result;//set output equal to case result
 	
 	wire[63:0] Anot, Bnot, sum, sumC, sum1, differenceA, differenceB, difference1; //arithmetic wires
 	wire[63:0] zeroC, passC, andC, orC, xorC;  //logic wires
@@ -15,8 +15,9 @@ module ALU(A, B, fsec, carry, fout);
 	
 	
 	//A and B 2:1 mux for A and A' 
-	invert64 invertA (A, Anot);  //make sure that this is making A --> -A, and does not need +1
-	invert64 invertB (B, Bnot);
+	invert64 invertA (A, Anot);  //Inverts A
+	invert64 invertB (B, Bnot);  //Inverts B
+	
 	integer i=1;
 	
 	//Arithmetic
@@ -33,6 +34,8 @@ module ALU(A, B, fsec, carry, fout);
 	shiftLeft1 shiftAl (A, Aleft);
 	shiftRight1 shiftAr (A, Aright);
 
+	
+	//5:1 Mux for Selecting Output of ALU
 	always @(*) begin
 		case(fsec)
 			5'b00000:	begin //inverts A
@@ -95,7 +98,7 @@ module ALU(A, B, fsec, carry, fout);
 				result = Aright;
 			end
 			
-			default:	result = 999;	//default case
+			default:	result = 0;	//default case
 		endcase
 	end
 
