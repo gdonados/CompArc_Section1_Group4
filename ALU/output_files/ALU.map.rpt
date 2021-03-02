@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Tue Mar 02 11:01:58 2021
+Tue Mar 02 11:18:40 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,16 +14,18 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "addition64:sub1"
- 10. Port Connectivity Checks: "addition64:add1"
- 11. Port Connectivity Checks: "addition64:subB"
- 12. Port Connectivity Checks: "addition64:subA"
- 13. Port Connectivity Checks: "addition64:addCarry"
- 14. Port Connectivity Checks: "addition64:add"
- 15. Port Connectivity Checks: "invert64:invertj"
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "shiftRight1:shiftAr"
+ 10. Port Connectivity Checks: "shiftLeft1:shiftAl"
+ 11. Port Connectivity Checks: "addition64:sub1"
+ 12. Port Connectivity Checks: "addition64:add1"
+ 13. Port Connectivity Checks: "addition64:subB"
+ 14. Port Connectivity Checks: "addition64:subA"
+ 15. Port Connectivity Checks: "addition64:addCarry"
+ 16. Port Connectivity Checks: "addition64:add"
+ 17. Port Connectivity Checks: "invert64:invertj"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -50,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 02 11:01:58 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 02 11:18:40 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
@@ -171,15 +173,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                              ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------+---------+
-; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v        ;         ;
-; addition64.v                     ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/addition64.v ;         ;
-; invert64.v                       ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/invert64.v   ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                               ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v         ;         ;
+; addition64.v                     ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/addition64.v  ;         ;
+; invert64.v                       ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/invert64.v    ;         ;
+; shiftLeft1.v                     ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftLeft1.v  ;         ;
+; shiftRight1.v                    ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftRight1.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -236,6 +240,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "shiftRight1:shiftAr"                                                                ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "shiftLeft1:shiftAl"                                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -341,7 +363,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 02 11:01:49 2021
+    Info: Processing started: Tue Mar 02 11:18:29 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -351,12 +373,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file additio
     Info (12023): Found entity 1: addition64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/addition64.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file invert64.v
     Info (12023): Found entity 1: invert64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/invert64.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at ALU.v(15): created implicit net for "jnot" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file shiftleft1.v
+    Info (12023): Found entity 1: shiftLeft1 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftLeft1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shiftright1.v
+    Info (12023): Found entity 1: shiftRight1 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftRight1.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at ALU.v(17): created implicit net for "jnot" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 17
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
 Warning (10034): Output port "fout" at ALU.v(6) has no driver File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-Info (12128): Elaborating entity "invert64" for hierarchy "invert64:invertA" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 13
-Info (12128): Elaborating entity "addition64" for hierarchy "addition64:add" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 18
+Info (12128): Elaborating entity "invert64" for hierarchy "invert64:invertA" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 15
+Info (12128): Elaborating entity "addition64" for hierarchy "addition64:add" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 20
 Warning (10036): Verilog HDL or VHDL warning at addition64.v(6): object "carry_out" assigned a value but never read File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/addition64.v Line: 6
+Info (12128): Elaborating entity "shiftLeft1" for hierarchy "shiftLeft1:shiftAl" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 34
+Info (12128): Elaborating entity "shiftRight1" for hierarchy "shiftRight1:shiftAr" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 35
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "fout[0]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
     Warning (13410): Pin "fout[1]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
@@ -563,9 +591,9 @@ Info (21057): Implemented 198 device resources after synthesis - the final resou
     Info (21058): Implemented 134 input pins
     Info (21059): Implemented 64 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 204 warnings
-    Info: Peak virtual memory: 4748 megabytes
-    Info: Processing ended: Tue Mar 02 11:01:58 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4740 megabytes
+    Info: Processing ended: Tue Mar 02 11:18:40 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:28
 
 
