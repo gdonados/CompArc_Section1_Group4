@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Tue Mar 02 11:18:40 2021
+Tue Mar 02 12:42:03 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,18 +14,17 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "shiftRight1:shiftAr"
- 10. Port Connectivity Checks: "shiftLeft1:shiftAl"
- 11. Port Connectivity Checks: "addition64:sub1"
- 12. Port Connectivity Checks: "addition64:add1"
- 13. Port Connectivity Checks: "addition64:subB"
- 14. Port Connectivity Checks: "addition64:subA"
- 15. Port Connectivity Checks: "addition64:addCarry"
- 16. Port Connectivity Checks: "addition64:add"
- 17. Port Connectivity Checks: "invert64:invertj"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "addition64:sub1"
+ 11. Port Connectivity Checks: "addition64:add1"
+ 12. Port Connectivity Checks: "addition64:subB"
+ 13. Port Connectivity Checks: "addition64:subA"
+ 14. Port Connectivity Checks: "addition64:addCarry"
+ 15. Port Connectivity Checks: "addition64:add"
+ 16. Port Connectivity Checks: "invert64:invertj"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -52,13 +51,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 02 11:18:40 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 02 12:42:03 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
+; Total logic elements               ; 742                                         ;
+;     Total combinational functions  ; 742                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 198                                         ;
@@ -162,8 +161,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -173,48 +172,52 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                               ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
-; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v         ;         ;
-; addition64.v                     ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/addition64.v  ;         ;
-; invert64.v                       ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/invert64.v    ;         ;
-; shiftLeft1.v                     ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftLeft1.v  ;         ;
-; shiftRight1.v                    ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftRight1.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------+---------+
+; and64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/and64.v       ;         ;
+; xor64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/xor64.v       ;         ;
+; or64.v                           ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/or64.v        ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v         ;         ;
+; addition64.v                     ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/addition64.v  ;         ;
+; invert64.v                       ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/invert64.v    ;         ;
+; shiftLeft1.v                     ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftLeft1.v  ;         ;
+; shiftRight1.v                    ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftRight1.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 198   ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; A[0]  ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 198   ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 742           ;
+;                                             ;               ;
+; Total combinational functions               ; 742           ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 450           ;
+;     -- 3 input functions                    ; 197           ;
+;     -- <=2 input functions                  ; 95            ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 678           ;
+;     -- arithmetic mode                      ; 64            ;
+;                                             ;               ;
+; Total registers                             ; 0             ;
+;     -- Dedicated logic registers            ; 0             ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 198           ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; fsec[0]~input ;
+; Maximum fan-out                             ; 263           ;
+; Total fan-out                               ; 2843          ;
+; Average fan-out                             ; 2.50          ;
++---------------------------------------------+---------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -222,7 +225,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |ALU                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 198  ; 0            ; 0          ; |ALU                ; ALU         ; work         ;
+; |ALU                       ; 742 (711)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 198  ; 0            ; 0          ; |ALU                ; ALU         ; work         ;
+;    |xor64:xorAB|           ; 31 (31)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU|xor64:xorAB    ; xor64       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -242,22 +246,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "shiftRight1:shiftAr"                                                                ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "shiftLeft1:shiftAl"                                                                 ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 21:1               ; 62 bits   ; 868 LEs       ; 434 LEs              ; 434 LEs                ; No         ; |ALU|Mux15                 ;
+; 4:1                ; 64 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; No         ; |ALU|Add0                  ;
+; 5:1                ; 64 bits   ; 192 LEs       ; 128 LEs              ; 64 LEs                 ; No         ; |ALU|Add0                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -283,24 +280,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "addition64:subB"                                                                     ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; carry ; Input  ; Info     ; Stuck at GND                                                                        ;
-; out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------+
+; Port Connectivity Checks: "addition64:subB" ;
++-------+-------+----------+------------------+
+; Port  ; Type  ; Severity ; Details          ;
++-------+-------+----------+------------------+
+; carry ; Input ; Info     ; Stuck at GND     ;
++-------+-------+----------+------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "addition64:subA"                                                                     ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; carry ; Input  ; Info     ; Stuck at GND                                                                        ;
-; out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------+
+; Port Connectivity Checks: "addition64:subA" ;
++-------+-------+----------+------------------+
+; Port  ; Type  ; Severity ; Details          ;
++-------+-------+----------+------------------+
+; carry ; Input ; Info     ; Stuck at GND     ;
++-------+-------+----------+------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -312,14 +307,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "addition64:add"                                                                      ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; carry ; Input  ; Info     ; Stuck at GND                                                                        ;
-; out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------+
+; Port Connectivity Checks: "addition64:add" ;
++-------+-------+----------+-----------------+
+; Port  ; Type  ; Severity ; Details         ;
++-------+-------+----------+-----------------+
+; carry ; Input ; Info     ; Stuck at GND    ;
++-------+-------+----------+-----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -339,12 +333,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 198                         ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
+; cycloneiii_lcell_comb ; 742                         ;
+;     arith             ; 64                          ;
+;         3 data inputs ; 64                          ;
+;     normal            ; 678                         ;
+;         2 data inputs ; 95                          ;
+;         3 data inputs ; 133                         ;
+;         4 data inputs ; 450                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 11.40                       ;
+; Average LUT depth     ; 7.09                        ;
 +-----------------------+-----------------------------+
 
 
@@ -353,7 +351,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -363,237 +361,49 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 02 11:18:29 2021
+    Info: Processing started: Tue Mar 02 12:41:45 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file and64.v
+    Info (12023): Found entity 1: and64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/and64.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file xor64.v
+    Info (12023): Found entity 1: xor64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/xor64.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or64.v
+    Info (12023): Found entity 1: or64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/or64.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 2
+    Info (12023): Found entity 1: ALU File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file addition64.v
-    Info (12023): Found entity 1: addition64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/addition64.v Line: 1
+    Info (12023): Found entity 1: addition64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/addition64.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file invert64.v
-    Info (12023): Found entity 1: invert64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/invert64.v Line: 1
+    Info (12023): Found entity 1: invert64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/invert64.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shiftleft1.v
-    Info (12023): Found entity 1: shiftLeft1 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftLeft1.v Line: 1
+    Info (12023): Found entity 1: shiftLeft1 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftLeft1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shiftright1.v
-    Info (12023): Found entity 1: shiftRight1 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftRight1.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at ALU.v(17): created implicit net for "jnot" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 17
+    Info (12023): Found entity 1: shiftRight1 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftRight1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.v
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU_tb.v Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at ALU.v(21): created implicit net for "jnot" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 21
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10034): Output port "fout" at ALU.v(6) has no driver File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-Info (12128): Elaborating entity "invert64" for hierarchy "invert64:invertA" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 15
-Info (12128): Elaborating entity "addition64" for hierarchy "addition64:add" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 20
-Warning (10036): Verilog HDL or VHDL warning at addition64.v(6): object "carry_out" assigned a value but never read File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/addition64.v Line: 6
-Info (12128): Elaborating entity "shiftLeft1" for hierarchy "shiftLeft1:shiftAl" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 34
-Info (12128): Elaborating entity "shiftRight1" for hierarchy "shiftRight1:shiftAr" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 35
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "fout[0]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[1]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[2]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[3]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[4]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[5]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[6]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[7]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[8]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[9]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[10]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[11]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[12]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[13]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[14]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[15]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[16]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[17]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[18]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[19]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[20]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[21]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[22]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[23]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[24]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[25]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[26]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[27]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[28]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[29]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[30]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[31]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[32]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[33]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[34]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[35]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[36]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[37]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[38]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[39]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[40]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[41]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[42]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[43]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[44]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[45]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[46]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[47]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[48]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[49]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[50]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[51]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[52]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[53]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[54]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[55]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[56]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[57]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[58]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[59]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[60]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[61]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[62]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
-    Warning (13410): Pin "fout[63]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 6
+Info (12128): Elaborating entity "invert64" for hierarchy "invert64:invertA" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 19
+Info (12128): Elaborating entity "addition64" for hierarchy "addition64:add" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 24
+Warning (10036): Verilog HDL or VHDL warning at addition64.v(6): object "carry_out" assigned a value but never read File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/addition64.v Line: 6
+Info (12128): Elaborating entity "and64" for hierarchy "and64:andAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 37
+Info (12128): Elaborating entity "or64" for hierarchy "or64:orAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 38
+Info (12128): Elaborating entity "xor64" for hierarchy "xor64:xorAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 39
+Info (12128): Elaborating entity "shiftLeft1" for hierarchy "shiftLeft1:shiftAl" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 43
+Info (12128): Elaborating entity "shiftRight1" for hierarchy "shiftRight1:shiftAr" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 44
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 134 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "A[0]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[1]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[2]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[3]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[4]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[5]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[6]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[7]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[8]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[9]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[10]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[11]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[12]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[13]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[14]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[15]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[16]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[17]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[18]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[19]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[20]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[21]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[22]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[23]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[24]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[25]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[26]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[27]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[28]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[29]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[30]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[31]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[32]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[33]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[34]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[35]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[36]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[37]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[38]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[39]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[40]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[41]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[42]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[43]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[44]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[45]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[46]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[47]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[48]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[49]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[50]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[51]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[52]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[53]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[54]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[55]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[56]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[57]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[58]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[59]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[60]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[61]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[62]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "A[63]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[0]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[1]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[2]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[3]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[4]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[5]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[6]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[7]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[8]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[9]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[10]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[11]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[12]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[13]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[14]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[15]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[16]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[17]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[18]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[19]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[20]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[21]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[22]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[23]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[24]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[25]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[26]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[27]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[28]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[29]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[30]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[31]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[32]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[33]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[34]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[35]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[36]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[37]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[38]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[39]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[40]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[41]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[42]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[43]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[44]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[45]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[46]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[47]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[48]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[49]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[50]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[51]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[52]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[53]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[54]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[55]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[56]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[57]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[58]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[59]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[60]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[61]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[62]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "B[63]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 3
-    Warning (15610): No output dependent on input pin "fsec[0]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 4
-    Warning (15610): No output dependent on input pin "fsec[1]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 4
-    Warning (15610): No output dependent on input pin "fsec[2]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 4
-    Warning (15610): No output dependent on input pin "fsec[3]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 4
-    Warning (15610): No output dependent on input pin "fsec[4]" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 4
-    Warning (15610): No output dependent on input pin "carry" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 5
-Info (21057): Implemented 198 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 940 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 134 input pins
     Info (21059): Implemented 64 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 204 warnings
-    Info: Peak virtual memory: 4740 megabytes
-    Info: Processing ended: Tue Mar 02 11:18:40 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:28
+    Info (21061): Implemented 742 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4754 megabytes
+    Info: Processing ended: Tue Mar 02 12:42:03 2021
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:22
 
 
