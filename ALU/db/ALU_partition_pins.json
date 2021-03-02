@@ -264,19 +264,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "fsec[0]",
-					"strict" : false
-				},
-				{
-					"name" : "fsec[1]",
-					"strict" : false
-				},
-				{
-					"name" : "A[0]",
-					"strict" : false
-				},
-				{
-					"name" : "B[0]",
+					"name" : "fsec[3]",
 					"strict" : false
 				},
 				{
@@ -288,7 +276,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "fsec[3]",
+					"name" : "fsec[1]",
+					"strict" : false
+				},
+				{
+					"name" : "fsec[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
 					"strict" : false
 				},
 				{

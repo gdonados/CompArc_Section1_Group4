@@ -1,5 +1,5 @@
 Flow report for ALU
-Tue Mar 02 12:42:23 2021
+Tue Mar 02 12:59:55 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 02 12:42:23 2021       ;
+; Flow Status                        ; Successful - Tue Mar 02 12:59:55 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M08DAF484C8G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 743 / 8,064 ( 9 % )                         ;
-;     Total combinational functions  ; 743 / 8,064 ( 9 % )                         ;
+; Total logic elements               ; 872 / 8,064 ( 11 % )                        ;
+;     Total combinational functions  ; 872 / 8,064 ( 11 % )                        ;
 ;     Dedicated logic registers      ; 0 / 8,064 ( 0 % )                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 198 / 250 ( 79 % )                          ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/02/2021 12:41:46 ;
+; Start date & time ; 03/02/2021 12:59:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALU                 ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 929340916809.161470690613340           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 168202114897947.161470796803968        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; ALU_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; ALU_tb                                 ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -104,26 +104,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4754 MB             ; 00:00:22                           ;
-; Fitter               ; 00:00:10     ; 1.2                     ; 5692 MB             ; 00:00:11                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4683 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.4                     ; 4819 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4642 MB             ; 00:00:01                           ;
-; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:39                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4759 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:08     ; 1.2                     ; 5573 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4691 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.5                     ; 4804 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4648 MB             ; 00:00:01                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:40                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; MSI              ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; MSI              ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; MSI              ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; MSI              ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; MSI              ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                          ;
++----------------------+------------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname       ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------------+------------+------------+----------------+
+; Analysis & Synthesis ; Roberts-Thinkpad-T490s ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Roberts-Thinkpad-T490s ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Roberts-Thinkpad-T490s ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Roberts-Thinkpad-T490s ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; Roberts-Thinkpad-T490s ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------------+------------+------------+----------------+
 
 
 ------------
