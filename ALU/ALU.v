@@ -5,12 +5,14 @@ module ALU(A, B, fsec, carry, fout);
 	input carry; 		 //
 	output [63:0] fout;
 	
-	wire[63:0] Anot, Bnot, sum, sumC, sum1, differenceA, differenceB, difference1;
+	wire[63:0] Anot, Bnot, sum, sumC, sum1, differenceA, differenceB, difference1; //arithmetic wires
+	//logic wires
+	wire[63:0] Aleft, Aright; //shift wires
 	integer i=0;
 	integer j=1;
 	
  //A and B 2:1 mux for A and A' 
- invert64 invertA (A, Anot);
+ invert64 invertA (A, Anot);  //make sure that this is making A --> -A, and does not need +1
  invert64 invertB (B, Bnot);
  invert64 invertj (j, jnot);  //pay close attention here to if it works
  
@@ -29,6 +31,8 @@ module ALU(A, B, fsec, carry, fout);
  
  
  //Shift (does not use 2:1 mux)
+ shiftLeft1 shiftAl (A, Aleft);
+ shiftRight1 shiftAr (A, Aright);
  
  endmodule
  

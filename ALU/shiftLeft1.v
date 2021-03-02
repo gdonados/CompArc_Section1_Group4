@@ -1,0 +1,8 @@
+module shiftLeft1 (A, C);
+	input [63:0] A;
+	output reg [63:0] C;
+	
+	always @(*) begin
+	C= A << 1; 
+	end
+endmodule
