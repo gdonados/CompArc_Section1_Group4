@@ -6,7 +6,7 @@ module ALU(A, B, fsec, carry, fout);
 	output [63:0] fout;
 	
 	wire[63:0] Anot, Bnot, sum, sumC, sum1, differenceA, differenceB, difference1; //arithmetic wires
-	//logic wires
+	wire[63:0] zeroC, passC, andC, orC, xorC;  //logic wires
 	wire[63:0] Aleft, Aright; //shift wires
 	integer i=0;
 	integer j=1;
@@ -27,7 +27,12 @@ module ALU(A, B, fsec, carry, fout);
  addition64 sub1 (A, jnot, i, difference1);  //A-1
  
  //Logic
- 
+	//invert64 
+ zero64 zeroAC (A, zeroC); //A -> 0
+ pass64 passA (A, passC); //A -> A
+ and64 andAB (A, B, andC); //A & B = C
+ or64 orAB (A, B, orC); //A | B = C
+ xor64 xorAB (A, B, xorC); //A ^ B = C
  
  
  //Shift (does not use 2:1 mux)
