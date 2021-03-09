@@ -1,19 +1,34 @@
 module carry_look_ahead64bit_tb;
-reg[63:0] a,b;
-reg cin;
-wire [63:0] sum;
-wire cout;
+reg[63:0] A,B;
+reg Cin;
+wire [63:0] Sum;
+wire Cout;
 
-carry_look_ahead64bit dut(a, b, cin, sum, cout);
+carry_look_ahead64bit dut(A, A, Cin, Sum, Cout);
 
 initial begin
-	a=0; b=0; cin=0;
-	#10 a=16'd0; b=16'd0; cin=1'd1;
-	#10 a=16'd14; b=16'd1; cin=1'd1;
-	#10 a=16'd5; b=16'd0; cin=1'd0;
-	#10 a=16'd999; b=16'd0; cin=1'd1;
+A=64'd0; B=64'd0; Cin=0;
+#10
+A=64'd1000; B=64'd2945; Cin=0;
+#10
+A=64'd1000; B=64'd2945; Cin=1;
+	/*//for carry = 0;
+	for(i=0; i<16; i=i+1) begin
+		for(j=0; j<16; j=j+1) begin
+			A = i;
+			B = j;
+			#10;
+		end
+	end
+	
+	//for carry = 1;
+	Cin=1;
+	for(i=0; i<16; i=i+1) begin
+		for(j=0; j<16; j=j+1) begin
+			A = i;
+			B = j;
+			#10;
+		end
+	end*/
 end
-
-initial 
-	$monitor( "A=%d, B=%d, Cin=%d, Sum=%d, Cout=%d", a,b,cin,sum,cout);
 endmodule

@@ -9,7 +9,7 @@ module ALU(A, B, fsec, carry, fout);
 	
 	assign fout = result;//set output equal to case result
 	
-	wire[63:0] Anot, Bnot, sum, sumC, differenceA, differenceB, difference1; //arithmetic wires
+	wire[63:0] Anot, Bnot, sum, sumC, differenceBA, differenceAB, difference1; //arithmetic wires
 	wire[63:0] zeroC, passC, andC, orC, xorC;  //logic wires
 	wire[63:0] Aleft, Aright; //shift wires
 	wire cout; //carry out
@@ -26,8 +26,8 @@ module ALU(A, B, fsec, carry, fout);
 	carry_look_ahead64bit addABcarry (A,B,carry, sumC, cout); //adds A + B + Carry_in
 	
 	
-	addition64 subA (Anot, B, i, differenceA);  //(-A)+B, aka B-A
-	addition64 subB (A, Bnot, i, differenceB);  //A+(-B), aka A-B
+	carry_look_ahead64bit subBA (Anot+1, B, j, differenceBA);  //(-A)+B, aka B-A
+	carry_look_ahead64bit subAB (A, Bnot+1, j, differenceAB);  //A+(-B), aka A-B
 
 	//Logic
 	and64 andAB (A, B, andC); //A & B = C
@@ -43,12 +43,12 @@ module ALU(A, B, fsec, carry, fout);
 	//5:1 Mux for Selecting Output of ALU
 	always @(*) begin
 		case(fsec)
-			5'b00000:	begin //inverts A
-				result = Anot;
+			5'b00000:	begin //Bitwise inverts A
+				result = Anot+1;
 			end
 			
-			5'b00001:	begin //inverts B
-				result = Bnot;
+			5'b00001:	begin //Arithmetic Negative B
+				result = Bnot+1;
 			end
 			
 			5'b00010:	begin //A + B
@@ -64,11 +64,11 @@ module ALU(A, B, fsec, carry, fout);
 			end
 			
 			5'b00101:	begin
-				result = differenceA; //B-A
+				result = differenceBA; //B-A
 			end
 			
 			5'b00110:	begin
-				result = differenceB; //A-B
+				result = differenceAB; //A-B
 			end
 			
 			5'b00111:	begin	//A-1
@@ -82,24 +82,32 @@ module ALU(A, B, fsec, carry, fout);
 			5'b01001:	begin	//passes A through
 				result = A;
 			end
+			 
+			5'b01010:	begin //Bitwise inverts A
+				result = Anot;
+			end
 			
-			5'b01010:	begin	//ands A and B
+			5'b01011:	begin //Bitwise Invert B
+				result = Bnot;
+			end
+			
+			5'b01100:	begin	//ands A and B
 				result = andC;
 			end
 			
-			5'b01011:	begin	//Ors A and B
+			5'b01101:	begin	//Ors A and B
 				result = orC;
 			end
 			
-			5'b01100:	begin	//Xors A and B
+			5'b01110:	begin	//Xors A and B
 				result = xorC;
 			end
 			
-			5'b01101:	begin	//Shifts A to the left 1
+			5'b01111:	begin	//Shifts A to the left 1
 				result = Aleft;
 			end	
 			
-			5'b01110:	begin	//Shifts A to the right 1
+			5'b10000:	begin	//Shifts A to the right 1
 				result = Aright;
 			end
 			

@@ -1,15 +1,15 @@
-Fitter Status : Successful - Tue Mar 09 10:49:58 2021
+Fitter Status : Successful - Tue Mar 09 12:05:39 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : ALU
-Top-level Entity Name : carry_look_ahead4bit
+Top-level Entity Name : ALU
 Family : MAX 10
 Device : 10M08DAF484C8G
 Timing Models : Final
-Total logic elements : 13 / 8,064 ( < 1 % )
-    Total combinational functions : 13 / 8,064 ( < 1 % )
+Total logic elements : 1,745 / 8,064 ( 22 % )
+    Total combinational functions : 1,745 / 8,064 ( 22 % )
     Dedicated logic registers : 0 / 8,064 ( 0 % )
 Total registers : 0
-Total pins : 14 / 250 ( 6 % )
+Total pins : 198 / 250 ( 79 % )
 Total virtual pins : 0
 Total memory bits : 0 / 387,072 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
