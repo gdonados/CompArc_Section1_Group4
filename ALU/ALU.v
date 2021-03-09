@@ -1,13 +1,16 @@
 `timescale 10ns/10ns
-module ALU(A, B, fsec, carry, fout);
+module ALU(A, B, fsec, carry, fout, signal);
 	input [63:0] A, B;   //data inputs
 	input [4:0] fsec;    //"opcode"
 	input carry; 		   //carry input
 	output [63:0] fout;  //function output
+	output [3:0] signal; //signal bit outputs
 	
 	reg [63:0] result;   //chosen statement result
+	reg [3:0] signalCheck; //chosen signal check
 	
 	assign fout = result;//set output equal to case result
+	assign signal = signalCheck; //set signal equal to signal check
 	
 	wire[63:0] Anot, Bnot, sum, sumC, differenceBA, differenceAB, difference1; //arithmetic wires
 	wire[63:0] zeroC, passC, andC, orC, xorC;  //logic wires
@@ -115,6 +118,24 @@ module ALU(A, B, fsec, carry, fout);
 		endcase
 	end
 
+	always @(*) begin
+			//if output is zero
+			if(result == 0)	begin
+				signalCheck[0] = 1;
+			end
+			//if output is signed
+			if(result[63] == 1) begin
+				signalCheck[1] = 1;
+			end
+			//if A + B unsigned 65th bit arithmetic overflow error 
+			if(cout == 1 && (fsec == 5'b00010 || fsec == 5'b00011)) begin
+				signalCheck[2] = 1;
+			end
+			//if A + B signed 64th bit == 1, arithmetic overflow error
+			if((fsec == 5'b00010 && sum[63] == 1) || (fsec == 5'b00011 && sumC[63] == 1)) begin
+				signalCheck[3] = 1;
+			end
+	end
 endmodule
  
 	

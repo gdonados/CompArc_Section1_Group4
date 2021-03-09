@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/simulation/modelsim
 vALU
-Z1 !s110 1615309296
+Z1 !s110 1615311577
 !i10b 1
-!s100 Rz:X`nAzRAb`I[2VVkill2
+!s100 Yc:7;To=U4zE^GV<ToYcY2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I3`>hJKz68=4YCVhoK3]@l1
+IHoSdIci`Pg9iRD8z3MmK`3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1615309202
+w1615311321
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v
 !i122 3
-L0 2 117
+L0 2 138
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1615309296.000000
+Z5 !s108 1615311577.000000
 !s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v|
 !i113 1
@@ -35,23 +35,23 @@ Z7 !s92 -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomo
 Z8 tCvgOpt 0
 n@a@l@u
 vALU_tb
-Z9 !s110 1615309297
+Z9 !s110 1615311578
 !i10b 1
-!s100 3k1a@j<XXQ>M99Z4]1<>[2
+!s100 7cXZIJA153SgF4Y3QOoCI0
 R2
-I12=V1K2CCo3VdbS]652f:0
+In5ezHHPNmZ=_]ia=eG8Uk2
 R3
 R0
-w1614706994
+w1615311455
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU_tb.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU_tb.v
 !i122 10
-L0 3 25
+L0 3 26
 R4
 r1
 !s85 0
 31
-Z10 !s108 1615309297.000000
+Z10 !s108 1615311578.000000
 !s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU_tb.v|
 !i113 1
@@ -60,23 +60,23 @@ R7
 R8
 n@a@l@u_tb
 vand64
-Z11 !s110 1615309295
+R1
 !i10b 1
 !s100 Dhzg_o1nZWY3Hjha1=8NS3
 R2
 I>]HglbDOg0igml]]^o^=22
 R3
 R0
-Z12 w1614704286
+Z11 w1614704286
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/and64.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/and64.v
 !i122 0
-Z13 L0 1 9
+Z12 L0 1 9
 R4
 r1
 !s85 0
 31
-Z14 !s108 1615309295.000000
+R5
 !s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/and64.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/and64.v|
 !i113 1
@@ -95,7 +95,7 @@ w1615307767
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead16bit.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead16bit.v
 !i122 8
-Z15 L0 2 14
+Z13 L0 2 14
 R4
 r1
 !s85 0
@@ -108,7 +108,7 @@ R6
 R7
 R8
 vcarry_look_ahead4bit
-R1
+R9
 !i10b 1
 !s100 3Qk>JLzQXeUc6Y;[GAZLD2
 R2
@@ -124,7 +124,7 @@ R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead4bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead4bit.v|
 !i113 1
@@ -143,7 +143,7 @@ w1615307768
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead64bit.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead64bit.v
 !i122 9
-R15
+R13
 R4
 r1
 !s85 0
@@ -167,7 +167,7 @@ w1614701792
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/invert64.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/invert64.v
 !i122 4
-Z16 L0 1 8
+Z14 L0 1 8
 R4
 r1
 !s85 0
@@ -187,16 +187,16 @@ R2
 I4QN7Uj`ZB84VkD2XS`LWS0
 R3
 R0
-R12
+R11
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/or64.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/or64.v
 !i122 2
-R13
+R12
 R4
 r1
 !s85 0
 31
-R14
+R5
 !s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/or64.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/or64.v|
 !i113 1
@@ -204,7 +204,7 @@ R6
 R7
 R8
 vshiftLeft1
-R1
+R9
 !i10b 1
 !s100 b8JK>0iaE^OagOK3AHXZn0
 R2
@@ -215,7 +215,7 @@ w1614701907
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftLeft1.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftLeft1.v
 !i122 5
-R16
+R14
 R4
 r1
 !s85 0
@@ -229,7 +229,7 @@ R7
 R8
 nshift@left1
 vshiftRight1
-R1
+R9
 !i10b 1
 !s100 =Oc^Icn0hmoYgbCXkK=U]2
 R2
@@ -240,12 +240,12 @@ w1614701909
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftRight1.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftRight1.v
 !i122 6
-R16
+R14
 R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftRight1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftRight1.v|
 !i113 1
@@ -254,23 +254,23 @@ R7
 R8
 nshift@right1
 vxor64
-R11
+R1
 !i10b 1
 !s100 NF5_JnH;@e62RVJKd_8g90
 R2
 Id2VIio6h`?aN@EWAoH:iG2
 R3
 R0
-R12
+R11
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/xor64.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/xor64.v
 !i122 1
-R13
+R12
 R4
 r1
 !s85 0
 31
-R14
+R5
 !s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/xor64.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/xor64.v|
 !i113 1

@@ -4,10 +4,11 @@ module ALU_tb();
 	reg [63:0] Ain, Bin;
 	reg[4:0] sel;
 	reg c;
+	reg[3:0] sig;
 	
 	wire [63:0] o;
 	
-	ALU dut (Ain, Bin, sel, c, o);
+	ALU dut (Ain, Bin, sel, c, o, sig);
 	
 	initial begin
 		Ain <= 64'd205; //sets A to 205

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Tue Mar 09 12:05:23 2021
+Tue Mar 09 12:37:52 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -48,7 +48,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 09 12:05:23 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 09 12:37:52 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 1,744                                       ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 198                                         ;
+; Total pins                         ; 202                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -211,14 +211,14 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 0             ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 198           ;
+; I/O pins                                    ; 202           ;
 ;                                             ;               ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; fsec[0]~input ;
 ; Maximum fan-out                             ; 145           ;
-; Total fan-out                               ; 6378          ;
-; Average fan-out                             ; 2.98          ;
+; Total fan-out                               ; 6382          ;
+; Average fan-out                             ; 2.97          ;
 +---------------------------------------------+---------------+
 
 
@@ -227,7 +227,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                        ; Entity Name           ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |ALU                                  ; 1744 (917)          ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 198  ; 0            ; 0          ; |ALU                                                                                       ; ALU                   ; work         ;
+; |ALU                                  ; 1744 (917)          ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 202  ; 0            ; 0          ; |ALU                                                                                       ; ALU                   ; work         ;
 ;    |and64:andAB|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU|and64:andAB                                                                           ; and64                 ; work         ;
 ;    |carry_look_ahead64bit:addABcarry| ; 81 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU|carry_look_ahead64bit:addABcarry                                                      ; carry_look_ahead64bit ; work         ;
 ;       |carry_look_ahead16bit:cla1|    ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ALU|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1                           ; carry_look_ahead16bit ; work         ;
@@ -387,19 +387,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 198                         ;
-; cycloneiii_lcell_comb ; 1744                        ;
+; boundary_port         ; 202                         ;
+; cycloneiii_lcell_comb ; 1745                        ;
 ;     arith             ; 189                         ;
 ;         2 data inputs ; 126                         ;
 ;         3 data inputs ; 63                          ;
-;     normal            ; 1555                        ;
+;     normal            ; 1556                        ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 150                         ;
 ;         3 data inputs ; 239                         ;
 ;         4 data inputs ; 1164                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 36.20                       ;
-; Average LUT depth     ; 19.19                       ;
+; Average LUT depth     ; 19.18                       ;
 +-----------------------+-----------------------------+
 
 
@@ -408,7 +409,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -418,7 +419,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 09 12:05:07 2021
+    Info: Processing started: Tue Mar 09 12:37:35 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -451,28 +452,38 @@ Info (12021): Found 1 design units, including 1 entities, in source file carry_l
 Info (12021): Found 1 design units, including 1 entities, in source file carry_look_ahead4bit_tb.v
     Info (12023): Found entity 1: carry_look_ahead4bit_tb File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead4bit_tb.v Line: 2
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(21): object "i" assigned a value but never read File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 21
-Info (12128): Elaborating entity "invert64" for hierarchy "invert64:invertA" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 18
-Info (12128): Elaborating entity "carry_look_ahead64bit" for hierarchy "carry_look_ahead64bit:addAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 25
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(24): object "i" assigned a value but never read File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at ALU.v(123): inferring latch(es) for variable "signalCheck", which holds its previous value in one or more paths through the always construct File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 123
+Info (10041): Inferred latch for "signalCheck[3]" at ALU.v(135) File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 135
+Info (10041): Inferred latch for "signalCheck[2]" at ALU.v(131) File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 131
+Info (10041): Inferred latch for "signalCheck[1]" at ALU.v(127) File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 127
+Info (10041): Inferred latch for "signalCheck[0]" at ALU.v(123) File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 123
+Info (12128): Elaborating entity "invert64" for hierarchy "invert64:invertA" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 21
+Info (12128): Elaborating entity "carry_look_ahead64bit" for hierarchy "carry_look_ahead64bit:addAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 28
 Info (12128): Elaborating entity "carry_look_ahead16bit" for hierarchy "carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead64bit.v Line: 10
 Info (12128): Elaborating entity "carry_look_ahead4bit" for hierarchy "carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead16bit.v Line: 10
-Info (12128): Elaborating entity "and64" for hierarchy "and64:andAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 33
-Info (12128): Elaborating entity "or64" for hierarchy "or64:orAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 34
-Info (12128): Elaborating entity "xor64" for hierarchy "xor64:xorAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 35
-Info (12128): Elaborating entity "shiftLeft1" for hierarchy "shiftLeft1:shiftAl" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 39
-Info (12128): Elaborating entity "shiftRight1" for hierarchy "shiftRight1:shiftAr" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 40
+Info (12128): Elaborating entity "and64" for hierarchy "and64:andAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 36
+Info (12128): Elaborating entity "or64" for hierarchy "or64:orAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 37
+Info (12128): Elaborating entity "xor64" for hierarchy "xor64:xorAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 38
+Info (12128): Elaborating entity "shiftLeft1" for hierarchy "shiftLeft1:shiftAl" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 42
+Info (12128): Elaborating entity "shiftRight1" for hierarchy "shiftRight1:shiftAr" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 43
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "signal[0]" is stuck at VCC File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 7
+    Warning (13410): Pin "signal[1]" is stuck at VCC File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 7
+    Warning (13410): Pin "signal[2]" is stuck at VCC File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 7
+    Warning (13410): Pin "signal[3]" is stuck at VCC File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1942 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1946 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 134 input pins
-    Info (21059): Implemented 64 output pins
+    Info (21059): Implemented 68 output pins
     Info (21061): Implemented 1744 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Tue Mar 09 12:05:23 2021
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:36
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Tue Mar 09 12:37:52 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:37
 
 
