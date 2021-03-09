@@ -1,12 +1,12 @@
-Fitter Status : Successful - Tue Mar 09 12:38:09 2021
+Fitter Status : Successful - Tue Mar 09 13:19:35 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : ALU
 Top-level Entity Name : ALU
 Family : MAX 10
 Device : 10M08DAF484C8G
 Timing Models : Final
-Total logic elements : 1,745 / 8,064 ( 22 % )
-    Total combinational functions : 1,745 / 8,064 ( 22 % )
+Total logic elements : 1,734 / 8,064 ( 22 % )
+    Total combinational functions : 1,734 / 8,064 ( 22 % )
     Dedicated logic registers : 0 / 8,064 ( 0 % )
 Total registers : 0
 Total pins : 202 / 250 ( 81 % )

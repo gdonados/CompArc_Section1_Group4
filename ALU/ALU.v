@@ -15,7 +15,7 @@ module ALU(A, B, fsec, carry, fout, signal);
 	wire[63:0] Anot, Bnot, sum, sumC, differenceBA, differenceAB, difference1; //arithmetic wires
 	wire[63:0] zeroC, passC, andC, orC, xorC;  //logic wires
 	wire[63:0] Aleft, Aright; //shift wires
-	wire cout; //carry out
+	wire coutAB, coutABC; //carry out wires
 	
 	//A and B 2:1 mux for A and A' 
 	invert64 invertA (A, Anot);  //Bitwise Inverts A
@@ -25,8 +25,8 @@ module ALU(A, B, fsec, carry, fout, signal);
 	integer j=0;
 	
 	//Arithmetic
-	carry_look_ahead64bit addAB (A,B,j, sum, cout); //adds A + B
-	carry_look_ahead64bit addABcarry (A,B,carry, sumC, cout); //adds A + B + Carry_in
+	carry_look_ahead64bit addAB (A,B,j, sum, coutAB); //adds A + B
+	carry_look_ahead64bit addABcarry (A,B,carry, sumC, coutABC); //adds A + B + Carry_in
 	
 	
 	carry_look_ahead64bit subBA (Anot+1, B, j, differenceBA);  //(-A)+B, aka B-A
@@ -116,25 +116,38 @@ module ALU(A, B, fsec, carry, fout, signal);
 			
 			default:	result = 0;	//default case
 		endcase
-	end
+		
+		//if output is zero
+		if(result == 0)	begin
+			signalCheck[0] = 1;
+		end
 
-	always @(*) begin
-			//if output is zero
-			if(result == 0)	begin
-				signalCheck[0] = 1;
-			end
-			//if output is signed
-			if(result[63] == 1) begin
-				signalCheck[1] = 1;
-			end
-			//if A + B unsigned 65th bit arithmetic overflow error 
-			if(cout == 1 && (fsec == 5'b00010 || fsec == 5'b00011)) begin
-				signalCheck[2] = 1;
-			end
-			//if A + B signed 64th bit == 1, arithmetic overflow error
-			if((fsec == 5'b00010 && sum[63] == 1) || (fsec == 5'b00011 && sumC[63] == 1)) begin
-				signalCheck[3] = 1;
-			end
+		else //if not set to 0
+			signalCheck[0] = 0;
+			
+		//if output is signed
+		if(result[63] == 1) begin
+			signalCheck[1] = 1;
+		end
+
+		else //if not set to 0
+			signalCheck[1] = 0;
+
+		//if A + B unsigned 65th bit arithmetic overflow error 
+		if((coutAB == 1'b1 || coutABC == 1'b1) && (fsec == 5'b00010 || fsec == 5'b00011)) begin
+			signalCheck[2] = 1;
+		end
+
+		else //if not set to 0
+			signalCheck[2] = 0;
+			
+		//if A + B signed 64th bit == 1, arithmetic overflow error
+		if((fsec == 5'b00010 && sum[63] == 1) || (fsec == 5'b00011 && sumC[63] == 1)) begin
+			signalCheck[3] = 1;
+		end
+
+		else //if not set to 0
+			signalCheck[3] = 0;
 	end
 endmodule
  
