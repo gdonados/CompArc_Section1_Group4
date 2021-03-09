@@ -9,18 +9,23 @@ module ALU(A, B, fsec, carry, fout);
 	
 	assign fout = result;//set output equal to case result
 	
-	wire[63:0] Anot, Bnot, sum, sumC, sum1, differenceA, differenceB, difference1; //arithmetic wires
+	wire[63:0] Anot, Bnot, sum, sumC, differenceA, differenceB, difference1; //arithmetic wires
 	wire[63:0] zeroC, passC, andC, orC, xorC;  //logic wires
 	wire[63:0] Aleft, Aright; //shift wires
-	
+	wire cout; //carry out
 	
 	//A and B 2:1 mux for A and A' 
-	invert64 invertA (A, Anot);  //Inverts A
-	invert64 invertB (B, Bnot);  //Inverts B
+	invert64 invertA (A, Anot);  //Bitwise Inverts A
+	invert64 invertB (B, Bnot);  //Bitwise Inverts B
 	
 	integer i=1;
+	integer j=0;
 	
 	//Arithmetic
+	carry_look_ahead64bit addAB (A,B,j, sum, cout); //adds A + B
+	carry_look_ahead64bit addABcarry (A,B,carry, sumC, cout); //adds A + B + Carry_in
+	
+	
 	addition64 subA (Anot, B, i, differenceA);  //(-A)+B, aka B-A
 	addition64 subB (A, Bnot, i, differenceB);  //A+(-B), aka A-B
 
@@ -47,11 +52,11 @@ module ALU(A, B, fsec, carry, fout);
 			end
 			
 			5'b00010:	begin //A + B
-				result = A+B;
+				result = sum;
 			end
 			
 			5'b00011:	begin //A + B + C
-				result = A+B+carry;
+				result = sumC;
 			end
 			
 			5'b00100:	begin //A + 1
