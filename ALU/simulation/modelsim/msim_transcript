@@ -13,119 +13,119 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/and64.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:14:24 on Mar 09,2021
+# Start time: 16:33:56 on Mar 10,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/and64.v 
 # -- Compiling module and64
 # 
 # Top level modules:
 # 	and64
-# End time: 13:14:24 on Mar 09,2021, Elapsed time: 0:00:00
+# End time: 16:33:56 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/xor64.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:14:24 on Mar 09,2021
+# Start time: 16:33:56 on Mar 10,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/xor64.v 
 # -- Compiling module xor64
 # 
 # Top level modules:
 # 	xor64
-# End time: 13:14:24 on Mar 09,2021, Elapsed time: 0:00:00
+# End time: 16:33:56 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/or64.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:14:24 on Mar 09,2021
+# Start time: 16:33:57 on Mar 10,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/or64.v 
 # -- Compiling module or64
 # 
 # Top level modules:
 # 	or64
-# End time: 13:14:24 on Mar 09,2021, Elapsed time: 0:00:00
+# End time: 16:33:57 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:14:24 on Mar 09,2021
+# Start time: 16:33:57 on Mar 10,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 13:14:24 on Mar 09,2021, Elapsed time: 0:00:00
+# End time: 16:33:57 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/invert64.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:14:24 on Mar 09,2021
+# Start time: 16:33:57 on Mar 10,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/invert64.v 
 # -- Compiling module invert64
 # 
 # Top level modules:
 # 	invert64
-# End time: 13:14:24 on Mar 09,2021, Elapsed time: 0:00:00
+# End time: 16:33:57 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftLeft1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:14:24 on Mar 09,2021
+# Start time: 16:33:57 on Mar 10,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftLeft1.v 
 # -- Compiling module shiftLeft1
 # 
 # Top level modules:
 # 	shiftLeft1
-# End time: 13:14:24 on Mar 09,2021, Elapsed time: 0:00:00
+# End time: 16:33:57 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftRight1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:14:24 on Mar 09,2021
+# Start time: 16:33:57 on Mar 10,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftRight1.v 
 # -- Compiling module shiftRight1
 # 
 # Top level modules:
 # 	shiftRight1
-# End time: 13:14:25 on Mar 09,2021, Elapsed time: 0:00:01
+# End time: 16:33:57 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead4bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:14:25 on Mar 09,2021
+# Start time: 16:33:57 on Mar 10,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead4bit.v 
 # -- Compiling module carry_look_ahead4bit
 # 
 # Top level modules:
 # 	carry_look_ahead4bit
-# End time: 13:14:25 on Mar 09,2021, Elapsed time: 0:00:00
+# End time: 16:33:57 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead16bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:14:25 on Mar 09,2021
+# Start time: 16:33:57 on Mar 10,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead16bit.v 
 # -- Compiling module carry_look_ahead16bit
 # 
 # Top level modules:
 # 	carry_look_ahead16bit
-# End time: 13:14:25 on Mar 09,2021, Elapsed time: 0:00:00
+# End time: 16:33:57 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead64bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:14:25 on Mar 09,2021
+# Start time: 16:33:57 on Mar 10,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead64bit.v 
 # -- Compiling module carry_look_ahead64bit
 # 
 # Top level modules:
 # 	carry_look_ahead64bit
-# End time: 13:14:25 on Mar 09,2021, Elapsed time: 0:00:00
+# End time: 16:33:58 on Mar 10,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:14:25 on Mar 09,2021
+# Start time: 16:33:58 on Mar 10,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU_tb.v 
 # -- Compiling module ALU_tb
 # 
 # Top level modules:
 # 	ALU_tb
-# End time: 13:14:25 on Mar 09,2021, Elapsed time: 0:00:00
+# End time: 16:33:58 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  ALU_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" ALU_tb 
-# Start time: 13:14:25 on Mar 09,2021
+# Start time: 16:33:58 on Mar 10,2021
 # Loading work.ALU_tb
 # Loading work.ALU
 # Loading work.invert64
@@ -159,5 +159,3 @@
 # ** Note: $stop    : C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU_tb.v(22)
 #    Time: 3200 ns  Iteration: 0  Instance: /ALU_tb
 # Break in Module ALU_tb at C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU_tb.v line 22
-# End time: 13:17:37 on Mar 09,2021, Elapsed time: 0:03:12
-# Errors: 0, Warnings: 7

@@ -46,7 +46,7 @@ module ALU(A, B, fsec, carry, fout, signal);
 	//5:1 Mux for Selecting Output of ALU
 	always @(*) begin
 		case(fsec)
-			5'b00000:	begin //Bitwise inverts A
+			5'b00000:	begin //Arithmetic Negative A
 				result = Anot+1;
 			end
 			

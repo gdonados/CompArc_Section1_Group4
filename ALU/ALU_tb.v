@@ -11,8 +11,8 @@ module ALU_tb();
 	ALU dut (Ain, Bin, sel, c, o, sig);
 	
 	initial begin
-		Ain <= 64'b1011101011110001110100101001010100100100111111010001111010111101; //sets A to 205
-		Bin <= 64'b1111111111111111111111111111111111111111111111111111111111111111; //sets B to 512
+		Ain <= 64'd205; //sets A to 205
+		Bin <= 64'd512; //sets B to 512
 		sel <= 0;	//sets select to 0
 		c <= 0;	//carry is initially 0
 		
