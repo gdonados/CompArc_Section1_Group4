@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Wed Mar 10 16:19:39 2021
+Fri Mar 12 19:55:32 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 10 16:19:39 2021       ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 12 19:55:31 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
@@ -157,38 +157,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                               ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------+---------+
-; and64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/and64.v                 ;         ;
-; xor64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/xor64.v                 ;         ;
-; or64.v                           ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/or64.v                  ;         ;
-; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v                   ;         ;
-; invert64.v                       ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/invert64.v              ;         ;
-; shiftLeft1.v                     ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftLeft1.v            ;         ;
-; shiftRight1.v                    ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftRight1.v           ;         ;
-; carry_look_ahead4bit.v           ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead4bit.v  ;         ;
-; carry_look_ahead16bit.v          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead16bit.v ;         ;
-; carry_look_ahead64bit.v          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead64bit.v ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                         ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+---------+
+; and64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/and64.v                 ;         ;
+; xor64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/xor64.v                 ;         ;
+; or64.v                           ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/or64.v                  ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v                   ;         ;
+; invert64.v                       ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/invert64.v              ;         ;
+; shiftLeft1.v                     ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftLeft1.v            ;         ;
+; shiftRight1.v                    ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftRight1.v           ;         ;
+; carry_look_ahead4bit.v           ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead4bit.v  ;         ;
+; carry_look_ahead16bit.v          ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead16bit.v ;         ;
+; carry_look_ahead64bit.v          ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead64bit.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------+
@@ -399,7 +397,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -409,49 +407,47 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Mar 10 16:19:28 2021
+    Info: Processing started: Fri Mar 12 19:55:09 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file and64.v
-    Info (12023): Found entity 1: and64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/and64.v Line: 1
+    Info (12023): Found entity 1: and64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/and64.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file xor64.v
-    Info (12023): Found entity 1: xor64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/xor64.v Line: 1
+    Info (12023): Found entity 1: xor64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/xor64.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file or64.v
-    Info (12023): Found entity 1: or64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/or64.v Line: 1
+    Info (12023): Found entity 1: or64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/or64.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file addition64.v
-    Info (12023): Found entity 1: addition64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/addition64.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file invert64.v
-    Info (12023): Found entity 1: invert64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/invert64.v Line: 1
+    Info (12023): Found entity 1: invert64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/invert64.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shiftleft1.v
-    Info (12023): Found entity 1: shiftLeft1 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftLeft1.v Line: 1
+    Info (12023): Found entity 1: shiftLeft1 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftLeft1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shiftright1.v
-    Info (12023): Found entity 1: shiftRight1 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/shiftRight1.v Line: 1
+    Info (12023): Found entity 1: shiftRight1 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/shiftRight1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.v
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU_tb.v Line: 3
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file carry_look_ahead4bit.v
-    Info (12023): Found entity 1: carry_look_ahead4bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead4bit.v Line: 2
+    Info (12023): Found entity 1: carry_look_ahead4bit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead4bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file carry_look_ahead16bit.v
-    Info (12023): Found entity 1: carry_look_ahead16bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead16bit.v Line: 2
+    Info (12023): Found entity 1: carry_look_ahead16bit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead16bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file carry_look_ahead64bit.v
-    Info (12023): Found entity 1: carry_look_ahead64bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead64bit.v Line: 2
+    Info (12023): Found entity 1: carry_look_ahead64bit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead64bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file carry_look_ahead64bit_tb.v
-    Info (12023): Found entity 1: carry_look_ahead64bit_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead64bit_tb.v Line: 1
+    Info (12023): Found entity 1: carry_look_ahead64bit_tb File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead64bit_tb.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file carry_look_ahead4bit_tb.v
-    Info (12023): Found entity 1: carry_look_ahead4bit_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead4bit_tb.v Line: 2
+    Info (12023): Found entity 1: carry_look_ahead4bit_tb File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead4bit_tb.v Line: 2
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(24): object "i" assigned a value but never read File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 24
-Info (12128): Elaborating entity "invert64" for hierarchy "invert64:invertA" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 21
-Info (12128): Elaborating entity "carry_look_ahead64bit" for hierarchy "carry_look_ahead64bit:addAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 28
-Info (12128): Elaborating entity "carry_look_ahead16bit" for hierarchy "carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead64bit.v Line: 10
-Info (12128): Elaborating entity "carry_look_ahead4bit" for hierarchy "carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/carry_look_ahead16bit.v Line: 10
-Info (12128): Elaborating entity "and64" for hierarchy "and64:andAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 36
-Info (12128): Elaborating entity "or64" for hierarchy "or64:orAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 37
-Info (12128): Elaborating entity "xor64" for hierarchy "xor64:xorAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 38
-Info (12128): Elaborating entity "shiftLeft1" for hierarchy "shiftLeft1:shiftAl" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 42
-Info (12128): Elaborating entity "shiftRight1" for hierarchy "shiftRight1:shiftAr" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU.v Line: 43
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(24): object "i" assigned a value but never read File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 24
+Info (12128): Elaborating entity "invert64" for hierarchy "invert64:invertA" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 21
+Info (12128): Elaborating entity "carry_look_ahead64bit" for hierarchy "carry_look_ahead64bit:addAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 28
+Info (12128): Elaborating entity "carry_look_ahead16bit" for hierarchy "carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead64bit.v Line: 10
+Info (12128): Elaborating entity "carry_look_ahead4bit" for hierarchy "carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/carry_look_ahead16bit.v Line: 10
+Info (12128): Elaborating entity "and64" for hierarchy "and64:andAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 36
+Info (12128): Elaborating entity "or64" for hierarchy "or64:orAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 37
+Info (12128): Elaborating entity "xor64" for hierarchy "xor64:xorAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 38
+Info (12128): Elaborating entity "shiftLeft1" for hierarchy "shiftLeft1:shiftAl" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 42
+Info (12128): Elaborating entity "shiftRight1" for hierarchy "shiftRight1:shiftAr" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/ALU/ALU.v Line: 43
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -461,9 +457,9 @@ Info (21057): Implemented 1935 device resources after synthesis - the final reso
     Info (21059): Implemented 68 output pins
     Info (21061): Implemented 1733 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4769 megabytes
-    Info: Processing ended: Wed Mar 10 16:19:39 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Fri Mar 12 19:55:32 2021
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:42
 
 

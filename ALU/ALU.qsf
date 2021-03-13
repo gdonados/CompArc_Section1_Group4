@@ -51,7 +51,6 @@ set_global_assignment -name VERILOG_FILE and64.v
 set_global_assignment -name VERILOG_FILE xor64.v
 set_global_assignment -name VERILOG_FILE or64.v
 set_global_assignment -name VERILOG_FILE ALU.v
-set_global_assignment -name VERILOG_FILE addition64.v
 set_global_assignment -name VERILOG_FILE invert64.v
 set_global_assignment -name VERILOG_FILE shiftLeft1.v
 set_global_assignment -name VERILOG_FILE shiftRight1.v
