@@ -15,13 +15,13 @@ module RAM256x64(address, clock, in, write, out);
     assign correctAddress = (address[63:56] == RAMAddress) ? 1'b1 : 1'b0;
     assign out = correctAddress ? outReg : 64'bz;
     
-    always @(negedge clock) begin
+    always @(posedge clock) begin
    	 if (write & correctAddress) begin
-   		 mem[address[7:0]] <= in; //write to RAM when write is enabled
+   		 mem[address[63:56]] <= in; //write to RAM when write is enabled
    	 end
     end
     
-    always @(negedge clock) begin
-   	 outReg <= mem[address[7:0]]; //access RAM
+    always @(posedge clock) begin
+   	 outReg <= mem[address[63:56]]; //access RAM
     end
 endmodule

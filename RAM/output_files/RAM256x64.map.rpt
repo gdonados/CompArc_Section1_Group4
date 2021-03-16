@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RAM256x64
-Tue Mar 16 09:53:23 2021
+Tue Mar 16 10:23:01 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -50,7 +50,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 16 09:53:22 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 16 10:23:01 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; RAM256x64                                   ;
 ; Top-level Entity Name              ; RAM256x64                                   ;
@@ -190,37 +190,37 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 4        ;
-;                                             ;          ;
-; Total combinational functions               ; 4        ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 2        ;
-;     -- 3 input functions                    ; 1        ;
-;     -- <=2 input functions                  ; 1        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 4        ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 0        ;
-;     -- Dedicated logic registers            ; 0        ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 194      ;
-; Total memory bits                           ; 16384    ;
-;                                             ;          ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-;                                             ;          ;
-; Maximum fan-out node                        ; Equal0~2 ;
-; Maximum fan-out                             ; 64       ;
-; Total fan-out                               ; 1039     ;
-; Average fan-out                             ; 2.28     ;
-+---------------------------------------------+----------+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimated Total logic elements              ; 4                 ;
+;                                             ;                   ;
+; Total combinational functions               ; 4                 ;
+; Logic element usage by number of LUT inputs ;                   ;
+;     -- 4 input functions                    ; 2                 ;
+;     -- 3 input functions                    ; 1                 ;
+;     -- <=2 input functions                  ; 1                 ;
+;                                             ;                   ;
+; Logic elements by mode                      ;                   ;
+;     -- normal mode                          ; 4                 ;
+;     -- arithmetic mode                      ; 0                 ;
+;                                             ;                   ;
+; Total registers                             ; 0                 ;
+;     -- Dedicated logic registers            ; 0                 ;
+;     -- I/O registers                        ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 194               ;
+; Total memory bits                           ; 16384             ;
+;                                             ;                   ;
+; Embedded Multiplier 9-bit elements          ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; address[56]~input ;
+; Maximum fan-out                             ; 65                ;
+; Total fan-out                               ; 1039              ;
+; Average fan-out                             ; 2.28              ;
++---------------------------------------------+-------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -402,12 +402,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 16 09:53:13 2021
+    Info: Processing started: Tue Mar 16 10:22:51 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RAM256x64 -c RAM256x64
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ram256x64.v
     Info (12023): Found entity 1: RAM256x64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ram256x64_tb.v
+    Info (12023): Found entity 1: RAM256x64_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64_tb.v Line: 1
 Info (12127): Elaborating entity "RAM256x64" for the top level hierarchy
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "mem_rtl_0" 
@@ -439,7 +441,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/output_files/RAM256x64.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 48 input pin(s) that do not drive logic
+Warning (21074): Design contains 56 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "address[0]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 4
+    Warning (15610): No output dependent on input pin "address[1]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 4
+    Warning (15610): No output dependent on input pin "address[2]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 4
+    Warning (15610): No output dependent on input pin "address[3]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 4
+    Warning (15610): No output dependent on input pin "address[4]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 4
+    Warning (15610): No output dependent on input pin "address[5]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 4
+    Warning (15610): No output dependent on input pin "address[6]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 4
+    Warning (15610): No output dependent on input pin "address[7]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 4
     Warning (15610): No output dependent on input pin "address[8]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 4
     Warning (15610): No output dependent on input pin "address[9]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 4
     Warning (15610): No output dependent on input pin "address[10]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v Line: 4
@@ -493,11 +503,11 @@ Info (21057): Implemented 262 device resources after synthesis - the final resou
     Info (21059): Implemented 64 output pins
     Info (21061): Implemented 4 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
-    Info: Peak virtual memory: 4764 megabytes
-    Info: Processing ended: Tue Mar 16 09:53:23 2021
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 58 warnings
+    Info: Peak virtual memory: 4767 megabytes
+    Info: Processing ended: Tue Mar 16 10:23:01 2021
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+
