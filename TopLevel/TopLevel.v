@@ -27,8 +27,6 @@ module TopLevel(readA, readB, write, writeReg, data, ALUcarry, clk, rst, functio
 	
 	ALU alu (regAout, regBout, functionsel, ALUcarry, ALUout, signalBitsWire);
 	
-
-	
 	RAM256x64 ram (ALUout, clk, regBout, RAMwrite, RAMwire);
 	
 	

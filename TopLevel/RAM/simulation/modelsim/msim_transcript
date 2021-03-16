@@ -11,31 +11,31 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:42:27 on Mar 16,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64.v 
+# Start time: 12:11:36 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v 
 # -- Compiling module RAM256x64
 # 
 # Top level modules:
 # 	RAM256x64
-# End time: 10:42:27 on Mar 16,2021, Elapsed time: 0:00:00
+# End time: 12:11:36 on Mar 16,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:42:28 on Mar 16,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64_tb.v 
+# Start time: 12:11:36 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64_tb.v 
 # -- Compiling module RAM256x64_tb
 # 
 # Top level modules:
 # 	RAM256x64_tb
-# End time: 10:42:28 on Mar 16,2021, Elapsed time: 0:00:00
+# End time: 12:11:36 on Mar 16,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  RAM256x64_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" RAM256x64_tb 
-# Start time: 10:42:28 on Mar 16,2021
+# Start time: 12:11:36 on Mar 16,2021
 # Loading work.RAM256x64_tb
 # Loading work.RAM256x64
 # 
@@ -45,8 +45,8 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64_tb.v(14)
+# ** Note: $stop    : C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64_tb.v(15)
 #    Time: 10320 ps  Iteration: 0  Instance: /RAM256x64_tb
-# Break in Module RAM256x64_tb at C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/RAM256x64_tb.v line 14
-# End time: 10:43:37 on Mar 16,2021, Elapsed time: 0:01:09
+# Break in Module RAM256x64_tb at C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64_tb.v line 15
+# End time: 12:13:17 on Mar 16,2021, Elapsed time: 0:01:41
 # Errors: 0, Warnings: 0

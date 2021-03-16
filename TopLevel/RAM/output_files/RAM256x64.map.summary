@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Mar 16 10:41:49 2021
+Analysis & Synthesis Status : Successful - Tue Mar 16 12:10:43 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : RAM256x64
 Top-level Entity Name : RAM256x64
 Family : MAX 10
-Total logic elements : 4
-    Total combinational functions : 4
+Total logic elements : 0
+    Total combinational functions : 0
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 194
+Total pins : 138
 Total virtual pins : 0
 Total memory bits : 16,384
 Embedded Multiplier 9-bit elements : 0
