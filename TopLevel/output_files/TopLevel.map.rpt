@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TopLevel
-Tue Mar 16 11:33:30 2021
+Tue Mar 16 12:50:50 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -19,9 +19,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  11. Registers Packed Into Inferred Megafunctions
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Source assignments for RAM256x64:ram|altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated
- 14. Parameter Settings for User Entity Instance: RAM256x64:ram
- 15. Parameter Settings for Inferred Entity Instance: RAM256x64:ram|altsyncram:mem_rtl_0
- 16. altsyncram Parameter Settings by Entity Instance
+ 14. Parameter Settings for Inferred Entity Instance: RAM256x64:ram|altsyncram:mem_rtl_0
+ 15. altsyncram Parameter Settings by Entity Instance
+ 16. Port Connectivity Checks: "RAM256x64:ram"
  17. Port Connectivity Checks: "ALU:alu|carry_look_ahead64bit:subAB"
  18. Port Connectivity Checks: "ALU:alu|carry_look_ahead64bit:subBA"
  19. Port Connectivity Checks: "ALU:alu|carry_look_ahead64bit:addAB"
@@ -29,7 +29,6 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  21. Post-Synthesis Netlist Statistics for Top Partition
  22. Elapsed Time Per Partition
  23. Analysis & Synthesis Messages
- 24. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -56,13 +55,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 16 11:33:30 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 16 12:50:50 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; TopLevel                                    ;
 ; Top-level Entity Name              ; TopLevel                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 1,988                                       ;
-;     Total combinational functions  ; 1,924                                       ;
+; Total logic elements               ; 1,983                                       ;
+;     Total combinational functions  ; 1,919                                       ;
 ;     Dedicated logic registers      ; 64                                          ;
 ; Total registers                    ; 64                                          ;
 ; Total pins                         ; 222                                         ;
@@ -218,16 +217,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------------------------+
 ; Resource                                    ; Usage                                 ;
 +---------------------------------------------+---------------------------------------+
-; Estimated Total logic elements              ; 1,988                                 ;
+; Estimated Total logic elements              ; 1,983                                 ;
 ;                                             ;                                       ;
-; Total combinational functions               ; 1924                                  ;
+; Total combinational functions               ; 1919                                  ;
 ; Logic element usage by number of LUT inputs ;                                       ;
-;     -- 4 input functions                    ; 1329                                  ;
-;     -- 3 input functions                    ; 565                                   ;
-;     -- <=2 input functions                  ; 30                                    ;
+;     -- 4 input functions                    ; 1349                                  ;
+;     -- 3 input functions                    ; 543                                   ;
+;     -- <=2 input functions                  ; 27                                    ;
 ;                                             ;                                       ;
 ; Logic elements by mode                      ;                                       ;
-;     -- normal mode                          ; 1735                                  ;
+;     -- normal mode                          ; 1730                                  ;
 ;     -- arithmetic mode                      ; 189                                   ;
 ;                                             ;                                       ;
 ; Total registers                             ; 64                                    ;
@@ -240,9 +239,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0                                     ;
 ;                                             ;                                       ;
 ; Maximum fan-out node                        ; RegisterFile32x64bit:regFile|Mux127~1 ;
-; Maximum fan-out                             ; 364                                   ;
-; Total fan-out                               ; 8449                                  ;
-; Average fan-out                             ; 3.39                                  ;
+; Maximum fan-out                             ; 303                                   ;
+; Total fan-out                               ; 8393                                  ;
+; Average fan-out                             ; 3.37                                  ;
 +---------------------------------------------+---------------------------------------+
 
 
@@ -251,60 +250,60 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                     ; Entity Name           ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |TopLevel                                 ; 1924 (0)            ; 64 (0)                    ; 16384       ; 0          ; 0            ; 0       ; 0         ; 222  ; 0            ; 0          ; |TopLevel                                                                                               ; TopLevel              ; work         ;
-;    |ALU:alu|                              ; 1789 (915)          ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu                                                                                       ; ALU                   ; work         ;
-;       |and64:andAB|                       ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|and64:andAB                                                                           ; and64                 ; work         ;
-;       |carry_look_ahead64bit:addABcarry|  ; 128 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry                                                      ; carry_look_ahead64bit ; work         ;
-;          |carry_look_ahead16bit:cla1|     ; 34 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1                           ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla2 ; carry_look_ahead4bit  ; work         ;
+; |TopLevel                                 ; 1919 (0)            ; 64 (0)                    ; 16384       ; 0          ; 0            ; 0       ; 0         ; 222  ; 0            ; 0          ; |TopLevel                                                                                               ; TopLevel              ; work         ;
+;    |ALU:alu|                              ; 1789 (933)          ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu                                                                                       ; ALU                   ; work         ;
+;       |and64:andAB|                       ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|and64:andAB                                                                           ; and64                 ; work         ;
+;       |carry_look_ahead64bit:addABcarry|  ; 120 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry                                                      ; carry_look_ahead64bit ; work         ;
+;          |carry_look_ahead16bit:cla1|     ; 32 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1                           ; carry_look_ahead16bit ; work         ;
+;             |carry_look_ahead4bit:cla1|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1 ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla2|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla2 ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla3|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla3 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla4 ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla2|     ; 32 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2                           ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla1 ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla4|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla4 ; carry_look_ahead4bit  ; work         ;
+;          |carry_look_ahead16bit:cla2|     ; 28 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2                           ; carry_look_ahead16bit ; work         ;
+;             |carry_look_ahead4bit:cla1|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla1 ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla2|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla2 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla3 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla4 ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla3|     ; 35 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3                           ; carry_look_ahead16bit ; work         ;
+;             |carry_look_ahead4bit:cla3|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla3 ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla4|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla4 ; carry_look_ahead4bit  ; work         ;
+;          |carry_look_ahead16bit:cla3|     ; 33 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3                           ; carry_look_ahead16bit ; work         ;
 ;             |carry_look_ahead4bit:cla1|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla1 ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla2|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla2 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla3 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla4 ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla3|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla3 ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla4|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla4 ; carry_look_ahead4bit  ; work         ;
 ;          |carry_look_ahead16bit:cla4|     ; 27 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4                           ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla1 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla2 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla3 ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla1|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla1 ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla2|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla2 ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla3|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla3 ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla4|   ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla4 ; carry_look_ahead4bit  ; work         ;
-;       |carry_look_ahead64bit:addAB|       ; 174 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB                                                           ; carry_look_ahead64bit ; work         ;
-;          |carry_look_ahead16bit:cla1|     ; 42 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1                                ; carry_look_ahead16bit ; work         ;
+;       |carry_look_ahead64bit:addAB|       ; 168 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB                                                           ; carry_look_ahead64bit ; work         ;
+;          |carry_look_ahead16bit:cla1|     ; 41 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1                                ; carry_look_ahead16bit ; work         ;
 ;             |carry_look_ahead4bit:cla1|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla2|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla3|   ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla4|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
 ;          |carry_look_ahead16bit:cla2|     ; 46 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla2                                ; carry_look_ahead16bit ; work         ;
 ;             |carry_look_ahead4bit:cla1|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla2|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla3|   ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla4|   ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla3|     ; 45 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3                                ; carry_look_ahead16bit ; work         ;
+;          |carry_look_ahead16bit:cla3|     ; 44 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3                                ; carry_look_ahead16bit ; work         ;
 ;             |carry_look_ahead4bit:cla1|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla2|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla3|   ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla4|     ; 41 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla4|   ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
+;          |carry_look_ahead16bit:cla4|     ; 37 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4                                ; carry_look_ahead16bit ; work         ;
+;             |carry_look_ahead4bit:cla1|   ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla2|   ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla3|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla4|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;       |carry_look_ahead64bit:subAB|       ; 255 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB                                                           ; carry_look_ahead64bit ; work         ;
-;          |carry_look_ahead16bit:cla1|     ; 60 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
+;       |carry_look_ahead64bit:subAB|       ; 259 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB                                                           ; carry_look_ahead64bit ; work         ;
+;          |carry_look_ahead16bit:cla1|     ; 63 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1                                ; carry_look_ahead16bit ; work         ;
+;             |carry_look_ahead4bit:cla1|   ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla2|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla3|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla4|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla2|     ; 69 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2                                ; carry_look_ahead16bit ; work         ;
+;          |carry_look_ahead16bit:cla2|     ; 68 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2                                ; carry_look_ahead16bit ; work         ;
 ;             |carry_look_ahead4bit:cla1|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 18 (18)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla2|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla3|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla4|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
 ;          |carry_look_ahead16bit:cla3|     ; 68 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla3                                ; carry_look_ahead16bit ; work         ;
@@ -312,15 +311,15 @@ https://fpgasoftware.intel.com/eula.
 ;             |carry_look_ahead4bit:cla2|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla3|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla4|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla4|     ; 58 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4                                ; carry_look_ahead16bit ; work         ;
+;          |carry_look_ahead16bit:cla4|     ; 60 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4                                ; carry_look_ahead16bit ; work         ;
 ;             |carry_look_ahead4bit:cla1|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla2|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;       |carry_look_ahead64bit:subBA|       ; 258 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA                                                           ; carry_look_ahead64bit ; work         ;
-;          |carry_look_ahead16bit:cla1|     ; 62 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla3|   ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla4|   ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
+;       |carry_look_ahead64bit:subBA|       ; 257 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA                                                           ; carry_look_ahead64bit ; work         ;
+;          |carry_look_ahead16bit:cla1|     ; 61 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1                                ; carry_look_ahead16bit ; work         ;
+;             |carry_look_ahead4bit:cla1|   ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
+;             |carry_look_ahead4bit:cla2|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla3|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla4|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
 ;          |carry_look_ahead16bit:cla2|     ; 68 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla2                                ; carry_look_ahead16bit ; work         ;
@@ -338,8 +337,8 @@ https://fpgasoftware.intel.com/eula.
 ;             |carry_look_ahead4bit:cla2|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla3|   ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
 ;             |carry_look_ahead4bit:cla4|   ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;       |or64:orAB|                         ; 54 (54)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|or64:orAB                                                                             ; or64                  ; work         ;
-;    |RAM256x64:ram|                        ; 5 (5)               ; 0 (0)                     ; 16384       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|RAM256x64:ram                                                                                 ; RAM256x64             ; work         ;
+;       |or64:orAB|                         ; 46 (46)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|or64:orAB                                                                             ; or64                  ; work         ;
+;    |RAM256x64:ram|                        ; 0 (0)               ; 0 (0)                     ; 16384       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|RAM256x64:ram                                                                                 ; RAM256x64             ; work         ;
 ;       |altsyncram:mem_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 16384       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|RAM256x64:ram|altsyncram:mem_rtl_0                                                            ; altsyncram            ; work         ;
 ;          |altsyncram_mo71:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|RAM256x64:ram|altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated                             ; altsyncram_mo71       ; work         ;
 ;    |RegisterFile32x64bit:regFile|         ; 130 (130)           ; 64 (64)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|RegisterFile32x64bit:regFile                                                                  ; RegisterFile32x64bit  ; work         ;
@@ -2392,16 +2391,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+----------------------------+
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: RAM256x64:ram ;
-+----------------+----------+--------------------------------+
-; Parameter Name ; Value    ; Type                           ;
-+----------------+----------+--------------------------------+
-; RAMAddress     ; 00000010 ; Unsigned Binary                ;
-+----------------+----------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: RAM256x64:ram|altsyncram:mem_rtl_0 ;
 +------------------------------------+----------------------+-------------------------+
@@ -2483,6 +2472,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+------------------------------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RAM256x64:ram"                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; address ; Input ; Warning  ; Input port expression (64 bits) is wider than the input port (8 bits) it drives.  The 56 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "ALU:alu|carry_look_ahead64bit:subAB"                                                                                                                                               ;
 +------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2529,18 +2527,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 222                         ;
 ; cycloneiii_ff         ; 64                          ;
 ;     ENA CLR           ; 64                          ;
-; cycloneiii_io_obuf    ; 64                          ;
-; cycloneiii_lcell_comb ; 1924                        ;
+; cycloneiii_lcell_comb ; 1919                        ;
 ;     arith             ; 189                         ;
 ;         3 data inputs ; 189                         ;
-;     normal            ; 1735                        ;
-;         2 data inputs ; 30                          ;
-;         3 data inputs ; 376                         ;
-;         4 data inputs ; 1329                        ;
+;     normal            ; 1730                        ;
+;         2 data inputs ; 27                          ;
+;         3 data inputs ; 354                         ;
+;         4 data inputs ; 1349                        ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 35.00                       ;
-; Average LUT depth     ; 19.77                       ;
+; Max LUT depth         ; 38.00                       ;
+; Average LUT depth     ; 20.18                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2559,7 +2556,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 16 11:33:14 2021
+    Info: Processing started: Tue Mar 16 12:50:35 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopLevel -c TopLevel
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -2589,11 +2586,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file registe
     Info (12023): Found entity 1: RegisterFile32x64bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file toplevel.v
     Info (12023): Found entity 1: TopLevel File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel.v(15): created implicit net for "regSel" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file toplevel_tb.v
+    Info (12023): Found entity 1: TopLevel_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel.v(14): created implicit net for "regSel" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 14
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Info (12128): Elaborating entity "RegisterFile32x64bit" for hierarchy "RegisterFile32x64bit:regFile" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 15
+Info (12128): Elaborating entity "RegisterFile32x64bit" for hierarchy "RegisterFile32x64bit:regFile" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 14
 Warning (10240): Verilog HDL Always Construct warning at RegisterFile32x64bit.v(15): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v Line: 15
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 28
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 27
 Warning (10036): Verilog HDL or VHDL warning at ALU.v(24): object "i" assigned a value but never read File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 24
 Info (12128): Elaborating entity "invert64" for hierarchy "ALU:alu|invert64:invertA" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 21
 Info (12128): Elaborating entity "carry_look_ahead64bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 28
@@ -2604,7 +2603,7 @@ Info (12128): Elaborating entity "or64" for hierarchy "ALU:alu|or64:orAB" File: 
 Info (12128): Elaborating entity "xor64" for hierarchy "ALU:alu|xor64:xorAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 38
 Info (12128): Elaborating entity "shiftLeft1" for hierarchy "ALU:alu|shiftLeft1:shiftAl" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 42
 Info (12128): Elaborating entity "shiftRight1" for hierarchy "ALU:alu|shiftRight1:shiftAr" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 43
-Info (12128): Elaborating entity "RAM256x64" for hierarchy "RAM256x64:ram" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 32
+Info (12128): Elaborating entity "RAM256x64" for hierarchy "RAM256x64:ram" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 29
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "ALU:alu|j[31]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
     Warning (12110): Net "ALU:alu|j[30]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
@@ -2664,9 +2663,8 @@ Info (12133): Instantiated megafunction "RAM256x64:ram|altsyncram:mem_rtl_0" wit
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mo71.tdf
     Info (12023): Found entity 1: altsyncram_mo71 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/db/altsyncram_mo71.tdf Line: 28
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/output_files/TopLevel.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 6 input pin(s) that do not drive logic
@@ -2676,21 +2674,15 @@ Warning (21074): Design contains 6 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "writeReg[3]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 3
     Warning (15610): No output dependent on input pin "writeReg[4]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 3
     Warning (15610): No output dependent on input pin "muxSelect" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 4
-Info (21057): Implemented 2274 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2269 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 90 input pins
     Info (21059): Implemented 132 output pins
-    Info (21061): Implemented 1988 logic cells
+    Info (21061): Implemented 1983 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
     Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Tue Mar 16 11:33:30 2021
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:30
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/output_files/TopLevel.map.smsg.
+    Info: Processing ended: Tue Mar 16 12:50:50 2021
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:28
 
 

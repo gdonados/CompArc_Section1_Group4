@@ -1,29 +1,29 @@
 `timescale 10ns/10ns
 module TopLevel_tb();
 	reg [4:0] A, B, regSel, FS;
-	reg clk, wrt, reset, RAMwrt, CO, muxSelect;
+	reg clock, wrt, reset, RAMwrt, CO, muxSelect;
 	reg[63:0] in;
 	
 	wire [63:0] RAMo, ALUo;
 	wire [3:0] SIGNAL;
 	
+	TopLevel dut (A, B, wrt, regSel, in, CO, clock, reset, FS, SIGNAL, RAMwrt, RAMo, ALUo, muxSelect);
+	
 	//give all inputs initial values
 	initial begin
-		clk <= 1'b1;
+		clock <= 1'b0;
 		reset <= 1'b1;
 		in <= 64'b0;
 		wrt <= 1'b1;
-		RAMwrt <= 1'b1
+		RAMwrt <= 1'b1;
 		A <= 0;
 		B <= 0;
 		FS <= 0;
 		CO <= 0;
 		regSel <= 0;
-		in <= 0;
+		in <= 7364;
 		muxSelect <= 0;
-		
 		#5 reset <= 1'b0;  //delay 5 ticks then turn reset off
-		#3000 load <= 1'b0; 
 		#3200 $stop;        
 	end
 	
@@ -32,8 +32,22 @@ module TopLevel_tb();
 		#5 clock <= ~clock;
 		
 	always begin
+		#500 muxSelect = ~muxSelect;
+	end
+	
+	always begin
 		#5 in <= {$random, $random}; //$random is a system command that generates a 32-bit random number, we need 64-bits
 		regSel = regSel + 1;
 		#5; 									 //delay 5ns
 	end
+	
+	always begin
+		#50 FS = FS + 1;
+	end
+	
+	always
+		#45 A = A + 1;
+	
+	always
+		#75 B = B + 1;
 endmodule

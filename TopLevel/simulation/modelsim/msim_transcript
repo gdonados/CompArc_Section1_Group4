@@ -1,0 +1,152 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do TopLevel_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:01 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v 
+# -- Compiling module xor64
+# 
+# Top level modules:
+# 	xor64
+# End time: 12:52:02 on Mar 16,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:02 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v 
+# -- Compiling module shiftRight1
+# 
+# Top level modules:
+# 	shiftRight1
+# End time: 12:52:02 on Mar 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:02 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v 
+# -- Compiling module shiftLeft1
+# 
+# Top level modules:
+# 	shiftLeft1
+# End time: 12:52:02 on Mar 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:02 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v 
+# -- Compiling module or64
+# 
+# Top level modules:
+# 	or64
+# End time: 12:52:02 on Mar 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:02 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v 
+# -- Compiling module invert64
+# 
+# Top level modules:
+# 	invert64
+# End time: 12:52:02 on Mar 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:02 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v 
+# -- Compiling module carry_look_ahead64bit
+# 
+# Top level modules:
+# 	carry_look_ahead64bit
+# End time: 12:52:02 on Mar 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:02 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v 
+# -- Compiling module carry_look_ahead16bit
+# 
+# Top level modules:
+# 	carry_look_ahead16bit
+# End time: 12:52:02 on Mar 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:02 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v 
+# -- Compiling module carry_look_ahead4bit
+# 
+# Top level modules:
+# 	carry_look_ahead4bit
+# End time: 12:52:02 on Mar 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:02 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v 
+# -- Compiling module and64
+# 
+# Top level modules:
+# 	and64
+# End time: 12:52:03 on Mar 16,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:03 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v 
+# -- Compiling module RAM256x64
+# 
+# Top level modules:
+# 	RAM256x64
+# End time: 12:52:03 on Mar 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:03 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:52:03 on Mar 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register\ File {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:03 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v 
+# -- Compiling module RegisterFile32x64bit
+# 
+# Top level modules:
+# 	RegisterFile32x64bit
+# End time: 12:52:03 on Mar 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:03 on Mar 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v 
+# -- Compiling module TopLevel
+# 
+# Top level modules:
+# 	TopLevel
+# ** Error: (vlog-7) Failed to open  file "C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/simulation/modelsim/rtl_work/_info" in read/write mode.
+# Permission denied. (errno = EACCES)
+# ** Error: (vlog-7) Failed to open info file "C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/simulation/modelsim/rtl_work/_info" in write mode.
+# Permission denied. (errno = EACCES)
+# End time: 12:52:03 on Mar 16,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./TopLevel_run_msim_rtl_verilog.do line 20
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopL..."

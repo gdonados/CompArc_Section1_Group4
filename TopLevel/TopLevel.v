@@ -6,11 +6,10 @@ module TopLevel(readA, readB, write, writeReg, data, ALUcarry, clk, rst, functio
 	output [63:0] RAMout,ALUout; //outputs
 	output [3:0] signalBits;
 	
-	assign RAMout = RAMwire;
-	assign signalBits = signalBitsWire;
+	wire[63:0] regAout, regBout, muxOut, ramwire, aluwire;
 	
-	wire[63:0] regAout, regBout, RAMwire, muxOut;
-	wire[3:0] signalBitsWire;
+	assign RAMout = ramwire;
+	assign ALUout = aluwire;
 	
 	RegisterFile32x64bit regFile (regAout, regBout, data, readA, readB, regSel, write, rst, clk);
 	
@@ -25,9 +24,9 @@ module TopLevel(readA, readB, write, writeReg, data, ALUcarry, clk, rst, functio
 		endcase
 	end*/
 	
-	ALU alu (regAout, regBout, functionsel, ALUcarry, ALUout, signalBitsWire);
+	ALU alu (regAout, regBout, functionsel, ALUcarry, aluwire, signalBits);
 	
-	RAM256x64 ram (ALUout, clk, regBout, RAMwrite, RAMwire);
+	RAM256x64 ram (ALUout, clk, regBout, RAMwrite, ramwire);
 	
 	
 endmodule

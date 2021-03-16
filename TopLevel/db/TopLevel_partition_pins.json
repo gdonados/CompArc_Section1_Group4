@@ -532,6 +532,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "functionsel[4]",
+					"strict" : false
+				},
+				{
 					"name" : "readA[0]",
 					"strict" : false
 				},
@@ -545,26 +549,6 @@
 				},
 				{
 					"name" : "readA[3]",
-					"strict" : false
-				},
-				{
-					"name" : "functionsel[4]",
-					"strict" : false
-				},
-				{
-					"name" : "functionsel[1]",
-					"strict" : false
-				},
-				{
-					"name" : "functionsel[2]",
-					"strict" : false
-				},
-				{
-					"name" : "functionsel[3]",
-					"strict" : false
-				},
-				{
-					"name" : "functionsel[0]",
 					"strict" : false
 				},
 				{
@@ -592,11 +576,27 @@
 					"strict" : false
 				},
 				{
+					"name" : "functionsel[0]",
+					"strict" : false
+				},
+				{
 					"name" : "ALUcarry",
 					"strict" : false
 				},
 				{
-					"name" : "data[61]",
+					"name" : "functionsel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "functionsel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "functionsel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data[62]",
 					"strict" : false
 				},
 				{
@@ -612,6 +612,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "data[61]",
+					"strict" : false
+				},
+				{
 					"name" : "data[60]",
 					"strict" : false
 				},
@@ -620,7 +624,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "data[58]",
+					"name" : "data[56]",
 					"strict" : false
 				},
 				{
@@ -628,19 +632,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "data[56]",
-					"strict" : false
-				},
-				{
 					"name" : "data[55]",
-					"strict" : false
-				},
-				{
-					"name" : "data[54]",
-					"strict" : false
-				},
-				{
-					"name" : "data[53]",
 					"strict" : false
 				},
 				{
@@ -648,15 +640,11 @@
 					"strict" : false
 				},
 				{
+					"name" : "data[53]",
+					"strict" : false
+				},
+				{
 					"name" : "data[51]",
-					"strict" : false
-				},
-				{
-					"name" : "data[50]",
-					"strict" : false
-				},
-				{
-					"name" : "data[49]",
 					"strict" : false
 				},
 				{
@@ -664,15 +652,11 @@
 					"strict" : false
 				},
 				{
+					"name" : "data[49]",
+					"strict" : false
+				},
+				{
 					"name" : "data[47]",
-					"strict" : false
-				},
-				{
-					"name" : "data[46]",
-					"strict" : false
-				},
-				{
-					"name" : "data[45]",
 					"strict" : false
 				},
 				{
@@ -680,15 +664,11 @@
 					"strict" : false
 				},
 				{
+					"name" : "data[45]",
+					"strict" : false
+				},
+				{
 					"name" : "data[43]",
-					"strict" : false
-				},
-				{
-					"name" : "data[42]",
-					"strict" : false
-				},
-				{
-					"name" : "data[41]",
 					"strict" : false
 				},
 				{
@@ -696,11 +676,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "data[39]",
+					"name" : "data[41]",
 					"strict" : false
 				},
 				{
-					"name" : "data[38]",
+					"name" : "data[39]",
 					"strict" : false
 				},
 				{
@@ -732,7 +712,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "data[30]",
+					"name" : "data[28]",
 					"strict" : false
 				},
 				{
@@ -740,19 +720,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "data[28]",
-					"strict" : false
-				},
-				{
 					"name" : "data[27]",
-					"strict" : false
-				},
-				{
-					"name" : "data[26]",
-					"strict" : false
-				},
-				{
-					"name" : "data[25]",
 					"strict" : false
 				},
 				{
@@ -760,15 +728,11 @@
 					"strict" : false
 				},
 				{
+					"name" : "data[25]",
+					"strict" : false
+				},
+				{
 					"name" : "data[23]",
-					"strict" : false
-				},
-				{
-					"name" : "data[22]",
-					"strict" : false
-				},
-				{
-					"name" : "data[21]",
 					"strict" : false
 				},
 				{
@@ -776,15 +740,11 @@
 					"strict" : false
 				},
 				{
+					"name" : "data[21]",
+					"strict" : false
+				},
+				{
 					"name" : "data[19]",
-					"strict" : false
-				},
-				{
-					"name" : "data[18]",
-					"strict" : false
-				},
-				{
-					"name" : "data[17]",
 					"strict" : false
 				},
 				{
@@ -792,19 +752,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "data[17]",
+					"strict" : false
+				},
+				{
 					"name" : "data[15]",
 					"strict" : false
 				},
 				{
-					"name" : "data[14]",
+					"name" : "data[12]",
 					"strict" : false
 				},
 				{
 					"name" : "data[13]",
-					"strict" : false
-				},
-				{
-					"name" : "data[12]",
 					"strict" : false
 				},
 				{
@@ -816,14 +776,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "data[9]",
-					"strict" : false
-				},
-				{
-					"name" : "data[8]",
-					"strict" : false
-				},
-				{
 					"name" : "data[7]",
 					"strict" : false
 				},
@@ -832,15 +784,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "data[5]",
-					"strict" : false
-				},
-				{
 					"name" : "data[4]",
 					"strict" : false
 				},
 				{
-					"name" : "data[3]",
+					"name" : "data[5]",
 					"strict" : false
 				},
 				{
@@ -848,15 +796,67 @@
 					"strict" : false
 				},
 				{
-					"name" : "data[1]",
-					"strict" : false
-				},
-				{
 					"name" : "data[0]",
 					"strict" : false
 				},
 				{
-					"name" : "data[62]",
+					"name" : "data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data[18]",
+					"strict" : false
+				},
+				{
+					"name" : "data[22]",
+					"strict" : false
+				},
+				{
+					"name" : "data[26]",
+					"strict" : false
+				},
+				{
+					"name" : "data[30]",
+					"strict" : false
+				},
+				{
+					"name" : "data[38]",
+					"strict" : false
+				},
+				{
+					"name" : "data[42]",
+					"strict" : false
+				},
+				{
+					"name" : "data[46]",
+					"strict" : false
+				},
+				{
+					"name" : "data[50]",
+					"strict" : false
+				},
+				{
+					"name" : "data[54]",
+					"strict" : false
+				},
+				{
+					"name" : "data[58]",
 					"strict" : false
 				},
 				{
