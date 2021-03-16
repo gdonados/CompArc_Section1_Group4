@@ -1,0 +1,873 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "signalBits[0]",
+					"strict" : false
+				},
+				{
+					"name" : "signalBits[1]",
+					"strict" : false
+				},
+				{
+					"name" : "signalBits[2]",
+					"strict" : false
+				},
+				{
+					"name" : "signalBits[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[8]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[9]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[10]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[11]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[12]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[13]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[14]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[15]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[16]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[17]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[18]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[19]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[20]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[21]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[22]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[23]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[24]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[25]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[26]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[27]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[28]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[29]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[30]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[31]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[32]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[33]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[34]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[35]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[36]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[37]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[38]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[39]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[40]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[41]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[42]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[43]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[44]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[45]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[46]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[47]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[48]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[49]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[50]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[51]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[52]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[53]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[54]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[55]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[56]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[57]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[58]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[59]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[60]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[61]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[62]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMout[63]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[16]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[17]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[18]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[19]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[20]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[21]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[22]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[23]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[24]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[25]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[26]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[27]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[28]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[29]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[30]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[31]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[32]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[33]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[34]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[35]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[36]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[37]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[38]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[39]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[40]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[41]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[42]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[43]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[44]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[45]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[46]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[47]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[48]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[49]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[50]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[51]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[52]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[53]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[54]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[55]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[56]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[57]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[58]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[59]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[60]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[61]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[62]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUout[63]",
+					"strict" : false
+				},
+				{
+					"name" : "readA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "readA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "readA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "readA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "functionsel[4]",
+					"strict" : false
+				},
+				{
+					"name" : "functionsel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "functionsel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "functionsel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "functionsel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "readA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "readB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "readB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "readB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "readB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "readB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUcarry",
+					"strict" : false
+				},
+				{
+					"name" : "data[61]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "write",
+					"strict" : false
+				},
+				{
+					"name" : "data[60]",
+					"strict" : false
+				},
+				{
+					"name" : "data[59]",
+					"strict" : false
+				},
+				{
+					"name" : "data[58]",
+					"strict" : false
+				},
+				{
+					"name" : "data[57]",
+					"strict" : false
+				},
+				{
+					"name" : "data[56]",
+					"strict" : false
+				},
+				{
+					"name" : "data[55]",
+					"strict" : false
+				},
+				{
+					"name" : "data[54]",
+					"strict" : false
+				},
+				{
+					"name" : "data[53]",
+					"strict" : false
+				},
+				{
+					"name" : "data[52]",
+					"strict" : false
+				},
+				{
+					"name" : "data[51]",
+					"strict" : false
+				},
+				{
+					"name" : "data[50]",
+					"strict" : false
+				},
+				{
+					"name" : "data[49]",
+					"strict" : false
+				},
+				{
+					"name" : "data[48]",
+					"strict" : false
+				},
+				{
+					"name" : "data[47]",
+					"strict" : false
+				},
+				{
+					"name" : "data[46]",
+					"strict" : false
+				},
+				{
+					"name" : "data[45]",
+					"strict" : false
+				},
+				{
+					"name" : "data[44]",
+					"strict" : false
+				},
+				{
+					"name" : "data[43]",
+					"strict" : false
+				},
+				{
+					"name" : "data[42]",
+					"strict" : false
+				},
+				{
+					"name" : "data[41]",
+					"strict" : false
+				},
+				{
+					"name" : "data[40]",
+					"strict" : false
+				},
+				{
+					"name" : "data[39]",
+					"strict" : false
+				},
+				{
+					"name" : "data[38]",
+					"strict" : false
+				},
+				{
+					"name" : "data[37]",
+					"strict" : false
+				},
+				{
+					"name" : "data[36]",
+					"strict" : false
+				},
+				{
+					"name" : "data[35]",
+					"strict" : false
+				},
+				{
+					"name" : "data[34]",
+					"strict" : false
+				},
+				{
+					"name" : "data[33]",
+					"strict" : false
+				},
+				{
+					"name" : "data[32]",
+					"strict" : false
+				},
+				{
+					"name" : "data[31]",
+					"strict" : false
+				},
+				{
+					"name" : "data[30]",
+					"strict" : false
+				},
+				{
+					"name" : "data[29]",
+					"strict" : false
+				},
+				{
+					"name" : "data[28]",
+					"strict" : false
+				},
+				{
+					"name" : "data[27]",
+					"strict" : false
+				},
+				{
+					"name" : "data[26]",
+					"strict" : false
+				},
+				{
+					"name" : "data[25]",
+					"strict" : false
+				},
+				{
+					"name" : "data[24]",
+					"strict" : false
+				},
+				{
+					"name" : "data[23]",
+					"strict" : false
+				},
+				{
+					"name" : "data[22]",
+					"strict" : false
+				},
+				{
+					"name" : "data[21]",
+					"strict" : false
+				},
+				{
+					"name" : "data[20]",
+					"strict" : false
+				},
+				{
+					"name" : "data[19]",
+					"strict" : false
+				},
+				{
+					"name" : "data[18]",
+					"strict" : false
+				},
+				{
+					"name" : "data[17]",
+					"strict" : false
+				},
+				{
+					"name" : "data[16]",
+					"strict" : false
+				},
+				{
+					"name" : "data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data[62]",
+					"strict" : false
+				},
+				{
+					"name" : "data[63]",
+					"strict" : false
+				},
+				{
+					"name" : "RAMwrite",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
