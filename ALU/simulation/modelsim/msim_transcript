@@ -159,3 +159,5 @@
 # ** Note: $stop    : C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU_tb.v(22)
 #    Time: 3200 ns  Iteration: 0  Instance: /ALU_tb
 # Break in Module ALU_tb at C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/ALU/ALU_tb.v line 22
+# End time: 17:03:03 on Mar 10,2021, Elapsed time: 0:29:05
+# Errors: 0, Warnings: 7

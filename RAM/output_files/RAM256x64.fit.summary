@@ -1,0 +1,18 @@
+Fitter Status : Successful - Tue Mar 16 09:53:35 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : RAM256x64
+Top-level Entity Name : RAM256x64
+Family : MAX 10
+Device : 10M08DAF484C8G
+Timing Models : Final
+Total logic elements : 5 / 8,064 ( < 1 % )
+    Total combinational functions : 5 / 8,064 ( < 1 % )
+    Dedicated logic registers : 0 / 8,064 ( 0 % )
+Total registers : 0
+Total pins : 194 / 250 ( 78 % )
+Total virtual pins : 0
+Total memory bits : 16,384 / 387,072 ( 4 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )
