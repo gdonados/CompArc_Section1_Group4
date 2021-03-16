@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RAM256x64
-Tue Mar 16 10:23:01 2021
+Tue Mar 16 10:41:49 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -50,7 +50,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 16 10:23:01 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 16 10:41:49 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; RAM256x64                                   ;
 ; Top-level Entity Name              ; RAM256x64                                   ;
@@ -216,7 +216,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                   ;
 ; Embedded Multiplier 9-bit elements          ; 0                 ;
 ;                                             ;                   ;
-; Maximum fan-out node                        ; address[56]~input ;
+; Maximum fan-out node                        ; address[57]~input ;
 ; Maximum fan-out                             ; 65                ;
 ; Total fan-out                               ; 1039              ;
 ; Average fan-out                             ; 2.28              ;
@@ -282,7 +282,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+----------+-----------------------------------------------+
 ; Parameter Name ; Value    ; Type                                          ;
 +----------------+----------+-----------------------------------------------+
-; RAMAddress     ; 00000000 ; Unsigned Binary                               ;
+; RAMAddress     ; 00000010 ; Unsigned Binary                               ;
 +----------------+----------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -402,7 +402,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 16 10:22:51 2021
+    Info: Processing started: Tue Mar 16 10:41:39 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RAM256x64 -c RAM256x64
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -504,8 +504,8 @@ Info (21057): Implemented 262 device resources after synthesis - the final resou
     Info (21061): Implemented 4 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 58 warnings
-    Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Tue Mar 16 10:23:01 2021
+    Info: Peak virtual memory: 4758 megabytes
+    Info: Processing ended: Tue Mar 16 10:41:49 2021
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:23
 

@@ -1,5 +1,5 @@
 module RAM256x64(address, clock, in, write, out);
-    parameter RAMAddress = 8'b00000000;
+    parameter RAMAddress = 8'b00000010;
     
     input [63:0] address; //8b address
     input clock; //1b clock

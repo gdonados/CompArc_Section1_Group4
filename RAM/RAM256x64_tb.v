@@ -9,18 +9,18 @@ module RAM256x64_tb();
 		data_in = 0;
 		wrt = 1;
 		clk = 0;
-		addr = 8'b00000000;
-		#1280 wrt = 0;
-		#1300 $stop;
+		addr[63:56] = 8'b00000000;
+		#5120 wrt = 0;
+		#5200 $stop;
+	end
+	always begin
+	
+		#5 clk = ~clk;
 	end
 	
 	always begin
-		clk = ~clk;
-	end
-	
-	always begin
+		#20;
 		data_in = {$random, $random};
-		addr = addr + 1;
-		#5;
+		addr[63:56] = addr[63:56] + 1;
 	end
 endmodule

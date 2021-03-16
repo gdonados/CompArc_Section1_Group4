@@ -1,5 +1,5 @@
 Fitter report for RAM256x64
-Tue Mar 16 10:23:15 2021
+Tue Mar 16 10:41:58 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Mar 16 10:23:15 2021       ;
+; Fitter Status                      ; Successful - Tue Mar 16 10:41:58 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; RAM256x64                                   ;
 ; Top-level Entity Name              ; RAM256x64                                   ;
@@ -152,12 +152,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
+; Average used               ; 1.06        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.8%      ;
+;     Processors 2-6         ;   1.2%      ;
 +----------------------------+-------------+
 
 
@@ -385,8 +385,8 @@ The pin-out file can be found in C:/Users/gdona/OneDrive/Documents/GitHub/CompAr
 ; address[53] ; A2    ; 8        ; 11           ; 25           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
 ; address[54] ; B1    ; 8        ; 1            ; 10           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
 ; address[55] ; C17   ; 7        ; 29           ; 25           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
-; address[56] ; AB15  ; 4        ; 24           ; 0            ; 28           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
-; address[57] ; N14   ; 6        ; 31           ; 9            ; 21           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; address[56] ; N14   ; 6        ; 31           ; 9            ; 21           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; address[57] ; AB15  ; 4        ; 24           ; 0            ; 28           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
 ; address[58] ; T22   ; 5        ; 31           ; 2            ; 0            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
 ; address[59] ; AA9   ; 3        ; 17           ; 0            ; 14           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
 ; address[5]  ; R4    ; 2        ; 0            ; 4            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
@@ -638,7 +638,7 @@ The pin-out file can be found in C:/Users/gdona/OneDrive/Documents/GitHub/CompAr
 ; AB12     ;            ;          ; NC                                             ;        ;                       ;         ; --         ;                 ; --       ; --           ;
 ; AB13     ;            ;          ; NC                                             ;        ;                       ;         ; --         ;                 ; --       ; --           ;
 ; AB14     ; 103        ; 4        ; in[53]                                         ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; AB15     ; 107        ; 4        ; address[56]                                    ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB15     ; 107        ; 4        ; address[57]                                    ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AB16     ; 113        ; 4        ; in[8]                                          ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AB17     ; 117        ; 4        ; in[40]                                         ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AB18     ; 119        ; 4        ; in[46]                                         ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
@@ -901,7 +901,7 @@ The pin-out file can be found in C:/Users/gdona/OneDrive/Documents/GitHub/CompAr
 ; N11      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; N12      ;            ; --       ; VCC                                            ; power  ;                       ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N13      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; N14      ; 148        ; 6        ; address[57]                                    ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N14      ; 148        ; 6        ; address[56]                                    ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; N15      ; 150        ; 6        ; in[18]                                         ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; N16      ;            ; 5        ; VCCIO5                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; N17      ;            ; 6        ; VCCIO6                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -1193,8 +1193,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; out[61]     ; Incomplete set of assignments ;
 ; out[62]     ; Incomplete set of assignments ;
 ; out[63]     ; Incomplete set of assignments ;
-; address[56] ; Incomplete set of assignments ;
 ; address[57] ; Incomplete set of assignments ;
+; address[56] ; Incomplete set of assignments ;
 ; address[58] ; Incomplete set of assignments ;
 ; address[59] ; Incomplete set of assignments ;
 ; address[60] ; Incomplete set of assignments ;
@@ -1387,8 +1387,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; out[61]     ; Missing location assignment   ;
 ; out[62]     ; Missing location assignment   ;
 ; out[63]     ; Missing location assignment   ;
-; address[56] ; Missing location assignment   ;
 ; address[57] ; Missing location assignment   ;
+; address[56] ; Missing location assignment   ;
 ; address[58] ; Missing location assignment   ;
 ; address[59] ; Missing location assignment   ;
 ; address[60] ; Missing location assignment   ;
@@ -1601,8 +1601,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; out[61]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; out[62]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; out[63]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; address[56] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; address[57] ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; address[57] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; address[56] ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
 ; address[58] ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
 ; address[59] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; address[60] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
@@ -1633,7 +1633,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; in[19]      ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; in[20]      ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
 ; in[21]      ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; in[22]      ; Input    ; --            ; (6) 873 ps    ; --                    ; --  ; --   ;
+; in[22]      ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
 ; in[23]      ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; in[24]      ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
 ; in[25]      ; Input    ; --            ; (6) 873 ps    ; --                    ; --  ; --   ;
@@ -1667,7 +1667,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; in[53]      ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; in[54]      ; Input    ; --            ; (6) 873 ps    ; --                    ; --  ; --   ;
 ; in[55]      ; Input    ; --            ; (6) 873 ps    ; --                    ; --  ; --   ;
-; in[56]      ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
+; in[56]      ; Input    ; --            ; (6) 873 ps    ; --                    ; --  ; --   ;
 ; in[57]      ; Input    ; --            ; (6) 873 ps    ; --                    ; --  ; --   ;
 ; in[58]      ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; in[59]      ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
@@ -1739,18 +1739,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; address[53]                                                              ;                   ;         ;
 ; address[54]                                                              ;                   ;         ;
 ; address[55]                                                              ;                   ;         ;
-; address[56]                                                              ;                   ;         ;
+; address[57]                                                              ;                   ;         ;
 ;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a0  ; 1                 ; 6       ;
 ;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a18 ; 1                 ; 6       ;
 ;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a36 ; 1                 ; 6       ;
 ;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a46 ; 1                 ; 6       ;
 ;      - Equal0~0                                                          ; 1                 ; 6       ;
-; address[57]                                                              ;                   ;         ;
-;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a0  ; 0                 ; 0       ;
-;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a18 ; 0                 ; 0       ;
-;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a36 ; 0                 ; 0       ;
-;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a46 ; 0                 ; 0       ;
-;      - Equal0~0                                                          ; 0                 ; 0       ;
+; address[56]                                                              ;                   ;         ;
+;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a0  ; 1                 ; 0       ;
+;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a18 ; 1                 ; 0       ;
+;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a36 ; 1                 ; 0       ;
+;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a46 ; 1                 ; 0       ;
+;      - Equal0~0                                                          ; 1                 ; 0       ;
 ; address[58]                                                              ;                   ;         ;
 ;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a0  ; 0                 ; 6       ;
 ;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a18 ; 0                 ; 6       ;
@@ -1834,7 +1834,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; in[21]                                                                   ;                   ;         ;
 ;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a18 ; 0                 ; 6       ;
 ; in[22]                                                                   ;                   ;         ;
-;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a18 ; 1                 ; 6       ;
+;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a18 ; 0                 ; 6       ;
 ; in[23]                                                                   ;                   ;         ;
 ;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a18 ; 0                 ; 6       ;
 ; in[24]                                                                   ;                   ;         ;
@@ -1902,7 +1902,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; in[55]                                                                   ;                   ;         ;
 ;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a46 ; 1                 ; 6       ;
 ; in[56]                                                                   ;                   ;         ;
-;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a46 ; 0                 ; 6       ;
+;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a46 ; 1                 ; 6       ;
 ; in[57]                                                                   ;                   ;         ;
 ;      - altsyncram:mem_rtl_0|altsyncram_mo71:auto_generated|ram_block1a46 ; 1                 ; 6       ;
 ; in[58]                                                                   ;                   ;         ;
@@ -1961,8 +1961,8 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; Direct links          ; 1 / 27,275 ( < 1 % )   ;
 ; Global clocks         ; 1 / 10 ( 10 % )        ;
 ; Local interconnects   ; 2 / 8,064 ( < 1 % )    ;
-; R24 interconnects     ; 40 / 1,320 ( 3 % )     ;
-; R4 interconnects      ; 224 / 28,560 ( < 1 % ) ;
+; R24 interconnects     ; 39 / 1,320 ( 3 % )     ;
+; R4 interconnects      ; 226 / 28,560 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
@@ -2213,8 +2213,8 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; out[61]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; out[62]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; out[63]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; address[56]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; address[57]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; address[56]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; address[58]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; address[59]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; address[60]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2384,7 +2384,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  42 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  24 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  32 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -2406,10 +2406,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/RAM/output_files/RAM256x64.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5687 megabytes
-    Info: Processing ended: Tue Mar 16 10:23:15 2021
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 5691 megabytes
+    Info: Processing ended: Tue Mar 16 10:41:59 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +----------------------------+
