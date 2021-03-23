@@ -1,3 +1,4 @@
+`timescale 10ns/10ns
 module RAM256x64(address, clock, in, write, out);
     input [7:0] address; //8b address
     input clock; //1b clock

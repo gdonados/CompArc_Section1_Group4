@@ -4,11 +4,14 @@ module TopLevel_tb();
 	reg clock, wrt, reset, RAMwrt, CO, muxSelect;
 	reg[63:0] in;
 	
-	wire [63:0] RAMo, ALUo;
+	wire [63:0] RAMo, ALUo, aVal, bVal;
 	wire [3:0] SIGNAL;
 	
 	TopLevel dut (A, B, wrt, regSel, in, CO, clock, reset, FS, SIGNAL, RAMwrt, RAMo, ALUo, muxSelect);
 	
+	assign aVal = dut.regAout;
+	assign bVal = dut.regBout;
+
 	//give all inputs initial values
 	initial begin
 		clock <= 1'b0;
@@ -42,12 +45,12 @@ module TopLevel_tb();
 	end
 	
 	always begin
-		#50 FS = FS + 1;
+		#25 FS = FS + 1;
 	end
 	
 	always
-		#45 A = A + 1;
+		#10 A = A + 1;
 	
 	always
-		#75 B = B + 1;
+		#30 B = B + 1;
 endmodule

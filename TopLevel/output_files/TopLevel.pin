@@ -71,20 +71,20 @@ CHIP  "TopLevel"  ASSIGNED TO AN: 10M08DAF484C8G
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 GND                          : A1        : gnd    :                   :         :           :                
-ALUout[14]                   : A2        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
-readA[0]                     : A4        : input  : 2.5 V             :         : 8         : N              
-signalBits[0]                : A5        : output : 2.5 V             :         : 8         : N              
-ALUout[41]                   : A6        : output : 2.5 V             :         : 8         : N              
-data[3]                      : A7        : input  : 2.5 V             :         : 7         : N              
-data[2]                      : A8        : input  : 2.5 V             :         : 7         : N              
-data[10]                     : A9        : input  : 2.5 V             :         : 7         : N              
+ALUout[21]                   : A2        : output : 2.5 V             :         : 8         : N              
+ALUout[35]                   : A3        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
+data[2]                      : A5        : input  : 2.5 V             :         : 8         : N              
+ALUout[27]                   : A6        : output : 2.5 V             :         : 8         : N              
+RAMout[42]                   : A7        : output : 2.5 V             :         : 7         : N              
+RAMout[37]                   : A8        : output : 2.5 V             :         : 7         : N              
+data[40]                     : A9        : input  : 2.5 V             :         : 7         : N              
 NC                           : A10       :        :                   :         :           :                
 NC                           : A11       :        :                   :         :           :                
 NC                           : A12       :        :                   :         :           :                
 NC                           : A13       :        :                   :         :           :                
 RAMout[22]                   : A14       : output : 2.5 V             :         : 7         : N              
-RAMout[59]                   : A15       : output : 2.5 V             :         : 7         : N              
+RAMout[61]                   : A15       : output : 2.5 V             :         : 7         : N              
 NC                           : A16       :        :                   :         :           :                
 NC                           : A17       :        :                   :         :           :                
 NC                           : A18       :        :                   :         :           :                
@@ -92,65 +92,65 @@ NC                           : A19       :        :                   :         
 NC                           : A20       :        :                   :         :           :                
 NC                           : A21       :        :                   :         :           :                
 GND                          : A22       : gnd    :                   :         :           :                
-ALUout[32]                   : AA1       : output : 2.5 V             :         : 3         : N              
-ALUout[21]                   : AA2       : output : 2.5 V             :         : 3         : N              
-ALUout[50]                   : AA3       : output : 2.5 V             :         : 3         : N              
+ALUout[53]                   : AA1       : output : 2.5 V             :         : 3         : N              
+ALUout[20]                   : AA2       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA3       :        :                   :         : 3         :                
 GND                          : AA4       : gnd    :                   :         :           :                
-data[38]                     : AA5       : input  : 2.5 V             :         : 3         : N              
-data[31]                     : AA6       : input  : 2.5 V             :         : 3         : N              
-data[41]                     : AA7       : input  : 2.5 V             :         : 3         : N              
-ALUout[39]                   : AA8       : output : 2.5 V             :         : 3         : N              
-ALUout[37]                   : AA9       : output : 2.5 V             :         : 3         : N              
-data[57]                     : AA10      : input  : 2.5 V             :         : 3         : N              
+ALUout[15]                   : AA5       : output : 2.5 V             :         : 3         : N              
+ALUout[11]                   : AA6       : output : 2.5 V             :         : 3         : N              
+ALUout[14]                   : AA7       : output : 2.5 V             :         : 3         : N              
+ALUout[46]                   : AA8       : output : 2.5 V             :         : 3         : N              
+ALUout[59]                   : AA9       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA10      :        :                   :         : 3         :                
 NC                           : AA11      :        :                   :         :           :                
 NC                           : AA12      :        :                   :         :           :                
-ALUout[36]                   : AA13      : output : 2.5 V             :         : 4         : N              
-ALUout[56]                   : AA14      : output : 2.5 V             :         : 4         : N              
-data[63]                     : AA15      : input  : 2.5 V             :         : 4         : N              
-ALUout[26]                   : AA16      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 4         :                
+ALUout[44]                   : AA14      : output : 2.5 V             :         : 4         : N              
+signalBits[3]                : AA15      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA16      :        :                   :         : 4         :                
 NC                           : AA17      :        :                   :         :           :                
 GND                          : AA18      : gnd    :                   :         :           :                
 NC                           : AA19      :        :                   :         :           :                
 NC                           : AA20      :        :                   :         :           :                
-functionsel[1]               : AA21      : input  : 2.5 V             :         : 5         : N              
-RAMout[58]                   : AA22      : output : 2.5 V             :         : 5         : N              
+functionsel[2]               : AA21      : input  : 2.5 V             :         : 5         : N              
+RAMout[18]                   : AA22      : output : 2.5 V             :         : 5         : N              
 GND                          : AB1       : gnd    :                   :         :           :                
 NC                           : AB2       :        :                   :         :           :                
 NC                           : AB3       :        :                   :         :           :                
-ALUout[31]                   : AB4       : output : 2.5 V             :         : 3         : N              
-data[44]                     : AB5       : input  : 2.5 V             :         : 3         : N              
-data[32]                     : AB6       : input  : 2.5 V             :         : 3         : N              
-data[40]                     : AB7       : input  : 2.5 V             :         : 3         : N              
-data[59]                     : AB8       : input  : 2.5 V             :         : 3         : N              
-data[49]                     : AB9       : input  : 2.5 V             :         : 3         : N              
+ALUout[18]                   : AB4       : output : 2.5 V             :         : 3         : N              
+data[22]                     : AB5       : input  : 2.5 V             :         : 3         : N              
+ALUout[58]                   : AB6       : output : 2.5 V             :         : 3         : N              
+ALUout[40]                   : AB7       : output : 2.5 V             :         : 3         : N              
+ALUout[63]                   : AB8       : output : 2.5 V             :         : 3         : N              
+muxSelect                    : AB9       : input  : 2.5 V             :         : 3         : N              
 NC                           : AB10      :        :                   :         :           :                
 NC                           : AB11      :        :                   :         :           :                
 NC                           : AB12      :        :                   :         :           :                
 NC                           : AB13      :        :                   :         :           :                
-ALUout[47]                   : AB14      : output : 2.5 V             :         : 4         : N              
-signalBits[3]                : AB15      : output : 2.5 V             :         : 4         : N              
-RAMout[46]                   : AB16      : output : 2.5 V             :         : 4         : N              
-ALUout[6]                    : AB17      : output : 2.5 V             :         : 4         : N              
-data[55]                     : AB18      : input  : 2.5 V             :         : 4         : N              
+ALUout[24]                   : AB14      : output : 2.5 V             :         : 4         : N              
+ALUout[34]                   : AB15      : output : 2.5 V             :         : 4         : N              
+ALUout[37]                   : AB16      : output : 2.5 V             :         : 4         : N              
+ALUout[19]                   : AB17      : output : 2.5 V             :         : 4         : N              
+ALUout[12]                   : AB18      : output : 2.5 V             :         : 4         : N              
 NC                           : AB19      :        :                   :         :           :                
 NC                           : AB20      :        :                   :         :           :                
 NC                           : AB21      :        :                   :         :           :                
 GND                          : AB22      : gnd    :                   :         :           :                
-RAMout[4]                    : B1        : output : 2.5 V             :         : 8         : N              
-ALUout[23]                   : B2        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
-data[36]                     : B4        : input  : 2.5 V             :         : 8         : N              
-data[37]                     : B5        : input  : 2.5 V             :         : 8         : N              
+data[56]                     : B1        : input  : 2.5 V             :         : 8         : N              
+data[34]                     : B2        : input  : 2.5 V             :         : 8         : N              
+ALUout[16]                   : B3        : output : 2.5 V             :         : 8         : N              
+data[30]                     : B4        : input  : 2.5 V             :         : 8         : N              
+data[23]                     : B5        : input  : 2.5 V             :         : 8         : N              
 GND                          : B6        : gnd    :                   :         :           :                
-ALUout[42]                   : B7        : output : 2.5 V             :         : 8         : N              
-ALUcarry                     : B8        : input  : 2.5 V             :         : 7         : N              
+data[0]                      : B7        : input  : 2.5 V             :         : 8         : N              
+data[14]                     : B8        : input  : 2.5 V             :         : 7         : N              
 GND                          : B9        : gnd    :                   :         :           :                
-ALUout[46]                   : B10       : output : 2.5 V             :         : 7         : N              
+write                        : B10       : input  : 2.5 V             :         : 7         : N              
 NC                           : B11       :        :                   :         :           :                
 NC                           : B12       :        :                   :         :           :                
 GND                          : B13       : gnd    :                   :         :           :                
-ALUout[24]                   : B14       : output : 2.5 V             :         : 7         : N              
-data[11]                     : B15       : input  : 2.5 V             :         : 7         : N              
+RAMout[41]                   : B14       : output : 2.5 V             :         : 7         : N              
+ALUout[9]                    : B15       : output : 2.5 V             :         : 7         : N              
 NC                           : B16       :        :                   :         :           :                
 NC                           : B17       :        :                   :         :           :                
 GND                          : B18       : gnd    :                   :         :           :                
@@ -158,79 +158,79 @@ NC                           : B19       :        :                   :         
 NC                           : B20       :        :                   :         :           :                
 NC                           : B21       :        :                   :         :           :                
 NC                           : B22       :        :                   :         :           :                
-readB[1]                     : C1        : input  : 2.5 V             :         : 1B        : N              
-RAMout[1]                    : C2        : output : 2.5 V             :         : 8         : N              
-writeReg[0]                  : C3        : input  : 2.5 V             :         : 8         : N              
-ALUout[18]                   : C4        : output : 2.5 V             :         : 8         : N              
-RAMout[27]                   : C5        : output : 2.5 V             :         : 8         : N              
-data[4]                      : C6        : input  : 2.5 V             :         : 8         : N              
-ALUout[12]                   : C7        : output : 2.5 V             :         : 8         : N              
-RAMout[10]                   : C8        : output : 2.5 V             :         : 8         : N              
-ALUout[44]                   : C9        : output : 2.5 V             :         : 7         : N              
+readA[2]                     : C1        : input  : 2.5 V             :         : 1B        : N              
+data[28]                     : C2        : input  : 2.5 V             :         : 8         : N              
+data[59]                     : C3        : input  : 2.5 V             :         : 8         : N              
+data[27]                     : C4        : input  : 2.5 V             :         : 8         : N              
+data[41]                     : C5        : input  : 2.5 V             :         : 8         : N              
+ALUout[57]                   : C6        : output : 2.5 V             :         : 8         : N              
+writeReg[1]                  : C7        : input  : 2.5 V             :         : 8         : N              
+writeReg[0]                  : C8        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 7         :                
 NC                           : C10       :        :                   :         :           :                
 NC                           : C11       :        :                   :         :           :                
 NC                           : C12       :        :                   :         :           :                
-data[5]                      : C13       : input  : 2.5 V             :         : 7         : N              
-RAMout[3]                    : C14       : output : 2.5 V             :         : 7         : N              
+RAMout[19]                   : C13       : output : 2.5 V             :         : 7         : N              
+RAMout[52]                   : C14       : output : 2.5 V             :         : 7         : N              
 NC                           : C15       :        :                   :         :           :                
 NC                           : C16       :        :                   :         :           :                
-RAMout[14]                   : C17       : output : 2.5 V             :         : 7         : N              
+RAMout[63]                   : C17       : output : 2.5 V             :         : 7         : N              
 NC                           : C18       :        :                   :         :           :                
 NC                           : C19       :        :                   :         :           :                
-data[8]                      : C20       : input  : 2.5 V             :         : 6         : N              
-RAMout[38]                   : C21       : output : 2.5 V             :         : 6         : N              
-RAMout[21]                   : C22       : output : 2.5 V             :         : 6         : N              
-readB[3]                     : D1        : input  : 2.5 V             :         : 1B        : N              
-data[12]                     : D2        : input  : 2.5 V             :         : 1B        : N              
-data[24]                     : D3        : input  : 2.5 V             :         : 1B        : N              
+RAMout[14]                   : C20       : output : 2.5 V             :         : 6         : N              
+RAMout[31]                   : C21       : output : 2.5 V             :         : 6         : N              
+RAMout[48]                   : C22       : output : 2.5 V             :         : 6         : N              
+data[9]                      : D1        : input  : 2.5 V             :         : 1B        : N              
+data[32]                     : D2        : input  : 2.5 V             :         : 1B        : N              
+data[29]                     : D3        : input  : 2.5 V             :         : 1B        : N              
 GND                          : D4        : gnd    :                   :         :           :                
-readB[0]                     : D5        : input  : 2.5 V             :         : 8         : N              
-RAMout[61]                   : D6        : output : 2.5 V             :         : 8         : N              
-data[22]                     : D7        : input  : 2.5 V             :         : 8         : N              
-ALUout[15]                   : D8        : output : 2.5 V             :         : 8         : N              
-ALUout[33]                   : D9        : output : 2.5 V             :         : 8         : N              
-readA[1]                     : D10       : input  : 2.5 V             :         : 8         : N              
+data[44]                     : D5        : input  : 2.5 V             :         : 8         : N              
+data[12]                     : D6        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8         :                
+ALUout[36]                   : D8        : output : 2.5 V             :         : 8         : N              
+ALUout[39]                   : D9        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8         :                
 GND                          : D11       : gnd    :                   :         :           :                
 NC                           : D12       :        :                   :         :           :                
-ALUout[27]                   : D13       : output : 2.5 V             :         : 7         : N              
-ALUout[10]                   : D14       : output : 2.5 V             :         : 7         : N              
+RAMout[53]                   : D13       : output : 2.5 V             :         : 7         : N              
+RAMout[60]                   : D14       : output : 2.5 V             :         : 7         : N              
 NC                           : D15       :        :                   :         :           :                
 GND                          : D16       : gnd    :                   :         :           :                
-RAMout[63]                   : D17       : output : 2.5 V             :         : 7         : N              
-RAMout[34]                   : D18       : output : 2.5 V             :         : 6         : N              
-functionsel[4]               : D19       : input  : 2.5 V             :         : 6         : N              
+RAMout[51]                   : D17       : output : 2.5 V             :         : 7         : N              
+RAMout[49]                   : D18       : output : 2.5 V             :         : 6         : N              
+RAMout[12]                   : D19       : output : 2.5 V             :         : 6         : N              
 GND                          : D20       : gnd    :                   :         :           :                
-RAMout[53]                   : D21       : output : 2.5 V             :         : 6         : N              
-RAMout[30]                   : D22       : output : 2.5 V             :         : 6         : N              
-readA[4]                     : E1        : input  : 2.5 V             :         : 1B        : N              
+RAMout[24]                   : D21       : output : 2.5 V             :         : 6         : N              
+RAMout[35]                   : D22       : output : 2.5 V             :         : 6         : N              
+writeReg[3]                  : E1        : input  : 2.5 V             :         : 1B        : N              
 GND                          : E2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 1A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 1A        :                
+data[39]                     : E3        : input  : 2.5 V             :         : 1A        : N              
+readB[0]                     : E4        : input  : 2.5 V             :         : 1A        : N              
 GND                          : E5        : gnd    :                   :         :           :                
-RAMout[17]                   : E6        : output : 2.5 V             :         : 8         : N              
+data[52]                     : E6        : input  : 2.5 V             :         : 8         : N              
 GND                          : E7        : gnd    :                   :         :           :                
-ALUout[20]                   : E8        : output : 2.5 V             :         : 8         : N              
-readA[2]                     : E9        : input  : 2.5 V             :         : 8         : N              
-data[18]                     : E10       : input  : 2.5 V             :         : 8         : N              
-data[7]                      : E11       : input  : 2.5 V             :         : 8         : N              
-ALUout[11]                   : E12       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : E13       :        :                   :         : 7         :                
+data[42]                     : E8        : input  : 2.5 V             :         : 8         : N              
+ALUout[30]                   : E9        : output : 2.5 V             :         : 8         : N              
+ALUout[48]                   : E10       : output : 2.5 V             :         : 8         : N              
+writeReg[4]                  : E11       : input  : 2.5 V             :         : 8         : N              
+RAMout[57]                   : E12       : output : 2.5 V             :         : 7         : N              
+RAMout[58]                   : E13       : output : 2.5 V             :         : 7         : N              
 NC                           : E14       :        :                   :         :           :                
-RAMout[37]                   : E15       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : E16       :        :                   :         : 7         :                
+RAMout[55]                   : E15       : output : 2.5 V             :         : 7         : N              
+RAMout[46]                   : E16       : output : 2.5 V             :         : 7         : N              
 NC                           : E17       :        :                   :         :           :                
-RAMout[32]                   : E18       : output : 2.5 V             :         : 6         : N              
-RAMout[43]                   : E19       : output : 2.5 V             :         : 6         : N              
+RAMout[62]                   : E18       : output : 2.5 V             :         : 6         : N              
+RAMout[33]                   : E19       : output : 2.5 V             :         : 6         : N              
 NC                           : E20       :        :                   :         :           :                
-RAMout[50]                   : E21       : output : 2.5 V             :         : 6         : N              
-RAMout[5]                    : E22       : output : 2.5 V             :         : 6         : N              
-ALUout[60]                   : F1        : output : 2.5 V             :         : 1B        : N              
-functionsel[2]               : F2        : input  : 2.5 V             :         : 1B        : N              
-readA[3]                     : F3        : input  : 2.5 V             :         : 1A        : N              
-data[25]                     : F4        : input  : 2.5 V             :         : 1A        : N              
-data[19]                     : F5        : input  : 2.5 V             :         : 1A        : N              
+RAMout[27]                   : E21       : output : 2.5 V             :         : 6         : N              
+RAMout[20]                   : E22       : output : 2.5 V             :         : 6         : N              
+data[53]                     : F1        : input  : 2.5 V             :         : 1B        : N              
+readB[4]                     : F2        : input  : 2.5 V             :         : 1B        : N              
+data[37]                     : F3        : input  : 2.5 V             :         : 1A        : N              
+ALUout[43]                   : F4        : output : 2.5 V             :         : 1A        : N              
+data[50]                     : F5        : input  : 2.5 V             :         : 1A        : N              
 GND                          : F6        : gnd    :                   :         :           :                
-ALUout[19]                   : F7        : output : 2.5 V             :         : 8         : N              
+data[58]                     : F7        : input  : 2.5 V             :         : 8         : N              
 ~ALTERA_CONF_DONE~ / RESERVED_INPUT : F8        : input  : 2.5 V Schmitt Trigger :         : 8         : N              
 VCCIO8                       : F9        : power  :                   : 2.5V    : 8         :                
 GND                          : F10       : gnd    :                   :         :           :                
@@ -241,14 +241,14 @@ VCCIO7                       : F14       : power  :                   : 2.5V    
 NC                           : F15       :        :                   :         :           :                
 NC                           : F16       :        :                   :         :           :                
 NC                           : F17       :        :                   :         :           :                
-RAMout[52]                   : F18       : output : 2.5 V             :         : 6         : N              
+data[6]                      : F18       : input  : 2.5 V             :         : 6         : N              
 NC                           : F19       :        :                   :         :           :                
-RAMout[24]                   : F20       : output : 2.5 V             :         : 6         : N              
-RAMout[54]                   : F21       : output : 2.5 V             :         : 6         : N              
-RAMout[56]                   : F22       : output : 2.5 V             :         : 6         : N              
-writeReg[3]                  : G1        : input  : 2.5 V             :         : 1B        : N              
+RAMout[13]                   : F20       : output : 2.5 V             :         : 6         : N              
+RAMout[5]                    : F21       : output : 2.5 V             :         : 6         : N              
+RAMout[1]                    : F22       : output : 2.5 V             :         : 6         : N              
+data[61]                     : G1        : input  : 2.5 V             :         : 1B        : N              
 ~ALTERA_TCK~ / RESERVED_INPUT : G2        : input  : 2.5 V Schmitt Trigger :         : 1B        : N              
-RAMout[51]                   : G3        : output : 2.5 V             :         : 1A        : N              
+data[26]                     : G3        : input  : 2.5 V             :         : 1A        : N              
 readB[2]                     : G4        : input  : 2.5 V             :         : 1A        : N              
 ANAIN1                       : G5        :        :                   :         :           :                
 GND                          : G6        : gnd    :                   :         :           :                
@@ -262,47 +262,47 @@ VCCIO7                       : G13       : power  :                   : 2.5V    
 VCCIO7                       : G14       : power  :                   : 2.5V    : 7         :                
 GND                          : G15       : gnd    :                   :         :           :                
 VCCD_PLL2                    : G16       : power  :                   : 1.2V    :           :                
-RAMout[16]                   : G17       : output : 2.5 V             :         : 6         : N              
+RAMout[47]                   : G17       : output : 2.5 V             :         : 6         : N              
 GND                          : G18       : gnd    :                   :         :           :                
-RAMout[62]                   : G19       : output : 2.5 V             :         : 6         : N              
-RAMout[47]                   : G20       : output : 2.5 V             :         : 6         : N              
+RAMout[2]                    : G19       : output : 2.5 V             :         : 6         : N              
+data[3]                      : G20       : input  : 2.5 V             :         : 6         : N              
 GND                          : G21       : gnd    :                   :         :           :                
-RAMout[39]                   : G22       : output : 2.5 V             :         : 6         : N              
-data[1]                      : H1        : input  : 2.5 V             :         : 1B        : N              
+RAMout[30]                   : G22       : output : 2.5 V             :         : 6         : N              
+ALUout[8]                    : H1        : output : 2.5 V             :         : 1B        : N              
 ~ALTERA_TMS~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V Schmitt Trigger :         : 1B        : N              
-data[34]                     : H3        : input  : 2.5 V             :         : 1A        : N              
-data[20]                     : H4        : input  : 2.5 V             :         : 1A        : N              
+data[38]                     : H3        : input  : 2.5 V             :         : 1A        : N              
+data[43]                     : H4        : input  : 2.5 V             :         : 1A        : N              
 REFGND                       : H5        :        :                   :         :           :                
 ADC_VREF                     : H6        :        :                   :         :           :                
 VCCA_ADC                     : H7        : power  :                   : 2.5V    :           :                
 VCCA3                        : H8        : power  :                   : 2.5V    :           :                
 ~ALTERA_nCONFIG~ / RESERVED_INPUT : H9        : input  : 2.5 V Schmitt Trigger :         : 8         : N              
 ~ALTERA_CONFIG_SEL~ / RESERVED_INPUT : H10       : input  : 2.5 V             :         : 8         : N              
-ALUout[8]                    : H11       : output : 2.5 V             :         : 8         : N              
-ALUout[13]                   : H12       : output : 2.5 V             :         : 7         : N              
+data[4]                      : H11       : input  : 2.5 V             :         : 8         : N              
+RAMout[50]                   : H12       : output : 2.5 V             :         : 7         : N              
 NC                           : H13       :        :                   :         :           :                
-data[14]                     : H14       : input  : 2.5 V             :         : 7         : N              
+RAMout[38]                   : H14       : output : 2.5 V             :         : 7         : N              
 VCCA2                        : H15       : power  :                   : 2.5V    :           :                
 VCCIO6                       : H16       : power  :                   : 2.5V    : 6         :                
-ALUout[9]                    : H17       : output : 2.5 V             :         : 6         : N              
+RAMout[44]                   : H17       : output : 2.5 V             :         : 6         : N              
 NC                           : H18       :        :                   :         :           :                
 NC                           : H19       :        :                   :         :           :                
 NC                           : H20       :        :                   :         :           :                
-ALUout[1]                    : H21       : output : 2.5 V             :         : 6         : N              
-RAMout[18]                   : H22       : output : 2.5 V             :         : 6         : N              
-ALUout[40]                   : J1        : output : 2.5 V             :         : 1B        : N              
+ALUout[2]                    : H21       : output : 2.5 V             :         : 6         : N              
+ALUout[5]                    : H22       : output : 2.5 V             :         : 6         : N              
+data[25]                     : J1        : input  : 2.5 V             :         : 1B        : N              
 GND                          : J2        : gnd    :                   :         :           :                
-data[0]                      : J3        : input  : 2.5 V             :         : 1A        : N              
-data[21]                     : J4        : input  : 2.5 V             :         : 1A        : N              
+data[45]                     : J3        : input  : 2.5 V             :         : 1A        : N              
+data[35]                     : J4        : input  : 2.5 V             :         : 1A        : N              
 NC                           : J5        :        :                   :         :           :                
 GND                          : J6        : gnd    :                   :         :           :                
 VCCINT                       : J7        : power  :                   : 1.2V    :           :                
-ALUout[0]                    : J8        : output : 2.5 V             :         : 1A        : N              
-RAMout[33]                   : J9        : output : 2.5 V             :         : 1A        : N              
-data[16]                     : J10       : input  : 2.5 V             :         : 8         : N              
-data[60]                     : J11       : input  : 2.5 V             :         : 7         : N              
+data[36]                     : J8        : input  : 2.5 V             :         : 1A        : N              
+data[19]                     : J9        : input  : 2.5 V             :         : 1A        : N              
+writeReg[2]                  : J10       : input  : 2.5 V             :         : 8         : N              
+RAMout[36]                   : J11       : output : 2.5 V             :         : 7         : N              
 NC                           : J12       :        :                   :         :           :                
-RAMout[8]                    : J13       : output : 2.5 V             :         : 7         : N              
+RAMout[54]                   : J13       : output : 2.5 V             :         : 7         : N              
 NC                           : J14       :        :                   :         :           :                
 NC                           : J15       :        :                   :         :           :                
 GND                          : J16       : gnd    :                   :         :           :                
@@ -310,54 +310,54 @@ VCCIO6                       : J17       : power  :                   : 2.5V    
 NC                           : J18       :        :                   :         :           :                
 GND                          : J19       : gnd    :                   :         :           :                
 NC                           : J20       :        :                   :         :           :                
-RAMout[0]                    : J21       : output : 2.5 V             :         : 6         : N              
-RAMout[12]                   : J22       : output : 2.5 V             :         : 6         : N              
+ALUcarry                     : J21       : input  : 2.5 V             :         : 6         : N              
+data[7]                      : J22       : input  : 2.5 V             :         : 6         : N              
 NC                           : K1        :        :                   :         :           :                
-data[15]                     : K2        : input  : 2.5 V             :         : 1B        : N              
+data[49]                     : K2        : input  : 2.5 V             :         : 1B        : N              
 GND                          : K3        : gnd    :                   :         :           :                
-data[17]                     : K4        : input  : 2.5 V             :         : 1A        : N              
-data[28]                     : K5        : input  : 2.5 V             :         : 1A        : N              
-data[6]                      : K6        : input  : 2.5 V             :         : 1A        : N              
+data[15]                     : K4        : input  : 2.5 V             :         : 1A        : N              
+data[62]                     : K5        : input  : 2.5 V             :         : 1A        : N              
+data[18]                     : K6        : input  : 2.5 V             :         : 1A        : N              
 VCCIO1A                      : K7        : power  :                   : 2.5V    : 1A        :                
-data[26]                     : K8        : input  : 2.5 V             :         : 1B        : N              
-data[23]                     : K9        : input  : 2.5 V             :         : 1B        : N              
+data[10]                     : K8        : input  : 2.5 V             :         : 1B        : N              
+data[16]                     : K9        : input  : 2.5 V             :         : 1B        : N              
 GND                          : K10       : gnd    :                   :         :           :                
 VCC                          : K11       : power  :                   : 1.2V    :           :                
 GND                          : K12       : gnd    :                   :         :           :                
 VCC                          : K13       : power  :                   : 1.2V    :           :                
-RAMout[19]                   : K14       : output : 2.5 V             :         : 6         : N              
-data[9]                      : K15       : input  : 2.5 V             :         : 6         : N              
+RAMout[7]                    : K14       : output : 2.5 V             :         : 6         : N              
+RAMout[16]                   : K15       : output : 2.5 V             :         : 6         : N              
 VCCIO6                       : K16       : power  :                   : 2.5V    : 6         :                
 VCCIO6                       : K17       : power  :                   : 2.5V    : 6         :                
 NC                           : K18       :        :                   :         :           :                
 NC                           : K19       :        :                   :         :           :                
 NC                           : K20       :        :                   :         :           :                
-RAMout[6]                    : K21       : output : 2.5 V             :         : 6         : N              
-RAMout[31]                   : K22       : output : 2.5 V             :         : 6         : N              
+ALUout[4]                    : K21       : output : 2.5 V             :         : 6         : N              
+ALUout[1]                    : K22       : output : 2.5 V             :         : 6         : N              
 NC                           : L1        :        :                   :         :           :                
-readB[4]                     : L2        : input  : 2.5 V             :         : 1B        : N              
+data[33]                     : L2        : input  : 2.5 V             :         : 1B        : N              
 DNU                          : L3        :        :                   :         :           :                
 ~ALTERA_TDI~ / RESERVED_INPUT_WITH_WEAK_PULLUP : L4        : input  : 2.5 V Schmitt Trigger :         : 1B        : N              
 GND                          : L5        : gnd    :                   :         :           :                
 VCCIO1A                      : L6        : power  :                   : 2.5V    : 1A        :                
 VCCIO1B                      : L7        : power  :                   : 2.5V    : 1B        :                
-data[13]                     : L8        : input  : 2.5 V             :         : 1B        : N              
-RAMout[23]                   : L9        : output : 2.5 V             :         : 1B        : N              
+data[55]                     : L8        : input  : 2.5 V             :         : 1B        : N              
+data[46]                     : L9        : input  : 2.5 V             :         : 1B        : N              
 VCC                          : L10       : power  :                   : 1.2V    :           :                
 VCC                          : L11       : power  :                   : 1.2V    :           :                
 VCC                          : L12       : power  :                   : 1.2V    :           :                
 GND                          : L13       : gnd    :                   :         :           :                
-RAMout[57]                   : L14       : output : 2.5 V             :         : 6         : N              
-RAMout[49]                   : L15       : output : 2.5 V             :         : 6         : N              
+RAMout[25]                   : L14       : output : 2.5 V             :         : 6         : N              
+RAMout[0]                    : L15       : output : 2.5 V             :         : 6         : N              
 VCCIO6                       : L16       : power  :                   : 2.5V    : 6         :                
 GND                          : L17       : gnd    :                   :         :           :                
-RAMwrite                     : L18       : input  : 2.5 V             :         : 6         : N              
-RAMout[35]                   : L19       : output : 2.5 V             :         : 6         : N              
-RAMout[11]                   : L20       : output : 2.5 V             :         : 6         : N              
+data[5]                      : L18       : input  : 2.5 V             :         : 6         : N              
+RAMout[39]                   : L19       : output : 2.5 V             :         : 6         : N              
+RAMout[40]                   : L20       : output : 2.5 V             :         : 6         : N              
 GND                          : L21       : gnd    :                   :         :           :                
-RAMout[28]                   : L22       : output : 2.5 V             :         : 5         : N              
-ALUout[22]                   : M1        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : M2        :        :                   :         : 2         :                
+data[8]                      : L22       : input  : 2.5 V             :         : 5         : N              
+readB[3]                     : M1        : input  : 2.5 V             :         : 2         : N              
+data[48]                     : M2        : input  : 2.5 V             :         : 2         : N              
 NC                           : M3        :        :                   :         :           :                
 NC                           : M4        :        :                   :         :           :                
 ~ALTERA_TDO~                 : M5        : output : 2.5 V             :         : 1B        : N              
@@ -369,87 +369,87 @@ GND                          : M10       : gnd    :                   :         
 VCC                          : M11       : power  :                   : 1.2V    :           :                
 VCC                          : M12       : power  :                   : 1.2V    :           :                
 VCC                          : M13       : power  :                   : 1.2V    :           :                
-RAMout[55]                   : M14       : output : 2.5 V             :         : 6         : N              
-RAMout[44]                   : M15       : output : 2.5 V             :         : 6         : N              
+RAMout[3]                    : M14       : output : 2.5 V             :         : 6         : N              
+RAMout[23]                   : M15       : output : 2.5 V             :         : 6         : N              
 GND                          : M16       : gnd    :                   :         :           :                
 VCCIO6                       : M17       : power  :                   : 2.5V    : 6         :                
-RAMout[20]                   : M18       : output : 2.5 V             :         : 6         : N              
+data[1]                      : M18       : input  : 2.5 V             :         : 6         : N              
 GND                          : M19       : gnd    :                   :         :           :                
-RAMout[41]                   : M20       : output : 2.5 V             :         : 6         : N              
-ALUout[3]                    : M21       : output : 2.5 V             :         : 5         : N              
-RAMout[15]                   : M22       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : N1        :        :                   :         : 2         :                
-ALUout[59]                   : N2        : output : 2.5 V             :         : 2         : N              
-data[33]                     : N3        : input  : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : N4        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N5        :        :                   :         : 2         :                
+RAMout[43]                   : M20       : output : 2.5 V             :         : 6         : N              
+RAMwrite                     : M21       : input  : 2.5 V             :         : 5         : N              
+ALUout[0]                    : M22       : output : 2.5 V             :         : 5         : N              
+ALUout[42]                   : N1        : output : 2.5 V             :         : 2         : N              
+data[63]                     : N2        : input  : 2.5 V             :         : 2         : N              
+data[20]                     : N3        : input  : 2.5 V             :         : 2         : N              
+data[54]                     : N4        : input  : 2.5 V             :         : 2         : N              
+data[21]                     : N5        : input  : 2.5 V             :         : 2         : N              
 VCCIO2                       : N6        : power  :                   : 2.5V    : 2         :                
 VCCIO2                       : N7        : power  :                   : 2.5V    : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N8        :        :                   :         : 2         :                
-writeReg[2]                  : N9        : input  : 2.5 V             :         : 2         : N              
+data[24]                     : N8        : input  : 2.5 V             :         : 2         : N              
+ALUout[49]                   : N9        : output : 2.5 V             :         : 2         : N              
 VCC                          : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
 VCC                          : N12       : power  :                   : 1.2V    :           :                
 GND                          : N13       : gnd    :                   :         :           :                
-ALUout[5]                    : N14       : output : 2.5 V             :         : 6         : N              
-ALUout[2]                    : N15       : output : 2.5 V             :         : 6         : N              
+ALUout[6]                    : N14       : output : 2.5 V             :         : 6         : N              
+ALUout[3]                    : N15       : output : 2.5 V             :         : 6         : N              
 VCCIO5                       : N16       : power  :                   : 2.5V    : 5         :                
 VCCIO6                       : N17       : power  :                   : 2.5V    : 6         :                
-RAMout[9]                    : N18       : output : 2.5 V             :         : 6         : N              
-RAMout[26]                   : N19       : output : 2.5 V             :         : 6         : N              
+RAMout[59]                   : N18       : output : 2.5 V             :         : 6         : N              
+RAMout[56]                   : N19       : output : 2.5 V             :         : 6         : N              
 RAMout[45]                   : N20       : output : 2.5 V             :         : 6         : N              
-RAMout[36]                   : N21       : output : 2.5 V             :         : 5         : N              
-ALUout[34]                   : N22       : output : 2.5 V             :         : 5         : N              
-data[42]                     : P1        : input  : 2.5 V             :         : 2         : N              
+ALUout[7]                    : N21       : output : 2.5 V             :         : 5         : N              
+RAMout[9]                    : N22       : output : 2.5 V             :         : 5         : N              
+data[31]                     : P1        : input  : 2.5 V             :         : 2         : N              
 GND                          : P2        : gnd    :                   :         :           :                
-ALUout[54]                   : P3        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : P4        :        :                   :         : 2         :                
-data[39]                     : P5        : input  : 2.5 V             :         : 2         : N              
+data[51]                     : P3        : input  : 2.5 V             :         : 2         : N              
+data[60]                     : P4        : input  : 2.5 V             :         : 2         : N              
+data[57]                     : P5        : input  : 2.5 V             :         : 2         : N              
 GND                          : P6        : gnd    :                   :         :           :                
 VCCIO2                       : P7        : power  :                   : 2.5V    : 2         :                
 NC                           : P8        :        :                   :         :           :                
 NC                           : P9        :        :                   :         :           :                
-data[43]                     : P10       : input  : 2.5 V             :         : 3         : N              
-data[48]                     : P11       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P10       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P11       :        :                   :         : 3         :                
 NC                           : P12       :        :                   :         :           :                
-data[54]                     : P13       : input  : 2.5 V             :         : 4         : N              
-data[51]                     : P14       : input  : 2.5 V             :         : 5         : N              
-data[56]                     : P15       : input  : 2.5 V             :         : 5         : N              
+signalBits[0]                : P13       : output : 2.5 V             :         : 4         : N              
+RAMout[17]                   : P14       : output : 2.5 V             :         : 5         : N              
+RAMout[8]                    : P15       : output : 2.5 V             :         : 5         : N              
 VCCIO5                       : P16       : power  :                   : 2.5V    : 5         :                
 GND                          : P17       : gnd    :                   :         :           :                
-ALUout[16]                   : P18       : output : 2.5 V             :         : 5         : N              
-ALUout[17]                   : P19       : output : 2.5 V             :         : 5         : N              
-data[27]                     : P20       : input  : 2.5 V             :         : 5         : N              
-RAMout[40]                   : P21       : output : 2.5 V             :         : 5         : N              
-RAMout[7]                    : P22       : output : 2.5 V             :         : 5         : N              
-ALUout[53]                   : R1        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R2        :        :                   :         : 2         :                
-ALUout[51]                   : R3        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R4        :        :                   :         : 2         :                
-ALUout[43]                   : R5        : output : 2.5 V             :         : 2         : N              
+RAMout[29]                   : P18       : output : 2.5 V             :         : 5         : N              
+RAMout[11]                   : P19       : output : 2.5 V             :         : 5         : N              
+RAMout[21]                   : P20       : output : 2.5 V             :         : 5         : N              
+data[17]                     : P21       : input  : 2.5 V             :         : 5         : N              
+RAMout[34]                   : P22       : output : 2.5 V             :         : 5         : N              
+readA[1]                     : R1        : input  : 2.5 V             :         : 2         : N              
+ALUout[28]                   : R2        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R3        :        :                   :         : 2         :                
+readA[3]                     : R4        : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R5        :        :                   :         : 2         :                
 VCCIO2                       : R6        : power  :                   : 2.5V    : 2         :                
 NC                           : R7        :        :                   :         :           :                
 VCCA1                        : R8        : power  :                   : 2.5V    :           :                
 NC                           : R9        :        :                   :         :           :                
-ALUout[38]                   : R10       : output : 2.5 V             :         : 3         : N              
-data[50]                     : R11       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 3         :                
+ALUout[56]                   : R11       : output : 2.5 V             :         : 3         : N              
 NC                           : R12       :        :                   :         :           :                
-ALUout[30]                   : R13       : output : 2.5 V             :         : 4         : N              
-data[53]                     : R14       : input  : 2.5 V             :         : 5         : N              
-ALUout[4]                    : R15       : output : 2.5 V             :         : 5         : N              
+signalBits[1]                : R13       : output : 2.5 V             :         : 4         : N              
+readA[0]                     : R14       : input  : 2.5 V             :         : 5         : N              
+RAMout[6]                    : R15       : output : 2.5 V             :         : 5         : N              
 VCCIO5                       : R16       : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : R17       : power  :                   : 2.5V    : 5         :                
-RAMout[25]                   : R18       : output : 2.5 V             :         : 5         : N              
+RAMout[26]                   : R18       : output : 2.5 V             :         : 5         : N              
 GND                          : R19       : gnd    :                   :         :           :                
-RAMout[2]                    : R20       : output : 2.5 V             :         : 5         : N              
+functionsel[3]               : R20       : input  : 2.5 V             :         : 5         : N              
 GND                          : R21       : gnd    :                   :         :           :                
-RAMout[60]                   : R22       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : T1        :        :                   :         : 2         :                
+functionsel[4]               : R22       : input  : 2.5 V             :         : 5         : N              
+ALUout[38]                   : T1        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T2        :        :                   :         : 2         :                
 NC                           : T3        :        :                   :         :           :                
 GND                          : T4        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T5        :        :                   :         : 2         :                
-ALUout[58]                   : T6        : output : 2.5 V             :         : 2         : N              
+data[47]                     : T5        : input  : 2.5 V             :         : 2         : N              
+ALUout[60]                   : T6        : output : 2.5 V             :         : 2         : N              
 VCCD_PLL1                    : T7        : power  :                   : 1.2V    :           :                
 GND                          : T8        : gnd    :                   :         :           :                
 VCCIO3                       : T9        : power  :                   : 2.5V    : 3         :                
@@ -461,18 +461,18 @@ GND                          : T14       : gnd    :                   :         
 VCCA4                        : T15       : power  :                   : 2.5V    :           :                
 GND                          : T16       : gnd    :                   :         :           :                
 VCCIO5                       : T17       : power  :                   : 2.5V    : 5         :                
-write                        : T18       : input  : 2.5 V             :         : 5         : N              
-ALUout[49]                   : T19       : output : 2.5 V             :         : 5         : N              
-functionsel[3]               : T20       : input  : 2.5 V             :         : 5         : N              
-ALUout[7]                    : T21       : output : 2.5 V             :         : 5         : N              
-ALUout[57]                   : T22       : output : 2.5 V             :         : 5         : N              
+data[11]                     : T18       : input  : 2.5 V             :         : 5         : N              
+readB[1]                     : T19       : input  : 2.5 V             :         : 5         : N              
+ALUout[41]                   : T20       : output : 2.5 V             :         : 5         : N              
+readA[4]                     : T21       : input  : 2.5 V             :         : 5         : N              
+RAMout[28]                   : T22       : output : 2.5 V             :         : 5         : N              
 NC                           : U1        :        :                   :         :           :                
 NC                           : U2        :        :                   :         :           :                
 NC                           : U3        :        :                   :         :           :                
 NC                           : U4        :        :                   :         :           :                
 NC                           : U5        :        :                   :         :           :                
-muxSelect                    : U6        : input  : 2.5 V             :         : 3         : N              
-data[45]                     : U7        : input  : 2.5 V             :         : 3         : N              
+ALUout[31]                   : U6        : output : 2.5 V             :         : 3         : N              
+ALUout[50]                   : U7        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : U8        : power  :                   : 2.5V    : 3         :                
 VCCIO3                       : U9        : power  :                   : 2.5V    : 3         :                
 GND                          : U10       : gnd    :                   :         :           :                
@@ -480,30 +480,30 @@ VCCIO4                       : U11       : power  :                   : 2.5V    
 VCCIO4                       : U12       : power  :                   : 2.5V    : 4         :                
 GND                          : U13       : gnd    :                   :         :           :                
 VCCIO4                       : U14       : power  :                   : 2.5V    : 4         :                
-signalBits[2]                : U15       : output : 2.5 V             :         : 4         : N              
+functionsel[1]               : U15       : input  : 2.5 V             :         : 4         : N              
 NC                           : U16       :        :                   :         :           :                
-RAMout[29]                   : U17       : output : 2.5 V             :         : 5         : N              
-ALUout[25]                   : U18       : output : 2.5 V             :         : 5         : N              
+RAMout[4]                    : U17       : output : 2.5 V             :         : 5         : N              
+functionsel[0]               : U18       : input  : 2.5 V             :         : 5         : N              
 NC                           : U19       :        :                   :         :           :                
 NC                           : U20       :        :                   :         :           :                
-functionsel[0]               : U21       : input  : 2.5 V             :         : 5         : N              
-RAMout[42]                   : U22       : output : 2.5 V             :         : 5         : N              
+data[13]                     : U21       : input  : 2.5 V             :         : 5         : N              
+RAMout[15]                   : U22       : output : 2.5 V             :         : 5         : N              
 NC                           : V1        :        :                   :         :           :                
 GND                          : V2        : gnd    :                   :         :           :                
 NC                           : V3        :        :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V4        :        :                   :         : 3         :                
-writeReg[1]                  : V5        : input  : 2.5 V             :         : 3         : N              
+ALUout[61]                   : V5        : output : 2.5 V             :         : 3         : N              
 GND                          : V6        : gnd    :                   :         :           :                
 NC                           : V7        :        :                   :         :           :                
 NC                           : V8        :        :                   :         :           :                
-data[47]                     : V9        : input  : 2.5 V             :         : 3         : N              
-ALUout[35]                   : V10       : output : 2.5 V             :         : 3         : N              
+ALUout[54]                   : V9        : output : 2.5 V             :         : 3         : N              
+ALUout[10]                   : V10       : output : 2.5 V             :         : 3         : N              
 NC                           : V11       :        :                   :         :           :                
 NC                           : V12       :        :                   :         :           :                
-ALUout[28]                   : V13       : output : 2.5 V             :         : 4         : N              
-ALUout[62]                   : V14       : output : 2.5 V             :         : 4         : N              
+ALUout[62]                   : V13       : output : 2.5 V             :         : 4         : N              
+RAMout[10]                   : V14       : output : 2.5 V             :         : 4         : N              
 NC                           : V15       :        :                   :         :           :                
-RAMout[48]                   : V16       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V16       :        :                   :         : 4         :                
 ALUout[45]                   : V17       : output : 2.5 V             :         : 4         : N              
 NC                           : V18       :        :                   :         :           :                
 GND                          : V19       : gnd    :                   :         :           :                
@@ -512,42 +512,42 @@ NC                           : V21       :        :                   :         
 NC                           : V22       :        :                   :         :           :                
 NC                           : W1        :        :                   :         :           :                
 NC                           : W2        :        :                   :         :           :                
-data[30]                     : W3        : input  : 2.5 V             :         : 3         : N              
-data[29]                     : W4        : input  : 2.5 V             :         : 3         : N              
-signalBits[1]                : W5        : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : W6        :        :                   :         : 3         :                
-ALUout[52]                   : W7        : output : 2.5 V             :         : 3         : N              
-ALUout[55]                   : W8        : output : 2.5 V             :         : 3         : N              
+ALUout[32]                   : W3        : output : 2.5 V             :         : 3         : N              
+ALUout[29]                   : W4        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W5        :        :                   :         : 3         :                
+ALUout[52]                   : W6        : output : 2.5 V             :         : 3         : N              
+ALUout[17]                   : W7        : output : 2.5 V             :         : 3         : N              
+ALUout[23]                   : W8        : output : 2.5 V             :         : 3         : N              
 NC                           : W9        :        :                   :         :           :                
 NC                           : W10       :        :                   :         :           :                
 NC                           : W11       :        :                   :         :           :                
-ALUout[29]                   : W12       : output : 2.5 V             :         : 4         : N              
-data[35]                     : W13       : input  : 2.5 V             :         : 4         : N              
-ALUout[61]                   : W14       : output : 2.5 V             :         : 4         : N              
-ALUout[48]                   : W15       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W12       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W13       :        :                   :         : 4         :                
+ALUout[22]                   : W14       : output : 2.5 V             :         : 4         : N              
+RAMout[32]                   : W15       : output : 2.5 V             :         : 4         : N              
 NC                           : W16       :        :                   :         :           :                
-RAMout[13]                   : W17       : output : 2.5 V             :         : 4         : N              
+ALUout[25]                   : W17       : output : 2.5 V             :         : 4         : N              
 NC                           : W18       :        :                   :         :           :                
 NC                           : W19       :        :                   :         :           :                
 NC                           : W20       :        :                   :         :           :                
 GND                          : W21       : gnd    :                   :         :           :                
 NC                           : W22       :        :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y1        :        :                   :         : 3         :                
-ALUout[63]                   : Y2        : output : 2.5 V             :         : 3         : N              
-data[46]                     : Y3        : input  : 2.5 V             :         : 3         : N              
-writeReg[4]                  : Y4        : input  : 2.5 V             :         : 3         : N              
+ALUout[55]                   : Y1        : output : 2.5 V             :         : 3         : N              
+ALUout[13]                   : Y2        : output : 2.5 V             :         : 3         : N              
+ALUout[26]                   : Y3        : output : 2.5 V             :         : 3         : N              
+ALUout[47]                   : Y4        : output : 2.5 V             :         : 3         : N              
 NC                           : Y5        :        :                   :         :           :                
 NC                           : Y6        :        :                   :         :           :                
 NC                           : Y7        :        :                   :         :           :                
 NC                           : Y8        :        :                   :         :           :                
 GND                          : Y9        : gnd    :                   :         :           :                
-data[58]                     : Y10       : input  : 2.5 V             :         : 3         : N              
+ALUout[51]                   : Y10       : output : 2.5 V             :         : 3         : N              
 NC                           : Y11       :        :                   :         :           :                
 GND                          : Y12       : gnd    :                   :         :           :                
-data[52]                     : Y13       : input  : 2.5 V             :         : 4         : N              
-data[62]                     : Y14       : input  : 2.5 V             :         : 4         : N              
+ALUout[33]                   : Y13       : output : 2.5 V             :         : 4         : N              
+signalBits[2]                : Y14       : output : 2.5 V             :         : 4         : N              
 GND                          : Y15       : gnd    :                   :         :           :                
-data[61]                     : Y16       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y16       :        :                   :         : 4         :                
 NC                           : Y17       :        :                   :         :           :                
 NC                           : Y18       :        :                   :         :           :                
 NC                           : Y19       :        :                   :         :           :                
