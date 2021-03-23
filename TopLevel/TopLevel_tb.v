@@ -15,19 +15,19 @@ module TopLevel_tb();
 	//give all inputs initial values
 	initial begin
 		clock <= 1'b0;
-		reset <= 1'b1;
+		reset <= 1'b0;
 		in <= 64'b0;
 		wrt <= 1'b1;
 		RAMwrt <= 1'b1;
-		A <= 0;
+		A <= 31;
 		B <= 0;
 		FS <= 0;
 		CO <= 0;
 		regSel <= 0;
 		in <= 7364;
 		muxSelect <= 0;
-		#5 reset <= 1'b0;  //delay 5 ticks then turn reset off
-		#3200 $stop;        
+		#1800 reset <= 1'b1; //trigger reset 
+		#2000 $stop;        
 	end
 	
 	//simulates clock with a period of 10 ticks
@@ -39,18 +39,19 @@ module TopLevel_tb();
 	end
 	
 	always begin
-		#5 in <= {$random, $random}; //$random is a system command that generates a 32-bit random number, we need 64-bits
+		#20;
+		in <= {$random, $random}; //$random is a system command that generates a 32-bit random number, we need 64-bits
 		regSel = regSel + 1;
-		#5; 									 //delay 5ns
+		//#5; 									 //delay 5ns
 	end
 	
 	always begin
-		#25 FS = FS + 1;
+		#20 FS = FS + 1;
 	end
 	
 	always
-		#10 A = A + 1;
+		#20 A = A + 1;
 	
 	always
-		#30 B = B + 1;
+		#20 B = B + 1;
 endmodule

@@ -1,3 +1,4 @@
+`timescale 10ns/10ns
 module RAM256x64_tb();
 	reg [63:0] data_in;
 	reg [7:0] addr;
@@ -20,7 +21,7 @@ module RAM256x64_tb();
 	end
 	
 	always begin
-		#20;
+		#10;
 		data_in = {$random, $random};
 		addr = addr + 1;
 	end

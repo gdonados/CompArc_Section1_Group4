@@ -10,52 +10,52 @@ z2
 cModel Technology
 Z0 dC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/simulation/modelsim
 vRAM256x64
-Z1 !s110 1616513578
+Z1 !s110 1616516916
 !i10b 1
-!s100 l2ZQe6@a7c0mGDCDf3A2h0
+!s100 =a1R@3YGkz9LDD9JWWRi:0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IG9O6NajlY_:VVElL02W?S2
+IB=U2BkDgdi?0_nCCSU<CH3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1615923058
+w1616516679
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v
 !i122 0
-L0 1 23
-Z5 OV;L;2020.1;71
+L0 2 23
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1616513578.000000
+Z5 !s108 1616516916.000000
 !s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v|
 !i113 1
-Z7 o-vlog01compat -work work
-Z8 !s92 -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM
-Z9 tCvgOpt 0
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM
+Z8 tCvgOpt 0
 n@r@a@m256x64
 vRAM256x64_tb
 R1
 !i10b 1
-!s100 =UdEiSkVR]eZ=Qc7KLo3:2
+!s100 IfS<WUfYVodcYGkmGAl_;1
 R2
-I@z6=J<]8<IO?i@`dYn^Q<3
+In08>mSN:zZdS=4dQ4Zc>93
 R3
 R0
-R4
+w1616516848
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64_tb.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64_tb.v
 !i122 1
-L0 1 27
-R5
+L0 2 27
+R4
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64_tb.v|
 !i113 1
+R6
 R7
 R8
-R9
 n@r@a@m256x64_tb

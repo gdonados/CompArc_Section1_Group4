@@ -12,13 +12,13 @@ module RAM256x64(address, clock, in, write, out);
 	 
     reg [63:0]mem[0:255]; //reserve memory
     
-    always @(posedge clock) begin
+    always @(negedge clock) begin
    	 if (write) begin
    		 mem[address] <= in; //write to RAM when write is enabled
    	 end
     end
     
     always @(posedge clock) begin
-   	 outReg <= mem[address]; //access RAM
+			outReg <= mem[address]; //access RAM 
     end
 endmodule
