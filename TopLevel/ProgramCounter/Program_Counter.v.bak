@@ -1,0 +1,26 @@
+' timescale 10ns/10ns
+module Program_Counter (clk, rst, PC_IN, PS, PC_OUT, PC4)
+	input clk, rst;
+	input reg [63:0] PC_IN;
+	input [1:0] PS;
+	output reg [63:0] PC_OUT, PC4;
+	
+	
+	initial begin
+	
+		PC_OUT <= 32'h00000000;
+	end
+
+    always @(posedge Clk)
+    begin
+    	if (rst == 1)
+    	begin
+    		PC_OUT <= 32'h00000000;
+    	end
+    	else
+    	begin
+			if (PCWrite == 1) begin
+				PC_OUT <= PC4;
+			end
+    	end
+	
