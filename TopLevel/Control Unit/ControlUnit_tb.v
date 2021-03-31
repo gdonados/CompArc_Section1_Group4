@@ -1,3 +1,4 @@
+`timescale 10ns/10ns
 module ControlUnit_tb();
 	reg c, r;
 	reg [31:0] in;
@@ -5,6 +6,8 @@ module ControlUnit_tb();
 	
 	wire [30:0] out;
 	wire [63:0] con;
+	
+	ControlUnit dut (c, r, in, stat, con, out);
 	
 	initial begin
 		c = 0;

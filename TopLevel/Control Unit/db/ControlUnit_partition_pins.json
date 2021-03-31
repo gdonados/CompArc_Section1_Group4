@@ -4,47 +4,35 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "constant[0]",
-					"strict" : false
-				},
-				{
-					"name" : "constant[1]",
-					"strict" : false
-				},
-				{
 					"name" : "constant[2]",
 					"strict" : false
 				},
 				{
-					"name" : "constant[3]",
+					"name" : "constant[5]",
 					"strict" : false
 				},
 				{
-					"name" : "constant[4]",
+					"name" : "constant[6]",
 					"strict" : false
 				},
 				{
-					"name" : "controlWord[0]",
+					"name" : "controlWord[1]",
 					"strict" : false
 				},
 				{
-					"name" : "controlWord[2]",
+					"name" : "controlWord[3]",
 					"strict" : false
 				},
 				{
-					"name" : "controlWord[5]",
+					"name" : "controlWord[6]",
 					"strict" : false
 				},
 				{
-					"name" : "controlWord[8]",
+					"name" : "controlWord[9]",
 					"strict" : false
 				},
 				{
-					"name" : "controlWord[10]",
-					"strict" : false
-				},
-				{
-					"name" : "controlWord[19]",
+					"name" : "controlWord[11]",
 					"strict" : false
 				},
 				{
@@ -64,11 +52,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "controlWord[26]",
+					"name" : "controlWord[24]",
 					"strict" : false
 				},
 				{
-					"name" : "controlWord[29]",
+					"name" : "controlWord[27]",
+					"strict" : false
+				},
+				{
+					"name" : "controlWord[30]",
 					"strict" : false
 				},
 				{
