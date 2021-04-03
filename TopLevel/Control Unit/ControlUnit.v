@@ -1,3 +1,4 @@
+`timescale 10ns/10ns
 module ControlUnit(clk, rst, instruction, status, constant, controlWord);
 	input [31:0] instruction;
 	input [3:0] status;
@@ -29,9 +30,44 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord);
 			constant <= 64'b0;
 		end
 		
-		//hard values based off lab sheet, idk if actual opcodes exist for the rest of the instructions somewhere
+		//Goes through each opcode and assigns control word accordingly
 		casex(instruction[31:21])
-			11'b1001000100? :	begin //addi, 3 in rom
+			/////////////////////////////
+			///Arithmetic Instructions///
+			/////////////////////////////
+			11'b10001011000 :	begin //add, i think [15:10] are shamt bits
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 
+										1'b1, 1'b0};
+				//FS for adding
+				//regW is true
+				//ramW is false
+				//EN_MEM false
+				//EN_ALU true
+				//Use regB
+				//we dont want PC in the reg file
+				//We want the constant
+				//idk we'll use A
+				//use status lines
+				//No carry
+			end
+			
+			11'b11001011000 :	begin	//sub
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 
+										1'b1, 1'b0};
+				//FS for subbing
+				//regW is true
+				//ramW is false
+				//EN_MEM false
+				//EN_ALU true
+				//Use regB
+				//we dont want PC in the reg file
+				//We want the constant
+				//idk we'll use A
+				//use status lines
+				//No carry
+			end
+			
+			11'b1001000100? :	begin //addi, 3 in current rom
 				controlWord <= {2'b01, instruction[4:0], instruction[9:5], 5'bxxxxx, 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 
 										1'b1, 1'b0};
 
@@ -53,30 +89,148 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord);
 																	//expected control word: 010010011111xxxxx000101001001010
 			end
 			
-			11'b110100101xx :	begin	//MOVZ, 2 in rom
-			
-			end
-			
-			11'b10110100xxx :	begin //CBZ
-			
-			end
-			
 			11'b1101000100x : begin //subI, different code from addi
 			
 			end
 			
-			11'b11111000010 : begin //LDUR
+			11'b10101011000 :	begin //ADDS, add with flag set
 			
 			end
 			
-			11'b11111000000 :	begin //STUR
+			11'b11101011000 :	begin	//SUBS, sub with flag
 			
 			end
 			
-			11'b000101xxxxx : begin //b -7?
+			11'b1011000100? :	begin //ADDIS
 			
 			end
 			
+			11'b1111000100? :	begin //SUBIS
+			
+			end
+			
+			/////////////////////////////
+			////////Data Transfer////////
+			/////////////////////////////
+			
+			11'b11111000000 :	begin //STUR, store register 64-Bit
+			
+			end
+			
+			11'b11111000010 :	begin //LDUR, load register 64-Bit
+			
+			end
+			
+			11'b10111000000 :	begin	//STUR, 32-Bit
+			
+			end
+			
+			11'b10111000010 :	begin	//LDUR 32-Bit
+			
+			end
+			
+			11'b01111000000 : begin //STURH, store half word, 16-Bit
+			
+			end
+			
+			11'b01111000010 : begin	//LDURH, load half word, 16-Bit
+			
+			end
+			
+			11'b00111000000 : begin	//STURB, store byte
+			
+			end
+			
+			11'b00111000010 : begin	//LDURB
+			
+			end
+			
+			11'b110100101?? :	begin	//MOVZ, 2 in rom, move wide with zero
+			
+			end
+			
+			11'b111100101?? : begin	//MOVK, move wide with keep
+			
+			end
+			
+			11'b10110100??? :	begin //CBZ
+			
+			end
+			
+			////////////////////////////
+			/////Logic Instructions/////
+			////////////////////////////
+		
+			11'b10001010000 : begin	//AND
+			
+			end
+			
+			11'b10101010000 : begin //ORR, Inclusive Or
+			
+			end
+			
+			11'b11001010000 : begin	//EOR, exclusive Or
+			
+			end
+			
+			11'b1001001000? : begin //ANDI, and immediate
+			
+			end
+			
+			11'b1011001000? : begin //ORRI, or immediate
+			
+			end
+			
+			11'b1101001000? : begin	//EORI
+			
+			end
+			
+			11'b11101010000 : begin //ANDS, and set flag
+			
+			end
+			
+			11'b1111001000? : begin	//ANDIS, and immediate and set flag
+			
+			end
+			
+			11'b11010011010 : begin //LSR
+			
+			end
+			
+			11'b11010011011 : begin //LSL
+			
+			end
+			
+			////////////////////////////
+			/////Conditional Branch/////
+			////////////////////////////
+			
+			11'b10110100??? : begin	//CBZ, compare and branch = 0
+			
+			end
+			
+			11'b10110101??? : begin //CBNZ, compare and branch ~= 0
+			
+			end
+			
+			11'b01010100??? : begin //B.cond, branch conditionally
+			
+			end
+			
+			////////////////////////////
+			/////Unconditional Jump/////
+			////////////////////////////
+			11'b000101????? : begin	//B, branch
+			
+			end
+			
+			11'b11010110000 : begin	//BR, branch to register
+			
+			end
+			
+			11'b100101????? : begin //BL, branch with link
+			
+			end
 		endcase
 			
 	end

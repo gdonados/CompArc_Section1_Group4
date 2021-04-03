@@ -72,6 +72,30 @@
 					"strict" : false
 				},
 				{
+					"name" : "controlWord[12]",
+					"strict" : false
+				},
+				{
+					"name" : "controlWord[15]",
+					"strict" : false
+				},
+				{
+					"name" : "controlWord[16]",
+					"strict" : false
+				},
+				{
+					"name" : "controlWord[17]",
+					"strict" : false
+				},
+				{
+					"name" : "controlWord[18]",
+					"strict" : false
+				},
+				{
+					"name" : "controlWord[19]",
+					"strict" : false
+				},
+				{
 					"name" : "controlWord[20]",
 					"strict" : false
 				},
@@ -120,6 +144,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "instruction[31]",
+					"strict" : false
+				},
+				{
 					"name" : "instruction[22]",
 					"strict" : false
 				},
@@ -128,19 +156,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "instruction[25]",
-					"strict" : false
-				},
-				{
-					"name" : "instruction[24]",
-					"strict" : false
-				},
-				{
 					"name" : "instruction[26]",
-					"strict" : false
-				},
-				{
-					"name" : "instruction[27]",
 					"strict" : false
 				},
 				{
@@ -148,15 +164,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "instruction[28]",
-					"strict" : false
-				},
-				{
 					"name" : "instruction[30]",
 					"strict" : false
 				},
 				{
-					"name" : "instruction[31]",
+					"name" : "instruction[28]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[24]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[27]",
+					"strict" : false
+				},
+				{
+					"name" : "instruction[25]",
 					"strict" : false
 				},
 				{

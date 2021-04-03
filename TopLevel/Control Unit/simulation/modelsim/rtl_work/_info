@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/simulation/modelsim
 vControlUnit
-Z1 !s110 1617242206
+Z1 !s110 1617474557
 !i10b 1
-!s100 NZlFz:AR=?o797QcKWkYm2
+!s100 WO]dhOSPD@0@]z4JN_aRm2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IWTmbVAI:FV3Cc<?73X:F_0
+I6zAWd@1J;m>1cCQ=mfkSI0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1617237571
+w1617474501
 8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v
 FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v
 !i122 0
-L0 1 83
+L0 2 236
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1617242206.000000
+Z5 !s108 1617474557.000000
 !s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v|
 !i113 1
@@ -37,12 +37,12 @@ n@control@unit
 vControlUnit_tb
 R1
 !i10b 1
-!s100 D35CScAO;DCm>TbGZZfne0
+!s100 HmFm;SPXfmoYCL6=:iGXf2
 R2
-ISco3^BGAJijI:cmmdFa5:1
+Ii;@nEDQd;3Eh_Kn@iEC`W1
 R3
 R0
-w1617237572
+w1617474314
 8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v
 FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v
 !i122 1
