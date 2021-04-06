@@ -10,52 +10,52 @@ z2
 cModel Technology
 Z0 dC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/simulation/modelsim
 vControlUnit
-Z1 !s110 1617474557
+!s110 1617718433
 !i10b 1
 !s100 WO]dhOSPD@0@]z4JN_aRm2
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I6zAWd@1J;m>1cCQ=mfkSI0
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1617474501
 8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v
 FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v
 !i122 0
 L0 2 236
-Z4 OV;L;2020.1;71
+Z3 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1617474557.000000
+!s108 1617718433.000000
 !s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v|
 !i113 1
-Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit}
-Z8 tCvgOpt 0
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit}
+Z6 tCvgOpt 0
 n@control@unit
 vControlUnit_tb
-R1
+!s110 1617718434
 !i10b 1
 !s100 HmFm;SPXfmoYCL6=:iGXf2
-R2
+R1
 Ii;@nEDQd;3Eh_Kn@iEC`W1
-R3
+R2
 R0
 w1617474314
 8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v
 FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v
 !i122 1
 L0 2 23
-R4
+R3
 r1
 !s85 0
 31
-R5
+!s108 1617718434.000000
 !s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v|
 !i113 1
+R4
+R5
 R6
-R7
-R8
 n@control@unit_tb

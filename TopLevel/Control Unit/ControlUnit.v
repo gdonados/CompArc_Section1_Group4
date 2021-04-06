@@ -1,5 +1,5 @@
 `timescale 10ns/10ns
-module ControlUnit(clk, rst, instruction, status, constant, controlWord);
+module ControlUnit(clk, rst, instruction, status, constant, controlWord, length, flag);
 	input [31:0] instruction;
 	input [3:0] status;
 	input clk, rst;
@@ -21,8 +21,10 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord);
 												[1] SL
 												[0] carry
 												*/
-											
+	
 	output reg [63:0] constant;
+	output reg [2:0] length; //000 for 1 byte, 001 for 16-bits, 010 for 32-bits, 100 for-64 bits
+	output reg flag;
 	
 	always @(posedge clk)begin
 		if(rst == 1)begin
@@ -35,78 +37,89 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord);
 			/////////////////////////////
 			///Arithmetic Instructions///
 			/////////////////////////////
-			11'b10001011000 :	begin //add, i think [15:10] are shamt bits
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 
-										1'b1, 1'b0};
-				//FS for adding
-				//regW is true
-				//ramW is false
-				//EN_MEM false
-				//EN_ALU true
-				//Use regB
-				//we dont want PC in the reg file
-				//We want the constant
-				//idk we'll use A
-				//use status lines
-				//No carry
+			11'b10001011000 :	begin //add	
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b11001011000 :	begin	//sub
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 
-										1'b1, 1'b0};
-				//FS for subbing
-				//regW is true
-				//ramW is false
-				//EN_MEM false
-				//EN_ALU true
-				//Use regB
-				//we dont want PC in the reg file
-				//We want the constant
-				//idk we'll use A
-				//use status lines
-				//No carry
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b1001000100? :	begin //addi, 3 in current rom
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], 5'bxxxxx, 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 
-										1'b1, 1'b0};
-
-				//should be reg 4 in this case
-				//whatever xzr is
-				//constant is set 
-				//FS for adding
-				//regW is true
-				//ramW is false
-				//EN_MEM false
-				//EN_ALU true
-				//Dont use regB
-				//we dont want PC in the reg file
-				//We want the constant
-				//idk we'll use A
-				//use status lines
-				//No carry
-				constant <= instruction[21:10];			//Constant, should be 100 in this case
-																	//expected control word: 010010011111xxxxx000101001001010
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[21:10];	//constant generation		
+				flag <= 0;		
+				length <= 3'b010;				
 			end
 			
-			11'b1101000100x : begin //subI, different code from addi
-			
+			11'b1101000100? : begin //subI
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[21:10];	//constant generation		
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b10101011000 :	begin //ADDS, add with flag set
-			
+						
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 1;
+				length <= 3'b010;
 			end
 			
 			11'b11101011000 :	begin	//SUBS, sub with flag
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 1;
+				length <= 3'b010;
 			end
 			
 			11'b1011000100? :	begin //ADDIS
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[21:10];	//constant generation	
+				flag <= 1;	
+				length <= 3'b010;
 			end
 			
 			11'b1111000100? :	begin //SUBIS
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[21:10];	//constant generation		
+				flag <= 1;
+				length <= 3'b010;
 			end
 			
 			/////////////////////////////
@@ -114,47 +127,113 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord);
 			/////////////////////////////
 			
 			11'b11111000000 :	begin //STUR, store register 64-Bit
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b00, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[20:12]; //9 bit constant
+				length <= 3'b100;
+				flag <= 0;
 			end
 			
 			11'b11111000010 :	begin //LDUR, load register 64-Bit
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b00, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[20:12]; //9 bit constant
+				length <= 3'b100;
+				flag <= 0;
 			end
 			
 			11'b10111000000 :	begin	//STUR, 32-Bit
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[20:12]; //9 bit constant
+				length <= 3'b010;
+				flag <= 0;
 			end
 			
 			11'b10111000010 :	begin	//LDUR 32-Bit
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[20:12]; //9 bit constant
+				length <= 3'b010;
+				flag <= 0;
 			end
 			
 			11'b01111000000 : begin //STURH, store half word, 16-Bit
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[20:12]; //9 bit constant
+				length <= 3'b001;
+				flag <= 0;
 			end
 			
 			11'b01111000010 : begin	//LDURH, load half word, 16-Bit
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[20:12]; //9 bit constant
+				length <= 3'b001;
+				flag <= 0;
 			end
 			
 			11'b00111000000 : begin	//STURB, store byte
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[20:12]; //9 bit constant
+				length <= 3'b000;
+				flag <= 0;
 			end
 			
 			11'b00111000010 : begin	//LDURB
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[20:12]; //9 bit constant
+				length <= 3'b000;
+				flag <= 0;
 			end
 			
-			11'b110100101?? :	begin	//MOVZ, 2 in rom, move wide with zero
-			
+			11'b110100101?? :	begin	//MOVZ, move wide with zero
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0],      5'bxxxxx,        5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[20:5]; //16 bit constant
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b111100101?? : begin	//MOVK, move wide with keep
-			
-			end
-			
-			11'b10110100??? :	begin //CBZ
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0],      5'bxxxxx,        5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[20:5]; //16 bit constant
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			////////////////////////////
@@ -162,43 +241,107 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord);
 			////////////////////////////
 		
 			11'b10001010000 : begin	//AND
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b10101010000 : begin //ORR, Inclusive Or
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01101, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b11001010000 : begin	//EOR, exclusive Or
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b1001001000? : begin //ANDI, and immediate
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[21:10];	//constant generation 
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b1011001000? : begin //ORRI, or immediate
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01101, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[21:10];	//constant generation 
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b1101001000? : begin	//EORI
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[21:10];	//constant generation 
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b11101010000 : begin //ANDS, and set flag
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 1;
+				length <= 3'b010;
 			end
 			
 			11'b1111001000? : begin	//ANDIS, and immediate and set flag
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				constant <= instruction[21:10];	//constant generation 
+				flag <= 1;
+				length <= 3'b010;
 			end
 			
 			11'b11010011010 : begin //LSR
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b10000, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b11010011011 : begin //LSL
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01111, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			////////////////////////////
@@ -206,7 +349,13 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord);
 			////////////////////////////
 			
 			11'b10110100??? : begin	//CBZ, compare and branch = 0
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 			 		  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0],      5'b00000,        5'b00000      , 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b10110101??? : begin //CBNZ, compare and branch ~= 0
