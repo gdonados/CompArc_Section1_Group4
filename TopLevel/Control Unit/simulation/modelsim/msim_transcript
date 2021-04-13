@@ -13,29 +13,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control\ Unit {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:13:53 on Apr 06,2021
+# Start time: 10:40:36 on Apr 13,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v 
 # -- Compiling module ControlUnit
 # 
 # Top level modules:
 # 	ControlUnit
-# End time: 10:13:53 on Apr 06,2021, Elapsed time: 0:00:00
+# End time: 10:40:36 on Apr 13,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control\ Unit {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:13:54 on Apr 06,2021
+# Start time: 10:40:36 on Apr 13,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v 
 # -- Compiling module ControlUnit_tb
 # 
 # Top level modules:
 # 	ControlUnit_tb
-# End time: 10:13:54 on Apr 06,2021, Elapsed time: 0:00:00
+# End time: 10:40:36 on Apr 13,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  ControlUnit_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" ControlUnit_tb 
-# Start time: 10:13:54 on Apr 06,2021
+# Start time: 10:40:36 on Apr 13,2021
 # Loading work.ControlUnit_tb
 # Loading work.ControlUnit
 # 
@@ -45,7 +45,8 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Break key hit
-# Break in Module ControlUnit_tb at C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v line 23
-# End time: 10:17:52 on Apr 06,2021, Elapsed time: 0:03:58
+# ** Note: $stop    : C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v(31)
+#    Time: 2250 ns  Iteration: 0  Instance: /ControlUnit_tb
+# Break in Module ControlUnit_tb at C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v line 31
+# End time: 10:46:45 on Apr 13,2021, Elapsed time: 0:06:09
 # Errors: 0, Warnings: 0

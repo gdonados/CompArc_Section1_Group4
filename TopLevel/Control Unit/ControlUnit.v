@@ -353,32 +353,67 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 			 		  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0],      5'b00000,        5'b00000      , 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				controlWord <= {2'b01, instruction[4:0],      5'b00000,        5'b00000      , 5'b01100, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
+				constant <= instruction[24:5]*4;
 			end
 			
 			11'b10110101??? : begin //CBNZ, compare and branch ~= 0
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 			 		  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0],      5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
+				constant <= instruction[24:5]*4;
 			end
 			
 			11'b01010100??? : begin //B.cond, branch conditionally
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 			 		  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0],      5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
+				constant <= instruction[24:5]*4;
 			end
 			
 			////////////////////////////
 			/////Unconditional Jump/////
 			////////////////////////////
 			11'b000101????? : begin	//B, branch
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 			 		  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01,      5'b00000,         5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
+				constant <= instruction[25:0]*4;
 			end
 			
 			11'b11010110000 : begin	//BR, branch to register
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01001, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
 			end
 			
 			11'b100101????? : begin //BL, branch with link
-			
+				//						PC				DataReg				RegA					RegB				  FS		RegW ramW  ENMEM ENALU  ENB  EN_PC  selB  PCsel SL 	CO  
+				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
+				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				//						|				  | 			 		  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
+				controlWord <= {2'b01,      5'b00000,         5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
+				flag <= 0;
+				length <= 3'b010;
+				constant <= instruction[25:0]*4;
 			end
 		endcase
 			

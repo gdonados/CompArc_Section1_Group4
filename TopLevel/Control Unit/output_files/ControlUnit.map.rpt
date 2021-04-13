@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ControlUnit
-Tue Apr 06 12:16:24 2021
+Tue Apr 13 10:39:24 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -45,15 +45,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 06 12:16:24 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 13 10:39:24 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ControlUnit                                 ;
 ; Top-level Entity Name              ; ControlUnit                                 ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 120                                         ;
-;     Total combinational functions  ; 120                                         ;
-;     Dedicated logic registers      ; 47                                          ;
-; Total registers                    ; 47                                          ;
+; Total logic elements               ; 175                                         ;
+;     Total combinational functions  ; 175                                         ;
+;     Dedicated logic registers      ; 60                                          ;
+; Total registers                    ; 60                                          ;
 ; Total pins                         ; 138                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -181,20 +181,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 120       ;
+; Estimated Total logic elements              ; 175       ;
 ;                                             ;           ;
-; Total combinational functions               ; 120       ;
+; Total combinational functions               ; 175       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 77        ;
-;     -- 3 input functions                    ; 34        ;
-;     -- <=2 input functions                  ; 9         ;
+;     -- 4 input functions                    ; 124       ;
+;     -- 3 input functions                    ; 40        ;
+;     -- <=2 input functions                  ; 11        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 120       ;
+;     -- normal mode                          ; 175       ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
-; Total registers                             ; 47        ;
-;     -- Dedicated logic registers            ; 47        ;
+; Total registers                             ; 60        ;
+;     -- Dedicated logic registers            ; 60        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 138       ;
@@ -202,9 +202,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 47        ;
-; Total fan-out                               ; 734       ;
-; Average fan-out                             ; 1.66      ;
+; Maximum fan-out                             ; 60        ;
+; Total fan-out                               ; 988       ;
+; Average fan-out                             ; 1.93      ;
 +---------------------------------------------+-----------+
 
 
@@ -213,7 +213,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |ControlUnit               ; 120 (120)           ; 47 (47)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 138  ; 0            ; 0          ; |ControlUnit        ; ControlUnit ; work         ;
+; |ControlUnit               ; 175 (175)           ; 60 (60)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 138  ; 0            ; 0          ; |ControlUnit        ; ControlUnit ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -223,60 +223,47 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+----------------------------------------+
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
-; constant[17]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[18]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[19]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[20]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[21]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[22]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[23]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[24]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[25]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[26]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[27]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[28]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[29]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[30]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[31]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[32]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[33]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[34]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[35]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[36]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[37]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[38]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[39]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[40]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[41]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[42]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[43]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[44]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[45]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[46]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[47]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[48]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[49]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[50]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[51]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[52]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[53]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[54]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[55]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[56]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[57]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[58]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[59]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[60]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[61]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[62]~reg0                      ; Merged with constant[16]~reg0          ;
-; constant[63]~reg0                      ; Merged with constant[16]~reg0          ;
-; controlWord[2]~reg0                    ; Merged with controlWord[0]~reg0        ;
+; constant[29]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[30]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[31]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[32]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[33]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[34]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[35]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[36]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[37]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[38]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[39]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[40]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[41]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[42]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[43]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[44]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[45]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[46]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[47]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[48]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[49]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[50]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[51]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[52]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[53]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[54]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[55]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[56]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[57]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[58]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[59]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[60]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[61]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[62]~reg0                      ; Merged with constant[28]~reg0          ;
+; constant[63]~reg0                      ; Merged with constant[28]~reg0          ;
 ; controlWord[31]~reg0                   ; Merged with controlWord[0]~reg0        ;
 ; controlWord[4]~reg0                    ; Merged with controlWord[0]~reg0        ;
 ; controlWord[5]~reg0                    ; Merged with controlWord[0]~reg0        ;
-; constant[16]~reg0                      ; Stuck at GND due to stuck port data_in ;
+; constant[28]~reg0                      ; Stuck at GND due to stuck port data_in ;
 ; controlWord[0]~reg0                    ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 53 ;                                        ;
+; Total Number of Removed Registers = 40 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
@@ -285,12 +272,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 47    ;
+; Total registers                              ; 60    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 27    ;
+; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -300,10 +287,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ControlUnit|controlWord[27]~reg0 ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |ControlUnit|constant[10]~reg0    ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; Yes        ; |ControlUnit|constant[1]~reg0     ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ControlUnit|controlWord[22]~reg0 ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |ControlUnit|constant[16]~reg0    ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |ControlUnit|constant[0]~reg0     ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ControlUnit|constant[15]~reg0    ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ControlUnit|controlWord[23]~reg0 ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |ControlUnit|constant[9]~reg0     ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |ControlUnit|constant[2]~reg0     ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ControlUnit|controlWord[15]~reg0 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
 
@@ -314,18 +303,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 138                         ;
-; cycloneiii_ff         ; 47                          ;
-;     ENA               ; 27                          ;
-;     plain             ; 20                          ;
-; cycloneiii_lcell_comb ; 121                         ;
-;     normal            ; 121                         ;
+; cycloneiii_ff         ; 60                          ;
+;     ENA               ; 32                          ;
+;     plain             ; 28                          ;
+; cycloneiii_lcell_comb ; 176                         ;
+;     normal            ; 176                         ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 34                          ;
-;         4 data inputs ; 77                          ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 40                          ;
+;         4 data inputs ; 124                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 4.53                        ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 5.11                        ;
 +-----------------------+-----------------------------+
 
 
@@ -344,7 +333,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 06 12:16:15 2021
+    Info: Processing started: Tue Apr 13 10:39:15 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ControlUnit -c ControlUnit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -354,18 +343,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
     Info (12023): Found entity 1: ControlUnit_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit_tb.v Line: 2
 Info (12127): Elaborating entity "ControlUnit" for the top level hierarchy
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "constant[16]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "constant[17]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "constant[18]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "constant[19]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "constant[20]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "constant[21]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "constant[22]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "constant[23]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "constant[24]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "constant[25]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "constant[26]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "constant[27]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
     Warning (13410): Pin "constant[28]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
     Warning (13410): Pin "constant[29]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
     Warning (13410): Pin "constant[30]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
@@ -403,7 +380,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "constant[62]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
     Warning (13410): Pin "constant[63]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
     Warning (13410): Pin "controlWord[0]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
-    Warning (13410): Pin "controlWord[2]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
     Warning (13410): Pin "controlWord[4]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
     Warning (13410): Pin "controlWord[5]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
     Warning (13410): Pin "controlWord[31]" is stuck at GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 29
@@ -415,14 +391,14 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "status[1]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 4
     Warning (15610): No output dependent on input pin "status[2]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 4
     Warning (15610): No output dependent on input pin "status[3]" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 4
-Info (21057): Implemented 258 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 313 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 38 input pins
     Info (21059): Implemented 100 output pins
-    Info (21061): Implemented 120 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 60 warnings
-    Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Tue Apr 06 12:16:24 2021
+    Info (21061): Implemented 175 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 47 warnings
+    Info: Peak virtual memory: 4781 megabytes
+    Info: Processing ended: Tue Apr 13 10:39:24 2021
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Total CPU time (on all processors): 00:00:21
 
 
