@@ -4,9 +4,9 @@ module Program_Counter_tb();
 	reg [1:0] PS;
 	reg [63:0] PC_IN;
 	
-	wire [63:0] PC_OUT, PC4;
+	wire [63:0] PC_OUT;
 	
-	Program_Counter dut (clk, rst, PS, PC_IN, PC_OUT, PC4);
+	Program_Counter dut (clk, rst, PS, PC_IN, PC_OUT);
 	
 	
 	initial begin

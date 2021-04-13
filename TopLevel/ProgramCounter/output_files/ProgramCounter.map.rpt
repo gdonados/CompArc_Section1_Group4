@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProgramCounter
-Tue Apr 13 12:22:06 2021
+Tue Apr 13 12:32:56 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 13 12:22:06 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 13 12:32:56 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ProgramCounter                              ;
 ; Top-level Entity Name              ; Program_Counter                             ;
@@ -53,7 +53,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 129                                         ;
 ;     Dedicated logic registers      ; 64                                          ;
 ; Total registers                    ; 64                                          ;
-; Total pins                         ; 196                                         ;
+; Total pins                         ; 132                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -196,14 +196,14 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 64          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 196         ;
+; I/O pins                                    ; 132         ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; PS[1]~input ;
 ; Maximum fan-out                             ; 65          ;
-; Total fan-out                               ; 966         ;
-; Average fan-out                             ; 1.65        ;
+; Total fan-out                               ; 902         ;
+; Average fan-out                             ; 1.97        ;
 +---------------------------------------------+-------------+
 
 
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name     ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
-; |Program_Counter           ; 129 (129)           ; 64 (64)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 196  ; 0            ; 0          ; |Program_Counter    ; Program_Counter ; work         ;
+; |Program_Counter           ; 129 (129)           ; 64 (64)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 132  ; 0            ; 0          ; |Program_Counter    ; Program_Counter ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -246,19 +246,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 196                         ;
+; boundary_port         ; 132                         ;
 ; cycloneiii_ff         ; 64                          ;
 ;     ENA SCLR SLD      ; 64                          ;
-; cycloneiii_lcell_comb ; 130                         ;
+; cycloneiii_lcell_comb ; 129                         ;
 ;     arith             ; 63                          ;
 ;         3 data inputs ; 63                          ;
-;     normal            ; 67                          ;
-;         0 data inputs ; 1                           ;
+;     normal            ; 66                          ;
 ;         2 data inputs ; 65                          ;
 ;         3 data inputs ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.30                        ;
-; Average LUT depth     ; 5.50                        ;
+; Average LUT depth     ; 5.52                        ;
 +-----------------------+-----------------------------+
 
 
@@ -277,7 +276,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 13 12:21:55 2021
+    Info: Processing started: Tue Apr 13 12:32:48 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProgramCounter -c ProgramCounter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -286,83 +285,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file program
 Info (12021): Found 1 design units, including 1 entities, in source file program_counter_tb.v
     Info (12023): Found entity 1: Program_Counter_tb File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter_tb.v Line: 2
 Info (12127): Elaborating entity "Program_Counter" for the top level hierarchy
-Warning (10034): Output port "PC4" at Program_Counter.v(7) has no driver File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "PC4[0]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[1]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[2]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[3]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[4]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[5]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[6]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[7]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[8]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[9]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[10]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[11]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[12]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[13]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[14]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[15]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[16]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[17]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[18]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[19]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[20]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[21]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[22]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[23]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[24]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[25]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[26]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[27]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[28]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[29]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[30]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[31]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[32]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[33]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[34]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[35]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[36]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[37]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[38]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[39]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[40]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[41]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[42]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[43]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[44]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[45]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[46]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[47]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[48]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[49]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[50]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[51]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[52]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[53]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[54]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[55]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[56]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[57]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[58]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[59]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[60]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[61]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[62]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
-    Warning (13410): Pin "PC4[63]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 325 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 261 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 68 input pins
-    Info (21059): Implemented 128 output pins
+    Info (21059): Implemented 64 output pins
     Info (21061): Implemented 129 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 67 warnings
-    Info: Peak virtual memory: 4758 megabytes
-    Info: Processing ended: Tue Apr 13 12:22:06 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:27
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4760 megabytes
+    Info: Processing ended: Tue Apr 13 12:32:56 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:21
 
 

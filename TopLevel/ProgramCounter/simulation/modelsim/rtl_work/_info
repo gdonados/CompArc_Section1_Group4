@@ -10,52 +10,52 @@ z2
 cModel Technology
 Z0 dC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/simulation/modelsim
 vProgram_Counter
-!s110 1618331094
+Z1 !s110 1618331604
 !i10b 1
-!s100 hn5<;`AS]8PQ`Gz5]6`gP1
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I]3HGI<l:h624]2]0H=b6l2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s100 6f__oEcV[gCiTN>Xo877]0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IFQY?JUToLg9Pg6`GBKTi90
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1618330915
+w1618331566
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v
 !i122 0
-L0 2 44
-Z3 OV;L;2020.1;71
+L0 2 38
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1618331094.000000
+Z5 !s108 1618331604.000000
 !s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v|
 !i113 1
-Z4 o-vlog01compat -work work
-Z5 !s92 -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter
-Z6 tCvgOpt 0
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter
+Z8 tCvgOpt 0
 n@program_@counter
 vProgram_Counter_tb
-!s110 1618331095
-!i10b 1
-!s100 <<I`B7^iK_akK_HM<Q45Y0
 R1
-IfNXRbTeW>eokKl^IJA@^j0
+!i10b 1
+!s100 IeiCNH<KOadf`TUAfmO2j2
 R2
+I:Qz2Zf99D91hMKPf<>6733
+R3
 R0
-w1618330543
+w1618331567
 8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter_tb.v
 FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter_tb.v
 !i122 1
 L0 2 39
-R3
+R4
 r1
 !s85 0
 31
-!s108 1618331095.000000
+R5
 !s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter_tb.v|
 !i113 1
-R4
-R5
 R6
+R7
+R8
 n@program_@counter_tb

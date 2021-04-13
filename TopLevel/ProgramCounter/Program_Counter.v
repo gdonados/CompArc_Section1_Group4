@@ -1,17 +1,11 @@
 `timescale 10ns/10ns
-module Program_Counter (clk, reset, PS, PC_IN, PC_OUT, PC4);
+module Program_Counter (clk, reset, PS, PC_IN, PC_OUT);
 	input clk, reset; 
 	input [1:0] PS;
 	input[63:0] PC_IN;
-	output [63:0] PC_OUT; //to ROM
-	output [63:0] PC4; //to RAM or REG_File
-	
+	output [63:0] PC_OUT;
 
 	reg[63:0] PC;
-	
-	//always @(*) begin
-	//PC_OUT <= PC;
-	//end
 	
 	assign PC_OUT = PC;
 	
