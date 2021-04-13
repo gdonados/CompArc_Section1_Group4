@@ -1,0 +1,537 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "PC_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[16]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[17]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[18]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[19]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[20]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[21]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[22]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[23]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[24]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[25]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[26]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[27]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[28]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[29]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[30]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[31]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[32]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[33]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[34]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[35]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[36]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[37]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[38]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[39]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[40]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[41]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[42]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[43]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[44]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[45]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[46]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[47]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[48]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[49]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[50]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[51]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[52]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[53]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[54]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[55]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[56]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[57]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[58]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[59]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[60]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[61]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[62]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[63]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "PS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[16]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[17]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[18]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[19]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[20]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[21]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[22]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[23]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[24]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[25]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[26]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[27]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[28]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[29]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[30]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[31]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[32]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[33]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[34]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[35]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[36]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[37]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[38]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[39]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[40]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[41]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[42]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[43]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[44]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[45]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[46]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[47]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[48]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[49]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[50]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[51]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[52]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[53]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[54]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[55]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[56]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[57]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[58]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[59]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[60]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[61]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[62]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_IN[63]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

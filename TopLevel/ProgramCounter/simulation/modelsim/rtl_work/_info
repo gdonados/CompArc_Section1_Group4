@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/simulation/modelsim
+vProgram_Counter
+!s110 1618331094
+!i10b 1
+!s100 hn5<;`AS]8PQ`Gz5]6`gP1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]3HGI<l:h624]2]0H=b6l2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1618330915
+8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v
+FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v
+!i122 0
+L0 2 44
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1618331094.000000
+!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter
+Z6 tCvgOpt 0
+n@program_@counter
+vProgram_Counter_tb
+!s110 1618331095
+!i10b 1
+!s100 <<I`B7^iK_akK_HM<Q45Y0
+R1
+IfNXRbTeW>eokKl^IJA@^j0
+R2
+R0
+w1618330543
+8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter_tb.v
+FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter_tb.v
+!i122 1
+L0 2 39
+R3
+r1
+!s85 0
+31
+!s108 1618331095.000000
+!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter_tb.v|
+!i113 1
+R4
+R5
+R6
+n@program_@counter_tb

@@ -1,0 +1,44 @@
+`timescale 10ns/10ns
+module Program_Counter_tb ();
+	reg clk, rst, PS;
+	reg [63:0] PC_IN;
+	
+	wire [63:0] PC_OUT, PC4;
+	
+	Program_Counter dut (clk, rst, PS, PC_IN, PC_OUT, PC4);
+	
+	initial begin
+		clock <= 1'b0;
+		rst <= 1'b0;
+		PS <= 2'b00;
+		PC_IN <= 64'b0;
+	end
+	
+	always
+	#5 clk <= ~clk;
+	
+	#10 begin
+		PS <= 2'b01; //increment by 1 instruction
+	end
+	
+	#10 begin
+		PS <= 2'b10;
+		PC_IN <= 16'h4; //jump to instruction 4
+	end
+	
+	#10 begin
+		PS <= 2'b10;
+		PC_IN <= 16'h1; //jump back to instruction 1
+	end
+	
+	#10 begin
+		PS <= 2'b11;
+		PC_IN <= 16'h8; //jump forward 8 instructions
+	end
+		
+	#10 rst <= 1'b1;
+	
+	#10 $stop;
+	
+endmodule
+	
