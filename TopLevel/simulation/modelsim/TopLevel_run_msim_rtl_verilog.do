@@ -5,6 +5,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control\ Unit {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter/Program_Counter.v}
+vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v}
 vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v}
 vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v}
 vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v}

@@ -1,5 +1,5 @@
 `timescale 10ns/10ns
-module ROM(out, address);
+module ROM(address, out);
     output reg [31:0] out;
     input [15:0] address; // address - 16 deep memory
     always @(address) begin

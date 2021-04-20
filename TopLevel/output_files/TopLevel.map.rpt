@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TopLevel
-Tue Mar 23 13:15:53 2021
+Tue Apr 20 11:02:32 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,21 +13,16 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis RAM Summary
-  9. General Register Statistics
- 10. Registers Packed Into Inferred Megafunctions
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Source assignments for RAM256x64:ram|altsyncram:mem_rtl_0|altsyncram_aec1:auto_generated
- 13. Parameter Settings for Inferred Entity Instance: RAM256x64:ram|altsyncram:mem_rtl_0
- 14. altsyncram Parameter Settings by Entity Instance
- 15. Port Connectivity Checks: "ALU:alu|carry_look_ahead64bit:subAB"
- 16. Port Connectivity Checks: "ALU:alu|carry_look_ahead64bit:subBA"
- 17. Port Connectivity Checks: "ALU:alu|carry_look_ahead64bit:addAB"
- 18. Port Connectivity Checks: "ALU:alu"
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
- 22. Analysis & Synthesis Suppressed Messages
+  8. General Register Statistics
+  9. Port Connectivity Checks: "RAM256x64:ram"
+ 10. Port Connectivity Checks: "ALU:alu|carry_look_ahead64bit:subAB"
+ 11. Port Connectivity Checks: "ALU:alu|carry_look_ahead64bit:subBA"
+ 12. Port Connectivity Checks: "ALU:alu|carry_look_ahead64bit:addAB"
+ 13. Port Connectivity Checks: "ControlUnit:controlUnit"
+ 14. Port Connectivity Checks: "ROM:rom"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -54,18 +49,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 23 13:15:52 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 20 11:02:32 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; TopLevel                                    ;
 ; Top-level Entity Name              ; TopLevel                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 6,611                                       ;
-;     Total combinational functions  ; 4,563                                       ;
-;     Dedicated logic registers      ; 2,048                                       ;
-; Total registers                    ; 2048                                        ;
-; Total pins                         ; 222                                         ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 2                                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 16,384                                      ;
+; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 ; UFM blocks                         ; 0                                           ;
@@ -164,192 +159,80 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                   ;
-+--------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                           ; Library ;
-+--------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; ALU/xor64.v                          ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/xor64.v                          ;         ;
-; ALU/shiftRight1.v                    ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftRight1.v                    ;         ;
-; ALU/shiftLeft1.v                     ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftLeft1.v                     ;         ;
-; ALU/or64.v                           ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/or64.v                           ;         ;
-; ALU/invert64.v                       ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/invert64.v                       ;         ;
-; ALU/carry_look_ahead64bit.v          ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v          ;         ;
-; ALU/carry_look_ahead16bit.v          ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v          ;         ;
-; ALU/carry_look_ahead4bit.v           ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead4bit.v           ;         ;
-; ALU/and64.v                          ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/and64.v                          ;         ;
-; RAM/RAM256x64.v                      ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v                      ;         ;
-; ALU/ALU.v                            ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v                            ;         ;
-; Register File/RegisterFile32x64bit.v ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v ;         ;
-; TopLevel.v                           ; yes             ; User Verilog HDL File        ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v                           ;         ;
-; altsyncram.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                  ;         ;
-; stratix_ram_block.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                           ;         ;
-; lpm_mux.inc                          ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                     ;         ;
-; lpm_decode.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                  ;         ;
-; aglobal201.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                  ;         ;
-; a_rdenreg.inc                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                   ;         ;
-; altrom.inc                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                      ;         ;
-; altram.inc                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                      ;         ;
-; altdpram.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                    ;         ;
-; db/altsyncram_aec1.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/db/altsyncram_aec1.tdf               ;         ;
-+--------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++--------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path     ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                   ; Library ;
++--------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
+; Control Unit/ControlUnit.v           ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v           ;         ;
+; ProgramCounter/Program_Counter.v     ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter/Program_Counter.v     ;         ;
+; ROM/ROM.v                            ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v                            ;         ;
+; ALU/xor64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v                          ;         ;
+; ALU/shiftRight1.v                    ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v                    ;         ;
+; ALU/shiftLeft1.v                     ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v                     ;         ;
+; ALU/or64.v                           ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v                           ;         ;
+; ALU/invert64.v                       ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v                       ;         ;
+; ALU/carry_look_ahead64bit.v          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v          ;         ;
+; ALU/carry_look_ahead16bit.v          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v          ;         ;
+; ALU/carry_look_ahead4bit.v           ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v           ;         ;
+; ALU/and64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v                          ;         ;
+; RAM/RAM256x64.v                      ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v                      ;         ;
+; ALU/ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v                            ;         ;
+; Register File/RegisterFile32x64bit.v ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v ;         ;
+; TopLevel.v                           ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v                           ;         ;
++--------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 6,611     ;
-;                                             ;           ;
-; Total combinational functions               ; 4563      ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 3882      ;
-;     -- 3 input functions                    ; 473       ;
-;     -- <=2 input functions                  ; 208       ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 4374      ;
-;     -- arithmetic mode                      ; 189       ;
-;                                             ;           ;
-; Total registers                             ; 2048      ;
-;     -- Dedicated logic registers            ; 2048      ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 222       ;
-; Total memory bits                           ; 16384     ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 2112      ;
-; Total fan-out                               ; 26491     ;
-; Average fan-out                             ; 3.72      ;
-+---------------------------------------------+-----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                             ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                     ; Entity Name           ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |TopLevel                                 ; 4563 (0)            ; 2048 (0)                  ; 16384       ; 0          ; 0            ; 0       ; 0         ; 222  ; 0            ; 0          ; |TopLevel                                                                                               ; TopLevel              ; work         ;
-;    |ALU:alu|                              ; 1771 (937)          ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu                                                                                       ; ALU                   ; work         ;
-;       |and64:andAB|                       ; 26 (26)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|and64:andAB                                                                           ; and64                 ; work         ;
-;       |carry_look_ahead64bit:addABcarry|  ; 79 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry                                                      ; carry_look_ahead64bit ; work         ;
-;          |carry_look_ahead16bit:cla1|     ; 25 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1                           ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla2 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla3 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla4 ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla2|     ; 20 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2                           ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla1 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla2 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla3 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla4 ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla3|     ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3                           ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla1 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla2 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla3 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla4 ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla4|     ; 19 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4                           ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla1 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla2 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla3 ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addABcarry|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla4 ; carry_look_ahead4bit  ; work         ;
-;       |carry_look_ahead64bit:addAB|       ; 230 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB                                                           ; carry_look_ahead64bit ; work         ;
-;          |carry_look_ahead16bit:cla1|     ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla2|     ; 64 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla2                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 18 (18)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla3|     ; 57 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla4|     ; 53 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;       |carry_look_ahead64bit:subAB|       ; 235 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB                                                           ; carry_look_ahead64bit ; work         ;
-;          |carry_look_ahead16bit:cla1|     ; 55 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla2|     ; 60 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla3|     ; 60 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla3                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla4|     ; 60 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subAB|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;       |carry_look_ahead64bit:subBA|       ; 233 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA                                                           ; carry_look_ahead64bit ; work         ;
-;          |carry_look_ahead16bit:cla1|     ; 54 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla2|     ; 60 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla2                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla2|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla3|     ; 61 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla3                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla3|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;          |carry_look_ahead16bit:cla4|     ; 58 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla4                                ; carry_look_ahead16bit ; work         ;
-;             |carry_look_ahead4bit:cla1|   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla1      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla2|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla2      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla3|   ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla3      ; carry_look_ahead4bit  ; work         ;
-;             |carry_look_ahead4bit:cla4|   ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|carry_look_ahead64bit:subBA|carry_look_ahead16bit:cla4|carry_look_ahead4bit:cla4      ; carry_look_ahead4bit  ; work         ;
-;       |or64:orAB|                         ; 31 (31)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|ALU:alu|or64:orAB                                                                             ; or64                  ; work         ;
-;    |RAM256x64:ram|                        ; 0 (0)               ; 0 (0)                     ; 16384       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|RAM256x64:ram                                                                                 ; RAM256x64             ; work         ;
-;       |altsyncram:mem_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 16384       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|RAM256x64:ram|altsyncram:mem_rtl_0                                                            ; altsyncram            ; work         ;
-;          |altsyncram_aec1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|RAM256x64:ram|altsyncram:mem_rtl_0|altsyncram_aec1:auto_generated                             ; altsyncram_aec1       ; work         ;
-;    |RegisterFile32x64bit:regFile|         ; 2792 (2792)         ; 2048 (2048)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TopLevel|RegisterFile32x64bit:regFile                                                                  ; RegisterFile32x64bit  ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------+-----------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |TopLevel                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 2    ; 0            ; 0          ; |TopLevel           ; TopLevel    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                  ;
-+------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
-; Name                                                                         ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
-+------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
-; RAM256x64:ram|altsyncram:mem_rtl_0|altsyncram_aec1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 256          ; 64           ; 256          ; 64           ; 16384 ; None ;
-+------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
 
 
 +------------------------------------------------------+
@@ -357,125 +240,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2048  ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 2048  ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2048  ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions                 ;
-+-----------------------------+-------------------------+------+
-; Register Name               ; Megafunction            ; Type ;
-+-----------------------------+-------------------------+------+
-; RAM256x64:ram|outReg[0..63] ; RAM256x64:ram|mem_rtl_0 ; RAM  ;
-+-----------------------------+-------------------------+------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
-; 32:1               ; 64 bits   ; 1344 LEs      ; 1344 LEs             ; 0 LEs                  ; No         ; |TopLevel|RegisterFile32x64bit:regFile|Mux62 ;
-; 32:1               ; 64 bits   ; 1344 LEs      ; 1344 LEs             ; 0 LEs                  ; No         ; |TopLevel|RegisterFile32x64bit:regFile|Mux80 ;
-; 20:1               ; 62 bits   ; 806 LEs       ; 496 LEs              ; 310 LEs                ; No         ; |TopLevel|ALU:alu|Mux47                      ;
-; 3:1                ; 64 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; No         ; |TopLevel|ALU:alu|Add2                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------+
-; Source assignments for RAM256x64:ram|altsyncram:mem_rtl_0|altsyncram_aec1:auto_generated ;
-+---------------------------------+--------------------+------+----------------------------+
-; Assignment                      ; Value              ; From ; To                         ;
-+---------------------------------+--------------------+------+----------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                          ;
-+---------------------------------+--------------------+------+----------------------------+
-
-
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: RAM256x64:ram|altsyncram:mem_rtl_0 ;
-+------------------------------------+----------------------+-------------------------+
-; Parameter Name                     ; Value                ; Type                    ;
-+------------------------------------+----------------------+-------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                 ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY              ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY            ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE            ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE          ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                 ;
-; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                 ;
-; WIDTH_A                            ; 64                   ; Untyped                 ;
-; WIDTHAD_A                          ; 8                    ; Untyped                 ;
-; NUMWORDS_A                         ; 256                  ; Untyped                 ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                 ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                 ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                 ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                 ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                 ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                 ;
-; WIDTH_B                            ; 64                   ; Untyped                 ;
-; WIDTHAD_B                          ; 8                    ; Untyped                 ;
-; NUMWORDS_B                         ; 256                  ; Untyped                 ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                 ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                 ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                 ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                 ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                 ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                 ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                 ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                 ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                 ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                 ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                 ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                 ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                 ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                 ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                 ;
-; BYTE_SIZE                          ; 8                    ; Untyped                 ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                 ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                 ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                 ;
-; INIT_FILE                          ; UNUSED               ; Untyped                 ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                 ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                 ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                 ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                 ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                 ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                 ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                 ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                 ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                 ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                 ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                 ;
-; DEVICE_FAMILY                      ; MAX 10               ; Untyped                 ;
-; CBXI_PARAMETER                     ; altsyncram_aec1      ; Untyped                 ;
-+------------------------------------+----------------------+-------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                               ;
-+-------------------------------------------+------------------------------------+
-; Name                                      ; Value                              ;
-+-------------------------------------------+------------------------------------+
-; Number of entity instances                ; 1                                  ;
-; Entity Instance                           ; RAM256x64:ram|altsyncram:mem_rtl_0 ;
-;     -- OPERATION_MODE                     ; DUAL_PORT                          ;
-;     -- WIDTH_A                            ; 64                                 ;
-;     -- NUMWORDS_A                         ; 256                                ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                       ;
-;     -- WIDTH_B                            ; 64                                 ;
-;     -- NUMWORDS_B                         ; 256                                ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                             ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                       ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                               ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                          ;
-+-------------------------------------------+------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RAM256x64:ram"                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; address ; Input ; Warning  ; Input port expression (64 bits) is wider than the input port (8 bits) it drives.  The 56 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -507,38 +288,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu"                                                                                                                  ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                   ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
-; fout ; Output ; Warning  ; Output or bidir port (64 bits) is wider than the port expression (8 bits) it drives; bit(s) "fout[63..8]" have no fanouts ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ControlUnit:controlUnit"                                                                         ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                             ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+; CONTROLWORD[2..1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; length            ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; flag              ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ROM:rom"                                                                                                                                                                              ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                             ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; address ; Input ; Warning  ; Input port expression (64 bits) is wider than the input port (16 bits) it drives.  The 48 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 222                         ;
-; cycloneiii_ff         ; 2048                        ;
-;     ENA CLR           ; 2048                        ;
-; cycloneiii_lcell_comb ; 4564                        ;
-;     arith             ; 189                         ;
-;         2 data inputs ; 126                         ;
-;         3 data inputs ; 63                          ;
-;     normal            ; 4375                        ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 66                          ;
-;         2 data inputs ; 16                          ;
-;         3 data inputs ; 410                         ;
-;         4 data inputs ; 3882                        ;
-; cycloneiii_ram_block  ; 64                          ;
-;                       ;                             ;
-; Max LUT depth         ; 35.20                       ;
-; Average LUT depth     ; 24.38                       ;
-+-----------------------+-----------------------------+
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
 
 
 +-------------------------------+
@@ -546,7 +325,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:18     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -556,201 +335,112 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 23 13:15:23 2021
+    Info: Processing started: Tue Apr 20 11:02:23 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopLevel -c TopLevel
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file control unit/controlunit.v
+    Info (12023): Found entity 1: ControlUnit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file programcounter/program_counter.v
+    Info (12023): Found entity 1: Program_Counter File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter/Program_Counter.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file rom/rom.v
+    Info (12023): Found entity 1: ROM File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/xor64.v
-    Info (12023): Found entity 1: xor64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/xor64.v Line: 2
+    Info (12023): Found entity 1: xor64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/shiftright1.v
-    Info (12023): Found entity 1: shiftRight1 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftRight1.v Line: 2
+    Info (12023): Found entity 1: shiftRight1 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/shiftleft1.v
-    Info (12023): Found entity 1: shiftLeft1 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftLeft1.v Line: 2
+    Info (12023): Found entity 1: shiftLeft1 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/or64.v
-    Info (12023): Found entity 1: or64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/or64.v Line: 2
+    Info (12023): Found entity 1: or64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/invert64.v
-    Info (12023): Found entity 1: invert64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/invert64.v Line: 2
+    Info (12023): Found entity 1: invert64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/carry_look_ahead64bit.v
-    Info (12023): Found entity 1: carry_look_ahead64bit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v Line: 2
+    Info (12023): Found entity 1: carry_look_ahead64bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/carry_look_ahead16bit.v
-    Info (12023): Found entity 1: carry_look_ahead16bit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v Line: 2
+    Info (12023): Found entity 1: carry_look_ahead16bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/carry_look_ahead4bit.v
-    Info (12023): Found entity 1: carry_look_ahead4bit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead4bit.v Line: 2
+    Info (12023): Found entity 1: carry_look_ahead4bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/and64.v
-    Info (12023): Found entity 1: and64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/and64.v Line: 2
+    Info (12023): Found entity 1: and64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file ram/ram256x64.v
-    Info (12023): Found entity 1: RAM256x64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v Line: 2
+    Info (12023): Found entity 1: RAM256x64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 2
+    Info (12023): Found entity 1: ALU File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file register file/registerfile32x64bit.v
-    Info (12023): Found entity 1: RegisterFile32x64bit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v Line: 2
+    Info (12023): Found entity 1: RegisterFile32x64bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file toplevel.v
-    Info (12023): Found entity 1: TopLevel File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 2
+    Info (12023): Found entity 1: TopLevel File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file toplevel_tb.v
-    Info (12023): Found entity 1: TopLevel_tb File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 2
+    Info (12023): Found entity 1: TopLevel_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file toplevelschematic.bdf
+    Info (12023): Found entity 1: TopLevelSchematic
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Warning (10034): Output port "ALUout[63..8]" at TopLevel.v(6) has no driver File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-Info (12128): Elaborating entity "RegisterFile32x64bit" for hierarchy "RegisterFile32x64bit:regFile" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at RegisterFile32x64bit.v(15): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v Line: 15
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 29
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(24): object "i" assigned a value but never read File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 24
-Info (12128): Elaborating entity "invert64" for hierarchy "ALU:alu|invert64:invertA" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 21
-Info (12128): Elaborating entity "carry_look_ahead64bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 28
-Info (12128): Elaborating entity "carry_look_ahead16bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v Line: 10
-Info (12128): Elaborating entity "carry_look_ahead4bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v Line: 10
-Info (12128): Elaborating entity "and64" for hierarchy "ALU:alu|and64:andAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 36
-Info (12128): Elaborating entity "or64" for hierarchy "ALU:alu|or64:orAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 37
-Info (12128): Elaborating entity "xor64" for hierarchy "ALU:alu|xor64:xorAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 38
-Info (12128): Elaborating entity "shiftLeft1" for hierarchy "ALU:alu|shiftLeft1:shiftAl" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 42
-Info (12128): Elaborating entity "shiftRight1" for hierarchy "ALU:alu|shiftRight1:shiftAr" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 43
-Info (12128): Elaborating entity "RAM256x64" for hierarchy "RAM256x64:ram" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 31
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.v(16): object "programValueSelect" assigned a value but never read File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 16
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.v(16): object "statusLineUse" assigned a value but never read File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 16
+Info (12128): Elaborating entity "Program_Counter" for hierarchy "Program_Counter:PC" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 39
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 41
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:controlUnit" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 43
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 45
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(24): object "i" assigned a value but never read File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 24
+Info (12128): Elaborating entity "invert64" for hierarchy "ALU:alu|invert64:invertA" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 21
+Info (12128): Elaborating entity "carry_look_ahead64bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 28
+Info (12128): Elaborating entity "carry_look_ahead16bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v Line: 10
+Info (12128): Elaborating entity "carry_look_ahead4bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v Line: 10
+Info (12128): Elaborating entity "and64" for hierarchy "ALU:alu|and64:andAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 36
+Info (12128): Elaborating entity "or64" for hierarchy "ALU:alu|or64:orAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 37
+Info (12128): Elaborating entity "xor64" for hierarchy "ALU:alu|xor64:xorAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 38
+Info (12128): Elaborating entity "shiftLeft1" for hierarchy "ALU:alu|shiftLeft1:shiftAl" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 42
+Info (12128): Elaborating entity "shiftRight1" for hierarchy "ALU:alu|shiftRight1:shiftAr" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 43
+Info (12128): Elaborating entity "RegisterFile32x64bit" for hierarchy "RegisterFile32x64bit:regFile" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 47
+Warning (10240): Verilog HDL Always Construct warning at RegisterFile32x64bit.v(15): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v Line: 15
+Info (12128): Elaborating entity "RAM256x64" for hierarchy "RAM256x64:ram" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 49
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "ALU:alu|j[31]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[30]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[29]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[28]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[27]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[26]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[25]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[24]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[23]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[22]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[21]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[20]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[19]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[18]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[17]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[16]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[15]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[14]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[13]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[12]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[11]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[10]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[9]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[8]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[7]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[6]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[5]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[4]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[3]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[2]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[1]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[0]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
-Warning (276027): Inferred dual-clock RAM node "RAM256x64:ram|mem_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
-Info (19000): Inferred 1 megafunctions from design logic
-    Info (276029): Inferred altsyncram megafunction from the following design logic: "RAM256x64:ram|mem_rtl_0" 
-        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
-        Info (286033): Parameter WIDTH_A set to 64
-        Info (286033): Parameter WIDTHAD_A set to 8
-        Info (286033): Parameter NUMWORDS_A set to 256
-        Info (286033): Parameter WIDTH_B set to 64
-        Info (286033): Parameter WIDTHAD_B set to 8
-        Info (286033): Parameter NUMWORDS_B set to 256
-        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
-        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
-        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
-        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
-        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
-        Info (286033): Parameter INDATA_ACLR_A set to NONE
-        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-Info (12130): Elaborated megafunction instantiation "RAM256x64:ram|altsyncram:mem_rtl_0"
-Info (12133): Instantiated megafunction "RAM256x64:ram|altsyncram:mem_rtl_0" with the following parameter:
-    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
-    Info (12134): Parameter "WIDTH_A" = "64"
-    Info (12134): Parameter "WIDTHAD_A" = "8"
-    Info (12134): Parameter "NUMWORDS_A" = "256"
-    Info (12134): Parameter "WIDTH_B" = "64"
-    Info (12134): Parameter "WIDTHAD_B" = "8"
-    Info (12134): Parameter "NUMWORDS_B" = "256"
-    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
-    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
-    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
-    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
-    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
-    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
-    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_aec1.tdf
-    Info (12023): Found entity 1: altsyncram_aec1 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/db/altsyncram_aec1.tdf Line: 28
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ALUout[8]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[9]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[10]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[11]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[12]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[13]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[14]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[15]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[16]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[17]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[18]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[19]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[20]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[21]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[22]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[23]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[24]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[25]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[26]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[27]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[28]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[29]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[30]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[31]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[32]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[33]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[34]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[35]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[36]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[37]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[38]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[39]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[40]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[41]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[42]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[43]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[44]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[45]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[46]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[47]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[48]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[49]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[50]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[51]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[52]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[53]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[54]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[55]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[56]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[57]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[58]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[59]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[60]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[61]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[62]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-    Warning (13410): Pin "ALUout[63]" is stuck at GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 6
-Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/output_files/TopLevel.map.smsg
+    Warning (12110): Net "ALU:alu|j[31]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[30]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[29]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[28]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[27]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[26]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[25]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[24]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[23]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[22]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[21]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[20]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[19]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[18]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[17]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[16]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[15]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[14]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[13]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[12]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[11]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[10]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[9]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[8]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[7]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[6]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[5]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[4]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[3]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[2]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[1]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[0]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "muxSelect" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 4
-Info (21057): Implemented 6897 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 90 input pins
-    Info (21059): Implemented 132 output pins
-    Info (21061): Implemented 6611 logic cells
-    Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 98 warnings
-    Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Tue Mar 23 13:15:53 2021
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:46
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/output_files/TopLevel.map.smsg.
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 3
+    Warning (15610): No output dependent on input pin "rst" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 3
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 42 warnings
+    Info: Peak virtual memory: 4739 megabytes
+    Info: Processing ended: Tue Apr 20 11:02:32 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:22
 
 

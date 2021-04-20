@@ -61,6 +61,8 @@ set_global_assignment -name EDA_TEST_BENCH_NAME TopLevel_tb -section_id eda_simu
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TopLevel_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TopLevel_tb -section_id TopLevel_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE TopLevel_tb.v -section_id TopLevel_tb
+set_global_assignment -name VERILOG_FILE "Control Unit/ControlUnit.v"
+set_global_assignment -name VERILOG_FILE ProgramCounter/Program_Counter.v
 set_global_assignment -name VERILOG_FILE ROM/ROM.v
 set_global_assignment -name VERILOG_FILE ALU/xor64.v
 set_global_assignment -name VERILOG_FILE ALU/shiftRight1.v

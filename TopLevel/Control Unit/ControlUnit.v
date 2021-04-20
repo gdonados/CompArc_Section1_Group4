@@ -1,10 +1,10 @@
 `timescale 10ns/10ns
-module ControlUnit(clk, rst, instruction, status, constant, controlWord, length, flag);
+module ControlUnit(clk, rst, instruction, status, constant, CONTROLWORD, length, flag);
 	input [31:0] instruction;
 	input [3:0] status;
 	input clk, rst;
 	
-	output reg [31:0] controlWord; //[31:0] in instructions, added 1 for carry
+	output reg [31:0] CONTROLWORD; //[31:0] in instructions, added 1 for carry
 											/*[31:30] PS
 												[29:25] DA
 												[24:20] SA
@@ -28,7 +28,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 	
 	always @(posedge clk)begin
 		if(rst == 1)begin
-			controlWord <= 32'b0;
+			CONTROLWORD <= 32'b0;
 			constant <= 64'b0;
 		end
 		
@@ -42,7 +42,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 			end
@@ -52,7 +52,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 			end
@@ -62,7 +62,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[21:10];	//constant generation		
 				flag <= 0;		
 				length <= 3'b010;				
@@ -73,7 +73,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[21:10];	//constant generation		
 				flag <= 0;
 				length <= 3'b010;
@@ -85,7 +85,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
 				flag <= 1;
 				length <= 3'b010;
 			end
@@ -95,7 +95,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
 				flag <= 1;
 				length <= 3'b010;
 			end
@@ -105,7 +105,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00010, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[21:10];	//constant generation	
 				flag <= 1;	
 				length <= 3'b010;
@@ -116,7 +116,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx,       5'b00110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[21:10];	//constant generation		
 				flag <= 1;
 				length <= 3'b010;
@@ -131,7 +131,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b00, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b00, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[20:12]; //9 bit constant
 				length <= 3'b100;
 				flag <= 0;
@@ -142,7 +142,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b00, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b00, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[20:12]; //9 bit constant
 				length <= 3'b100;
 				flag <= 0;
@@ -153,7 +153,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[20:12]; //9 bit constant
 				length <= 3'b010;
 				flag <= 0;
@@ -164,7 +164,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[20:12]; //9 bit constant
 				length <= 3'b010;
 				flag <= 0;
@@ -175,7 +175,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[20:12]; //9 bit constant
 				length <= 3'b001;
 				flag <= 0;
@@ -186,7 +186,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[20:12]; //9 bit constant
 				length <= 3'b001;
 				flag <= 0;
@@ -197,7 +197,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[20:12]; //9 bit constant
 				length <= 3'b000;
 				flag <= 0;
@@ -208,7 +208,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[20:12]; //9 bit constant
 				length <= 3'b000;
 				flag <= 0;
@@ -219,7 +219,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0],      5'bxxxxx,        5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0],      5'bxxxxx,        5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[20:5]; //16 bit constant
 				flag <= 0;
 				length <= 3'b010;
@@ -230,7 +230,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0],      5'bxxxxx,        5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0],      5'bxxxxx,        5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[20:5]; //16 bit constant
 				flag <= 0;
 				length <= 3'b010;
@@ -245,7 +245,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 			end
@@ -255,7 +255,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01101, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01101, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 			end
@@ -265,7 +265,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 			end
@@ -275,7 +275,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[21:10];	//constant generation 
 				flag <= 0;
 				length <= 3'b010;
@@ -286,7 +286,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01101, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01101, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[21:10];	//constant generation 
 				flag <= 0;
 				length <= 3'b010;
@@ -297,7 +297,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01110, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[21:10];	//constant generation 
 				flag <= 0;
 				length <= 3'b010;
@@ -308,7 +308,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
 				flag <= 1;
 				length <= 3'b010;
 			end
@@ -318,7 +318,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[21:10];	//constant generation 
 				flag <= 1;
 				length <= 3'b010;
@@ -329,7 +329,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b10000, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b10000, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 			end
@@ -339,7 +339,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01111, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01111, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 			end
@@ -353,7 +353,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 			 		  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0],      5'b00000,        5'b00000      , 5'b01100, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0],      5'b00000,        5'b00000      , 5'b01100, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 				constant <= instruction[24:5]*4;
@@ -364,7 +364,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 			 		  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0],      5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0],      5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 				constant <= instruction[24:5]*4;
@@ -375,7 +375,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 			 		  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0],      5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0],      5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 				constant <= instruction[24:5]*4;
@@ -389,7 +389,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 			 		  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01,      5'b00000,         5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01,      5'b00000,         5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 				constant <= instruction[25:0]*4;
@@ -400,7 +400,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01001, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5], instruction[20:16], 5'b01001, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b0, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 			end
@@ -410,7 +410,7 @@ module ControlUnit(clk, rst, instruction, status, constant, controlWord, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 			 		  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				controlWord <= {2'b01,      5'b00000,         5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01,      5'b00000,         5'b00000,        5'b00000      , 5'b01100, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0, 1'b1, 1'b1, 1'b0};
 				flag <= 0;
 				length <= 3'b010;
 				constant <= instruction[25:0]*4;
