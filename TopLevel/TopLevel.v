@@ -17,8 +17,8 @@ module TopLevel(clk, rst);
 
 	assign muxOut = selAluValueInput ? regBout : constantValue;
 	
-	assign regFileDataInput = enableRamData ? ramOut : enableAluData ? ALUout : enableRegAData ? regAout : enablePcData ? 
-							programCounterOut : 64'b0;
+	assign regFileDataInput = enableRamData ? ramOut : (enableAluData ? ALUout : (enableRegAData ? regAout : (enablePcData ? 
+							programCounterOut : 64'b0)));
 							
 	assign programSelect = controlWord[31:30];
 	assign regDataAddress = controlWord[29:25];

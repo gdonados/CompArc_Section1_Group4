@@ -219,7 +219,7 @@ module ControlUnit(clk, rst, instruction, status, constant, CONTROLWORD, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				CONTROLWORD <= {2'b01, instruction[4:0],      5'bxxxxx,        5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0],      5'bxxxxx,        5'bxxxxx      , 5'b01101, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
 				constant <= instruction[20:5]; //16 bit constant
 				flag <= 0;
 				length <= 3'b010;

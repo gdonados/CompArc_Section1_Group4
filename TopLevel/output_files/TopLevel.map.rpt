@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TopLevel
-Tue Apr 20 11:02:32 2021
+Tue Apr 20 12:15:22 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 20 11:02:32 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 20 12:15:22 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; TopLevel                                    ;
 ; Top-level Entity Name              ; TopLevel                                    ;
@@ -335,7 +335,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 20 11:02:23 2021
+    Info: Processing started: Tue Apr 20 12:15:13 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopLevel -c TopLevel
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -375,6 +375,39 @@ Info (12021): Found 1 design units, including 1 entities, in source file topleve
     Info (12023): Found entity 1: TopLevel_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file toplevelschematic.bdf
     Info (12023): Found entity 1: TopLevelSchematic
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(20): created implicit net for "dataInput" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(35): created implicit net for "r0" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 35
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(36): created implicit net for "r1" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 36
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(37): created implicit net for "r2" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 37
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(38): created implicit net for "r3" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(39): created implicit net for "r4" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(40): created implicit net for "r5" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(41): created implicit net for "r6" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(42): created implicit net for "r7" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(43): created implicit net for "r8" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 43
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(44): created implicit net for "r9" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 44
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(45): created implicit net for "r10" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(46): created implicit net for "r11" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(47): created implicit net for "r12" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 47
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(48): created implicit net for "r13" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 48
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(49): created implicit net for "r14" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(50): created implicit net for "r15" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(51): created implicit net for "r16" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 51
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(52): created implicit net for "r17" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 52
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(53): created implicit net for "r18" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(54): created implicit net for "r19" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 54
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(55): created implicit net for "r20" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 55
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(56): created implicit net for "r21" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 56
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(57): created implicit net for "r22" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(58): created implicit net for "r23" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 58
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(59): created implicit net for "r24" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 59
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(60): created implicit net for "r25" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 60
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(61): created implicit net for "r26" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 61
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(62): created implicit net for "r27" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(63): created implicit net for "r28" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 63
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(64): created implicit net for "r29" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 64
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(65): created implicit net for "r30" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 65
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(66): created implicit net for "r31" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 66
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at TopLevel.v(16): object "programValueSelect" assigned a value but never read File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 16
 Warning (10036): Verilog HDL or VHDL warning at TopLevel.v(16): object "statusLineUse" assigned a value but never read File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 16
@@ -437,9 +470,9 @@ Warning (21074): Design contains 2 input pin(s) that do not drive logic
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 42 warnings
-    Info: Peak virtual memory: 4739 megabytes
-    Info: Processing ended: Tue Apr 20 11:02:32 2021
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 75 warnings
+    Info: Peak virtual memory: 4738 megabytes
+    Info: Processing ended: Tue Apr 20 12:15:22 2021
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:22
 
