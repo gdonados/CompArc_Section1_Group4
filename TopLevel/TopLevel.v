@@ -1,5 +1,5 @@
 `timescale 10ns/10ns
-module TopLevel(clk, rst);
+module TopLevel(clk, rst); //aka datapath
 	input clk, rst;
 	
 	wire [63:0] programCounterIn, programCounterOut, regAout, regBout, muxOut, ramwire, constantValue, regFileDataInput, ALUout, ramOut;
@@ -19,7 +19,8 @@ module TopLevel(clk, rst);
 	
 	assign regFileDataInput = enableRamData ? ramOut : (enableAluData ? ALUout : (enableRegAData ? regAout : (enablePcData ? 
 							programCounterOut : 64'b0)));
-							
+	
+	//Assign meaning to Control-Word Bits
 	assign programSelect = controlWord[31:30];
 	assign regDataAddress = controlWord[29:25];
 	assign regAAddress = controlWord[24:20];
@@ -46,18 +47,5 @@ module TopLevel(clk, rst);
 	
 	RegisterFile32x64bit regFile (regAout, regBout, regFileDataInput, regAAddress, regBAddress, regDataAddress, registerFileWrite, rst, clk);
 	
-	RAM256x64 ram (ALUout, clk, regBout, RAMwrite, ramOut);
-
-	
-	/*always @(*) begin
-		case(muxSelect) begin
-			0:	begin
-				muxOut <= regAout;
-			end
-			1:	begin
-				muxout <= constantValue;
-			end
-		endcase
-	end*/
-	
+	RAM256x64 ram (ALUout, clk, regBout, RAMwrite, ramOut);	
 endmodule

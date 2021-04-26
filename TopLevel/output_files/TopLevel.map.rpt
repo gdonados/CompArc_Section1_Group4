@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TopLevel
-Tue Apr 20 12:15:22 2021
+Mon Apr 26 09:48:58 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 20 12:15:22 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 26 09:48:58 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; TopLevel                                    ;
 ; Top-level Entity Name              ; TopLevel                                    ;
@@ -159,8 +159,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -170,28 +170,28 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
-+--------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path     ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                   ; Library ;
-+--------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
-; Control Unit/ControlUnit.v           ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v           ;         ;
-; ProgramCounter/Program_Counter.v     ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter/Program_Counter.v     ;         ;
-; ROM/ROM.v                            ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v                            ;         ;
-; ALU/xor64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v                          ;         ;
-; ALU/shiftRight1.v                    ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v                    ;         ;
-; ALU/shiftLeft1.v                     ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v                     ;         ;
-; ALU/or64.v                           ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v                           ;         ;
-; ALU/invert64.v                       ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v                       ;         ;
-; ALU/carry_look_ahead64bit.v          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v          ;         ;
-; ALU/carry_look_ahead16bit.v          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v          ;         ;
-; ALU/carry_look_ahead4bit.v           ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v           ;         ;
-; ALU/and64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v                          ;         ;
-; RAM/RAM256x64.v                      ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v                      ;         ;
-; ALU/ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v                            ;         ;
-; Register File/RegisterFile32x64bit.v ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v ;         ;
-; TopLevel.v                           ; yes             ; User Verilog HDL File  ; C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v                           ;         ;
-+--------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
++--------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path     ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                           ; Library ;
++--------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
+; Control Unit/ControlUnit.v           ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control Unit/ControlUnit.v           ;         ;
+; ProgramCounter/Program_Counter.v     ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v     ;         ;
+; ROM/ROM.v                            ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM/ROM.v                            ;         ;
+; ALU/xor64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/xor64.v                          ;         ;
+; ALU/shiftRight1.v                    ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftRight1.v                    ;         ;
+; ALU/shiftLeft1.v                     ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftLeft1.v                     ;         ;
+; ALU/or64.v                           ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/or64.v                           ;         ;
+; ALU/invert64.v                       ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/invert64.v                       ;         ;
+; ALU/carry_look_ahead64bit.v          ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v          ;         ;
+; ALU/carry_look_ahead16bit.v          ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v          ;         ;
+; ALU/carry_look_ahead4bit.v           ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead4bit.v           ;         ;
+; ALU/and64.v                          ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/and64.v                          ;         ;
+; RAM/RAM256x64.v                      ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v                      ;         ;
+; ALU/ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v                            ;         ;
+; Register File/RegisterFile32x64bit.v ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v ;         ;
+; TopLevel.v                           ; yes             ; User Verilog HDL File  ; C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v                           ;         ;
++--------------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -335,145 +335,145 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 20 12:15:13 2021
+    Info: Processing started: Mon Apr 26 09:48:48 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TopLevel -c TopLevel
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file control unit/controlunit.v
-    Info (12023): Found entity 1: ControlUnit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v Line: 2
+    Info (12023): Found entity 1: ControlUnit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control Unit/ControlUnit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file programcounter/program_counter.v
-    Info (12023): Found entity 1: Program_Counter File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter/Program_Counter.v Line: 2
+    Info (12023): Found entity 1: Program_Counter File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file rom/rom.v
-    Info (12023): Found entity 1: ROM File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v Line: 2
+    Info (12023): Found entity 1: ROM File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM/ROM.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/xor64.v
-    Info (12023): Found entity 1: xor64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v Line: 2
+    Info (12023): Found entity 1: xor64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/xor64.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/shiftright1.v
-    Info (12023): Found entity 1: shiftRight1 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v Line: 2
+    Info (12023): Found entity 1: shiftRight1 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftRight1.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/shiftleft1.v
-    Info (12023): Found entity 1: shiftLeft1 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v Line: 2
+    Info (12023): Found entity 1: shiftLeft1 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftLeft1.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/or64.v
-    Info (12023): Found entity 1: or64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v Line: 2
+    Info (12023): Found entity 1: or64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/or64.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/invert64.v
-    Info (12023): Found entity 1: invert64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v Line: 2
+    Info (12023): Found entity 1: invert64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/invert64.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/carry_look_ahead64bit.v
-    Info (12023): Found entity 1: carry_look_ahead64bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v Line: 2
+    Info (12023): Found entity 1: carry_look_ahead64bit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/carry_look_ahead16bit.v
-    Info (12023): Found entity 1: carry_look_ahead16bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v Line: 2
+    Info (12023): Found entity 1: carry_look_ahead16bit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/carry_look_ahead4bit.v
-    Info (12023): Found entity 1: carry_look_ahead4bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v Line: 2
+    Info (12023): Found entity 1: carry_look_ahead4bit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead4bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/and64.v
-    Info (12023): Found entity 1: and64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v Line: 2
+    Info (12023): Found entity 1: and64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/and64.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file ram/ram256x64.v
-    Info (12023): Found entity 1: RAM256x64 File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v Line: 2
+    Info (12023): Found entity 1: RAM256x64 File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu/alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 2
+    Info (12023): Found entity 1: ALU File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file register file/registerfile32x64bit.v
-    Info (12023): Found entity 1: RegisterFile32x64bit File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v Line: 2
+    Info (12023): Found entity 1: RegisterFile32x64bit File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file toplevel.v
-    Info (12023): Found entity 1: TopLevel File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 2
+    Info (12023): Found entity 1: TopLevel File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file toplevel_tb.v
-    Info (12023): Found entity 1: TopLevel_tb File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 2
+    Info (12023): Found entity 1: TopLevel_tb File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file toplevelschematic.bdf
     Info (12023): Found entity 1: TopLevelSchematic
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(20): created implicit net for "dataInput" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(35): created implicit net for "r0" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 35
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(36): created implicit net for "r1" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 36
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(37): created implicit net for "r2" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 37
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(38): created implicit net for "r3" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 38
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(39): created implicit net for "r4" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 39
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(40): created implicit net for "r5" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 40
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(41): created implicit net for "r6" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 41
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(42): created implicit net for "r7" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 42
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(43): created implicit net for "r8" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 43
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(44): created implicit net for "r9" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 44
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(45): created implicit net for "r10" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 45
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(46): created implicit net for "r11" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 46
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(47): created implicit net for "r12" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 47
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(48): created implicit net for "r13" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 48
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(49): created implicit net for "r14" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 49
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(50): created implicit net for "r15" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 50
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(51): created implicit net for "r16" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 51
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(52): created implicit net for "r17" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 52
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(53): created implicit net for "r18" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(54): created implicit net for "r19" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 54
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(55): created implicit net for "r20" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 55
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(56): created implicit net for "r21" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 56
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(57): created implicit net for "r22" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 57
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(58): created implicit net for "r23" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 58
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(59): created implicit net for "r24" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 59
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(60): created implicit net for "r25" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 60
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(61): created implicit net for "r26" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 61
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(62): created implicit net for "r27" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 62
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(63): created implicit net for "r28" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 63
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(64): created implicit net for "r29" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 64
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(65): created implicit net for "r30" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 65
-Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(66): created implicit net for "r31" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v Line: 66
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(20): created implicit net for "dataInput" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(35): created implicit net for "r0" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 35
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(36): created implicit net for "r1" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 36
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(37): created implicit net for "r2" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 37
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(38): created implicit net for "r3" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(39): created implicit net for "r4" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(40): created implicit net for "r5" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(41): created implicit net for "r6" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(42): created implicit net for "r7" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(43): created implicit net for "r8" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 43
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(44): created implicit net for "r9" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 44
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(45): created implicit net for "r10" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(46): created implicit net for "r11" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(47): created implicit net for "r12" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 47
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(48): created implicit net for "r13" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 48
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(49): created implicit net for "r14" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(50): created implicit net for "r15" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(51): created implicit net for "r16" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 51
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(52): created implicit net for "r17" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 52
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(53): created implicit net for "r18" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(54): created implicit net for "r19" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 54
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(55): created implicit net for "r20" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 55
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(56): created implicit net for "r21" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 56
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(57): created implicit net for "r22" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(58): created implicit net for "r23" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 58
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(59): created implicit net for "r24" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 59
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(60): created implicit net for "r25" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 60
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(61): created implicit net for "r26" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 61
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(62): created implicit net for "r27" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(63): created implicit net for "r28" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 63
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(64): created implicit net for "r29" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 64
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(65): created implicit net for "r30" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 65
+Warning (10236): Verilog HDL Implicit Net warning at TopLevel_tb.v(66): created implicit net for "r31" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v Line: 66
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.v(16): object "programValueSelect" assigned a value but never read File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 16
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.v(16): object "statusLineUse" assigned a value but never read File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 16
-Info (12128): Elaborating entity "Program_Counter" for hierarchy "Program_Counter:PC" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 39
-Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 41
-Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:controlUnit" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 43
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 45
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(24): object "i" assigned a value but never read File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 24
-Info (12128): Elaborating entity "invert64" for hierarchy "ALU:alu|invert64:invertA" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 21
-Info (12128): Elaborating entity "carry_look_ahead64bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 28
-Info (12128): Elaborating entity "carry_look_ahead16bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v Line: 10
-Info (12128): Elaborating entity "carry_look_ahead4bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v Line: 10
-Info (12128): Elaborating entity "and64" for hierarchy "ALU:alu|and64:andAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 36
-Info (12128): Elaborating entity "or64" for hierarchy "ALU:alu|or64:orAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 37
-Info (12128): Elaborating entity "xor64" for hierarchy "ALU:alu|xor64:xorAB" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 38
-Info (12128): Elaborating entity "shiftLeft1" for hierarchy "ALU:alu|shiftLeft1:shiftAl" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 42
-Info (12128): Elaborating entity "shiftRight1" for hierarchy "ALU:alu|shiftRight1:shiftAr" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 43
-Info (12128): Elaborating entity "RegisterFile32x64bit" for hierarchy "RegisterFile32x64bit:regFile" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 47
-Warning (10240): Verilog HDL Always Construct warning at RegisterFile32x64bit.v(15): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v Line: 15
-Info (12128): Elaborating entity "RAM256x64" for hierarchy "RAM256x64:ram" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 49
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.v(16): object "programValueSelect" assigned a value but never read File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 16
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.v(16): object "statusLineUse" assigned a value but never read File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 16
+Info (12128): Elaborating entity "Program_Counter" for hierarchy "Program_Counter:PC" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 40
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 42
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:controlUnit" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 44
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 46
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(24): object "i" assigned a value but never read File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 24
+Info (12128): Elaborating entity "invert64" for hierarchy "ALU:alu|invert64:invertA" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 21
+Info (12128): Elaborating entity "carry_look_ahead64bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 28
+Info (12128): Elaborating entity "carry_look_ahead16bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v Line: 10
+Info (12128): Elaborating entity "carry_look_ahead4bit" for hierarchy "ALU:alu|carry_look_ahead64bit:addAB|carry_look_ahead16bit:cla1|carry_look_ahead4bit:cla1" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v Line: 10
+Info (12128): Elaborating entity "and64" for hierarchy "ALU:alu|and64:andAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 36
+Info (12128): Elaborating entity "or64" for hierarchy "ALU:alu|or64:orAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 37
+Info (12128): Elaborating entity "xor64" for hierarchy "ALU:alu|xor64:xorAB" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 38
+Info (12128): Elaborating entity "shiftLeft1" for hierarchy "ALU:alu|shiftLeft1:shiftAl" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 42
+Info (12128): Elaborating entity "shiftRight1" for hierarchy "ALU:alu|shiftRight1:shiftAr" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 43
+Info (12128): Elaborating entity "RegisterFile32x64bit" for hierarchy "RegisterFile32x64bit:regFile" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 48
+Warning (10240): Verilog HDL Always Construct warning at RegisterFile32x64bit.v(15): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v Line: 15
+Info (12128): Elaborating entity "RAM256x64" for hierarchy "RAM256x64:ram" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 50
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "ALU:alu|j[31]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[30]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[29]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[28]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[27]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[26]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[25]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[24]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[23]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[22]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[21]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[20]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[19]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[18]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[17]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[16]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[15]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[14]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[13]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[12]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[11]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[10]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[9]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[8]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[7]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[6]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[5]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[4]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[3]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[2]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[1]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
-    Warning (12110): Net "ALU:alu|j[0]" is missing source, defaulting to GND File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[31]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[30]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[29]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[28]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[27]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[26]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[25]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[24]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[23]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[22]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[21]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[20]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[19]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[18]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[17]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[16]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[15]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[14]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[13]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[12]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[11]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[10]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[9]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[8]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[7]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[6]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[5]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[4]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[3]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[2]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[1]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
+    Warning (12110): Net "ALU:alu|j[0]" is missing source, defaulting to GND File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 25
 Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 3
-    Warning (15610): No output dependent on input pin "rst" File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 3
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 3
+    Warning (15610): No output dependent on input pin "rst" File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 3
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 75 warnings
-    Info: Peak virtual memory: 4738 megabytes
-    Info: Processing ended: Tue Apr 20 12:15:22 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4731 megabytes
+    Info: Processing ended: Mon Apr 26 09:48:58 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 

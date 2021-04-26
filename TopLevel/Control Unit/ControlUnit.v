@@ -23,7 +23,7 @@ module ControlUnit(clk, rst, instruction, status, constant, CONTROLWORD, length,
 												*/
 	
 	output reg [63:0] constant;
-	output reg [2:0] length; //000 for 1 byte, 001 for 16-bits, 010 for 32-bits, 100 for-64 bits
+	output reg [2:0] length; //000 for 1 byte (8-bits), 001 for 16-bits, 010 for 32-bits, 100 for-64 bits
 	output reg flag;
 	
 	always @(posedge clk)begin
@@ -415,7 +415,6 @@ module ControlUnit(clk, rst, instruction, status, constant, CONTROLWORD, length,
 				length <= 3'b010;
 				constant <= instruction[25:0]*4;
 			end
-		endcase
-			
+		endcase		
 	end
 endmodule
