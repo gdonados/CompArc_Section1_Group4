@@ -15,10 +15,7 @@ module TopLevel(clk, rst); //aka datapath
 	wire registerFileWrite, RAMwrite, enableRamData, enableAluData, enableRegAData, enablePcData, selAluValueInput, 
 					programValueSelect, statusLineUse, enableAluCarry;
 
-	assign muxOut = selAluValueInput ? regBout : constantValue;
-	
-	assign regFileDataInput = enableRamData ? ramOut : (enableAluData ? ALUout : (enableRegAData ? regAout : (enablePcData ? 
-							programCounterOut : 64'b0)));
+	assign muxOut = selAluValueInput ? constantValue : regBout;
 	
 	//Assign meaning to Control-Word Bits
 	assign programSelect = controlWord[31:30];
@@ -36,7 +33,12 @@ module TopLevel(clk, rst); //aka datapath
 	assign programValueSelect = controlWord[2];
 	assign statusLineUse = controlWord[1];
 	assign enableAluCarry = controlWord[0];
-
+	
+	assign regFileDataInput = enableRegAData ? regAout : 
+	enableAluData ? ALUout :
+	enableRamData ? ramOut :
+	enablePcData ? programCounterOut : 64'b0;
+							
 	Program_Counter PC (clk, rst, programSelect, programCounterIn, programCounterOut);
 	
 	ROM rom (programCounterOut, romOut);
@@ -44,7 +46,7 @@ module TopLevel(clk, rst); //aka datapath
 	ControlUnit controlUnit (clk, rst, romOut, signalBits, constantValue, controlWord, outputLength, setFlag);
 	
 	ALU alu (regAout, muxOut, functionSelect, enableAluCarry, ALUout, signalBits);
-	
+		
 	RegisterFile32x64bit regFile (regAout, regBout, regFileDataInput, regAAddress, regBAddress, regDataAddress, registerFileWrite, rst, clk);
 	
 	RAM256x64 ram (ALUout, clk, regBout, RAMwrite, ramOut);	

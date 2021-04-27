@@ -1,4 +1,5 @@
 # Reading pref.tcl
+# ERROR: No extended dataflow license exists
 # do TopLevel_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,184 +8,184 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control\ Unit {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control Unit/ControlUnit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control\ Unit {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:11 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control Unit" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control Unit/ControlUnit.v 
+# Start time: 12:47:18 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v 
 # -- Compiling module ControlUnit
 # 
 # Top level modules:
 # 	ControlUnit
-# End time: 10:05:12 on Apr 26,2021, Elapsed time: 0:00:01
+# End time: 12:47:18 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter/Program_Counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:12 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v 
+# Start time: 12:47:18 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter/Program_Counter.v 
 # -- Compiling module Program_Counter
 # 
 # Top level modules:
 # 	Program_Counter
-# End time: 10:05:12 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:18 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM/ROM.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:12 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM/ROM.v 
+# Start time: 12:47:18 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v 
 # -- Compiling module ROM
 # 
 # Top level modules:
 # 	ROM
-# End time: 10:05:12 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:18 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/xor64.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:12 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/xor64.v 
+# Start time: 12:47:18 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v 
 # -- Compiling module xor64
 # 
 # Top level modules:
 # 	xor64
-# End time: 10:05:12 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:18 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftRight1.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:12 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftRight1.v 
+# Start time: 12:47:18 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v 
 # -- Compiling module shiftRight1
 # 
 # Top level modules:
 # 	shiftRight1
-# End time: 10:05:12 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:19 on Apr 27,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftLeft1.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:12 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftLeft1.v 
+# Start time: 12:47:19 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v 
 # -- Compiling module shiftLeft1
 # 
 # Top level modules:
 # 	shiftLeft1
-# End time: 10:05:12 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:19 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/or64.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:12 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/or64.v 
+# Start time: 12:47:19 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v 
 # -- Compiling module or64
 # 
 # Top level modules:
 # 	or64
-# End time: 10:05:12 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:19 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/invert64.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:12 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/invert64.v 
+# Start time: 12:47:19 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v 
 # -- Compiling module invert64
 # 
 # Top level modules:
 # 	invert64
-# End time: 10:05:13 on Apr 26,2021, Elapsed time: 0:00:01
+# End time: 12:47:19 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:13 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v 
+# Start time: 12:47:19 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v 
 # -- Compiling module carry_look_ahead64bit
 # 
 # Top level modules:
 # 	carry_look_ahead64bit
-# End time: 10:05:13 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:19 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:13 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v 
+# Start time: 12:47:19 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v 
 # -- Compiling module carry_look_ahead16bit
 # 
 # Top level modules:
 # 	carry_look_ahead16bit
-# End time: 10:05:13 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:19 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead4bit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:13 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead4bit.v 
+# Start time: 12:47:19 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v 
 # -- Compiling module carry_look_ahead4bit
 # 
 # Top level modules:
 # 	carry_look_ahead4bit
-# End time: 10:05:13 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:19 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/and64.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:13 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/and64.v 
+# Start time: 12:47:19 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v 
 # -- Compiling module and64
 # 
 # Top level modules:
 # 	and64
-# End time: 10:05:13 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:19 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:13 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v 
+# Start time: 12:47:19 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v 
 # -- Compiling module RAM256x64
 # 
 # Top level modules:
 # 	RAM256x64
-# End time: 10:05:13 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:20 on Apr 27,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:13 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v 
+# Start time: 12:47:20 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 10:05:13 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:20 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register\ File {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register\ File {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:13 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v 
+# Start time: 12:47:20 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v 
 # -- Compiling module RegisterFile32x64bit
 # 
 # Top level modules:
 # 	RegisterFile32x64bit
-# End time: 10:05:13 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:20 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:13 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v 
+# Start time: 12:47:20 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v 
 # -- Compiling module TopLevel
 # 
 # Top level modules:
 # 	TopLevel
-# End time: 10:05:14 on Apr 26,2021, Elapsed time: 0:00:01
+# End time: 12:47:20 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel {C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel {C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:05:14 on Apr 26,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel" C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v 
+# Start time: 12:47:20 on Apr 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel" C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v 
 # -- Compiling module TopLevel_tb
 # 
 # Top level modules:
 # 	TopLevel_tb
-# End time: 10:05:14 on Apr 26,2021, Elapsed time: 0:00:00
+# End time: 12:47:20 on Apr 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  TopLevel_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" TopLevel_tb 
-# Start time: 10:05:14 on Apr 26,2021
+# Start time: 12:47:20 on Apr 27,2021
 # Loading work.TopLevel_tb
 # Loading work.TopLevel
 # Loading work.Program_Counter
@@ -202,22 +203,22 @@
 # Loading work.shiftRight1
 # Loading work.RegisterFile32x64bit
 # Loading work.RAM256x64
-# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (64) for port 'address'. The port definition is at: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM/ROM.v(2).
-#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/rom File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 42
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v(2).
-#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/alu/addAB File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 28
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (64) for port 'address'. The port definition is at: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/rom File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 44
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/alu/addAB File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 28
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'subBA'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/alu/subBA File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 32
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v(2).
-#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/alu/subBA File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 32
-# ** Warning: (vsim-3722) C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v(32): [TFMPC] - Missing connection for port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/alu/subBA File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 32
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/alu/subBA File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 32
+# ** Warning: (vsim-3722) C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v(32): [TFMPC] - Missing connection for port 'cout'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'subAB'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/alu/subAB File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 33
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v(2).
-#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/alu/subAB File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v Line: 33
-# ** Warning: (vsim-3722) C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v(33): [TFMPC] - Missing connection for port 'cout'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (64) for port 'address'. The port definition is at: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v(2).
-#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/ram File: C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v Line: 50
+#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/alu/subAB File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/alu/subAB File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v Line: 33
+# ** Warning: (vsim-3722) C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v(33): [TFMPC] - Missing connection for port 'cout'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (64) for port 'address'. The port definition is at: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TopLevel_tb/dut/ram File: C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v Line: 52
 # 
 # add wave *
 # view structure
@@ -225,8 +226,79 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v(28)
-#    Time: 18 us  Iteration: 0  Instance: /TopLevel_tb
-# Break in Module TopLevel_tb at C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v line 28
-# End time: 12:10:52 on Apr 26,2021, Elapsed time: 2:05:38
+# ** Note: $stop    : C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v(35)
+#    Time: 500 ns  Iteration: 0  Instance: /TopLevel_tb
+# Break in Module TopLevel_tb at C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v line 35
+step
+step
+step
+step
+step
+step
+# Next activity is in 50 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# End time: 12:49:44 on Apr 27,2021, Elapsed time: 0:02:24
 # Errors: 0, Warnings: 9

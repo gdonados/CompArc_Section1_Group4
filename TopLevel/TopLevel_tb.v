@@ -2,9 +2,11 @@
 module TopLevel_tb();
 	reg clock, reset;
 	
-	wire [63:0] RAMout, ALUout, aVal, bVal, PC_OUT, K;
+	wire [63:0] dataInput, RAMout, ALUout, aVal, bVal, PC_OUT, K, r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, 
+						r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23, r24, r25, r26, r27, r28, r29, r30, r31;
 	wire [31:0] instruction, CW;
 	wire [3:0] STATUS;
+	wire aluData, regData, ramData, PCData;
 	
 	TopLevel dut (clock, reset);
 	
@@ -18,14 +20,19 @@ module TopLevel_tb();
 	assign PC_OUT = dut.programCounterOut;
 	assign K = dut.constantValue;
 	assign dataInput = dut.regFileDataInput;
+	
+	assign aluData = dut.enableAluData;
+	assign regData = dut.enableRegAData;
+	assign ramData = dut.enableRamData;
+	assign PCData = dut.enablePcData;
 
 	//give all inputs initial values
 	initial begin
 		clock <= 1'b0;
 		reset <= 1'b0;
 		
-		#800 reset <= 1'b1; //trigger reset 
-		#1000 $stop;        
+		//#800 reset <= 1'b1; //trigger reset 
+	   #50 $stop;
 	end
 	
 	//simulates clock with a period of 10 ticks
@@ -64,4 +71,5 @@ module TopLevel_tb();
 	assign r29 = dut.regFile.registers[29];
 	assign r30 = dut.regFile.registers[30];
 	assign r31 = dut.regFile.registers[31];
+	
 endmodule

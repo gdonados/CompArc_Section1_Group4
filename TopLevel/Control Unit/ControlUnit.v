@@ -208,7 +208,7 @@ module ControlUnit(clk, rst, instruction, status, constant, CONTROLWORD, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0], instruction[9:5],     5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b0, 1'b0};
 				constant <= instruction[20:12]; //9 bit constant
 				length <= 3'b000;
 				flag <= 0;
@@ -219,8 +219,8 @@ module ControlUnit(clk, rst, instruction, status, constant, CONTROLWORD, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				CONTROLWORD <= {2'b01, instruction[4:0],      5'bxxxxx,        5'bxxxxx      , 5'b01101, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
-				constant <= instruction[20:5]; //16 bit constant
+				CONTROLWORD <= {2'b01, instruction[4:0],      5'b11111,        5'b11111      , 5'b01101, 1'b1, 1'b0, 1'b0, 1'b1, 1'b0, 1'b0,  1'b1, 1'b0, 1'b0, 1'b0};
+				constant <= {48'd0, instruction[20:5]}; //16 bit constant
 				flag <= 0;
 				length <= 3'b010;
 			end
@@ -230,7 +230,7 @@ module ControlUnit(clk, rst, instruction, status, constant, CONTROLWORD, length,
 				//						|				  |					  |					 |  				  |		 |		|		 |		 |		 |     |		  |     |    |		 |
 				//						|				  |					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
 				//						|				  | 					  |					 |					  |		 |		|		 |     |		 |     |		  |     |    |     |
-				CONTROLWORD <= {2'b01, instruction[4:0],      5'bxxxxx,        5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b1, 1'b0};
+				CONTROLWORD <= {2'b01, instruction[4:0],      5'bxxxxx,        5'bxxxxx      , 5'b00010, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0,  1'b1, 1'b0, 1'b0, 1'b0};
 				constant <= instruction[20:5]; //16 bit constant
 				flag <= 0;
 				length <= 3'b010;

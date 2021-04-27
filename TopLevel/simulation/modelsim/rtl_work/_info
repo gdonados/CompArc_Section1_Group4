@@ -8,422 +8,422 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/simulation/modelsim
+Z0 dC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/simulation/modelsim
 vALU
-Z1 !s110 1619445913
+Z1 !s110 1619542040
 !i10b 1
 !s100 gWPfP@D?13jU46XYmk6?92
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I:NKijz;>DcceR5RBdRo3H3
+IWcZ@SSNlYL;?mZ6@nHoES3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1616513968
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v
+w1619540603
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v
 !i122 13
 L0 2 151
-Z5 OV;L;2020.1;71
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1619445913.000000
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/ALU.v|
+Z5 !s108 1619542040.000000
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/ALU.v|
 !i113 1
-Z7 o-vlog01compat -work work
-Z8 !s92 -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU
-Z9 tCvgOpt 0
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU
+Z8 tCvgOpt 0
 n@a@l@u
 vand64
-R1
+Z9 !s110 1619542039
 !i10b 1
 !s100 5b?>5iQhTlZC>InWA;c5[3
 R2
-IFc:?f:bEPjT2lRUm7[MgH1
+Ief9dZ@fQ;e_h0;FPNMl681
 R3
 R0
-w1616517897
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/and64.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/and64.v
+Z10 w1616520608
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v
 !i122 11
-Z10 L0 2 9
-R5
+Z11 L0 2 9
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/and64.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/and64.v|
+Z12 !s108 1619542039.000000
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/and64.v|
 !i113 1
+R6
 R7
 R8
-R9
 vcarry_look_ahead16bit
-R1
+R9
 !i10b 1
 !s100 A:KLgMPYAg7Z[9[51kETF3
 R2
-IYCfS=kUoGQn?HI`j`UP:P2
+IO65^_nSiB7KdVSlaB48Ao2
 R3
 R0
-R4
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v
+Z13 w1615309630
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v
 !i122 9
-Z11 L0 2 14
-R5
+Z14 L0 2 14
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead16bit.v|
+R12
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead16bit.v|
 !i113 1
+R6
 R7
 R8
-R9
 vcarry_look_ahead4bit
-R1
+R9
 !i10b 1
 !s100 3Qk>JLzQXeUc6Y;[GAZLD2
 R2
-I^EJdn7JOXBXa2hmmRzc0F2
+Iil[?o0kUB1JZHUHaV>dFe0
 R3
 R0
-R4
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead4bit.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead4bit.v
+w1615305542
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v
 !i122 10
 L0 2 21
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead4bit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead4bit.v|
+R12
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead4bit.v|
 !i113 1
+R6
 R7
 R8
-R9
 vcarry_look_ahead64bit
-R1
+R9
 !i10b 1
 !s100 mYka4c<MMbI^miVQ0HkNL0
 R2
-IcE?QF9NjlLWSeVYha@fQ33
+Io;>6XSn904gF<;jKM>9i:1
 R3
 R0
-R4
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v
+R13
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v
 !i122 8
-R11
-R5
+R14
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/carry_look_ahead64bit.v|
+R12
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/carry_look_ahead64bit.v|
 !i113 1
+R6
 R7
 R8
-R9
 vControlUnit
-Z12 !s110 1619445912
+Z15 !s110 1619542038
 !i10b 1
-!s100 8V>`?1QJ5o>M8SMR32o660
+!s100 bTGCY5@H18Y7J>`0fX<Cm3
 R2
-IgoeOz4@>?6:_8j?@;8_YI2
+IHg<HBelkKj62_OQ?4z:o[0
 R3
 R0
-Z13 w1619444195
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control Unit/ControlUnit.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control Unit/ControlUnit.v
+w1619538199
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v
 !i122 0
-L0 2 420
-R5
+L0 2 419
+R4
 r1
 !s85 0
 31
-!s108 1619445911.000000
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control Unit/ControlUnit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control Unit|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control Unit/ControlUnit.v|
+Z16 !s108 1619542038.000000
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit/ControlUnit.v|
 !i113 1
-R7
-!s92 -vlog01compat -work work {+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Control Unit}
-R9
+R6
+!s92 -vlog01compat -work work {+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Control Unit}
+R8
 n@control@unit
 vinvert64
-R1
+R9
 !i10b 1
 !s100 CU7XOaezeFjUP=JHjf6Qh0
 R2
-IYzMjeTjO3;ec`C43HDM<03
+IceG9PoO^=1@=P0_VVHMhz0
 R3
 R0
-w1616517924
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/invert64.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/invert64.v
+R10
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v
 !i122 7
-Z14 L0 2 8
-R5
+Z17 L0 2 8
+R4
 r1
 !s85 0
 31
-Z15 !s108 1619445912.000000
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/invert64.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/invert64.v|
+R12
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/invert64.v|
 !i113 1
+R6
 R7
 R8
-R9
 vor64
-R12
+R9
 !i10b 1
 !s100 :1^@n;KKOULHE0FP5kjVE2
 R2
-I9KV]OXX700d3AWfM490?22
+IoJ?G5VHB?D;GckXEjN2fE2
 R3
 R0
-w1616517931
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/or64.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/or64.v
-!i122 6
 R10
-R5
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v
+!i122 6
+R11
+R4
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/or64.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/or64.v|
+R12
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/or64.v|
 !i113 1
+R6
 R7
 R8
-R9
 vProgram_Counter
-R12
+R15
 !i10b 1
 !s100 6f__oEcV[gCiTN>Xo877]0
 R2
-IFQY?JUToLg9Pg6`GBKTi90
+IX0aAW^7XlSWbU350FakQ61
 R3
 R0
-w1618331566
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v
+w1618926462
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter/Program_Counter.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter/Program_Counter.v
 !i122 1
 L0 2 38
-R5
+R4
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter/Program_Counter.v|
+R16
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter/Program_Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter/Program_Counter.v|
 !i113 1
-R7
-!s92 -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ProgramCounter
-R9
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ProgramCounter
+R8
 n@program_@counter
 vRAM256x64
 R1
 !i10b 1
 !s100 =a1R@3YGkz9LDD9JWWRi:0
 R2
-IB=U2BkDgdi?0_nCCSU<CH3
+I_6k^Cdmk?i`dC=_V5NO:00
 R3
 R0
-w1616516679
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v
+R10
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v
 !i122 12
 L0 2 23
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM/RAM256x64.v|
+R12
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM/RAM256x64.v|
 !i113 1
-R7
-!s92 -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/RAM
-R9
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/RAM
+R8
 n@r@a@m256x64
 vRegisterFile32x64bit
 R1
 !i10b 1
-!s100 RYE:ao^XL_E9Tf]g4INz>3
+!s100 10:S@zTT96<0SA0450Y3T1
 R2
-IDn?Cb_[OgES10;Cf`>GkG0
+I>1I<To@IJABzf6m9H3E:23
 R3
 R0
-w1616513970
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v
+w1619540139
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v
 !i122 14
-L0 2 29
-R5
+L0 2 28
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File/RegisterFile32x64bit.v|
+R5
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File/RegisterFile32x64bit.v|
 !i113 1
-R7
-!s92 -vlog01compat -work work {+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/Register File}
-R9
+R6
+!s92 -vlog01compat -work work {+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/Register File}
+R8
 n@register@file32x64bit
 vROM
-R12
+R15
 !i10b 1
-!s100 ?FXB>9SdkMBeXjNoAMiNO1
+!s100 =:jncClNA9j37f@JIU2cn3
 R2
-IC_XnPRj1ko2C>BWOn]>3?1
+I3LhF1:fjINjF@:aU:Q9n30
 R3
 R0
-R13
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM/ROM.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM/ROM.v
+w1619540872
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v
 !i122 2
-L0 2 26
-R5
+L0 2 27
+R4
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM/ROM.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM/ROM.v|
+R16
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM/ROM.v|
 !i113 1
-R7
-!s92 -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ROM
-R9
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ROM
+R8
 n@r@o@m
 vshiftLeft1
-R12
+R9
 !i10b 1
 !s100 24;cbNg9onHHaa5GE>HRK3
 R2
-I2jUnBf8WbaEekFm0Od0EF0
+ISQbaFV]LFhzDz=8g0N0g;3
 R3
 R0
-w1616517938
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftLeft1.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftLeft1.v
+R10
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v
 !i122 5
-R14
-R5
+R17
+R4
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftLeft1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftLeft1.v|
+R12
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftLeft1.v|
 !i113 1
+R6
 R7
 R8
-R9
 nshift@left1
 vshiftRight1
-R12
+R9
 !i10b 1
 !s100 f@e6hYM5WMgKncHOmXTWF3
 R2
-I3684P05Y2ITnNPa05LiZ@3
+ID[dR7X:l@kYz^8bJcIjVA3
 R3
 R0
-w1616517944
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftRight1.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftRight1.v
+R10
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v
 !i122 4
-R14
-R5
+R17
+R4
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftRight1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/shiftRight1.v|
+R16
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/shiftRight1.v|
 !i113 1
+R6
 R7
 R8
-R9
 nshift@right1
 vTopLevel
-Z16 !s110 1619445914
+R1
 !i10b 1
-!s100 b:M@R@eV?B@D5Okz7Zb0d0
+!s100 d>X6T@XHaoV[8YkJ@6^DL0
 R2
-I:lz4VjFdF1MJKgA8<j0io2
+I@`<Fh<Yd_2XzlkORM=<nG3
 R3
 R0
-w1619444842
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v
+w1619541995
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v
 !i122 15
-L0 2 50
-R5
+L0 2 52
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel.v|
+R5
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel.v|
 !i113 1
-R7
-Z17 !s92 -vlog01compat -work work +incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel
-R9
+R6
+Z18 !s92 -vlog01compat -work work +incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel
+R8
 n@top@level
 vTopLevel_tb
-R16
+R1
 !i10b 1
-!s100 H;]dQc^=aG=gV7lm@jQl:2
+!s100 [U7OTF7L9AJl6gVJYKLEz1
 R2
-I4XjPK]]gcUSNmH:Tkh9;g2
+IVR`bNchW7?ABO:;?8akIj2
 R3
 R0
-R13
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v
+w1619541634
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v
 !i122 16
-L0 2 66
-R5
+L0 2 74
+R4
 r1
 !s85 0
 31
-!s108 1619445914.000000
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/TopLevel_tb.v|
+R5
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/TopLevel_tb.v|
 !i113 1
-R7
-R17
-R9
+R6
+R18
+R8
 n@top@level_tb
 vxor64
-R12
+R15
 !i10b 1
 !s100 jX4?H`UQ86gH1:N=mIcNU2
 R2
-IF_i^8E00gZgK2MWR2KnQ42
+I?A=kNULJZQALg@OX4K>;`1
 R3
 R0
-w1616517951
-8C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/xor64.v
-FC:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/xor64.v
-!i122 3
 R10
-R5
+8C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v
+FC:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v
+!i122 3
+R11
+R4
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/xor64.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU|C:/Users/rlkmi/Documents/4_2021_Sophomore_Spring/CompArch/Labs/Processor/TopLevel/ALU/xor64.v|
+R16
+!s107 C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU|C:/Users/gdona/OneDrive/Documents/GitHub/CompArc/TopLevel/ALU/xor64.v|
 !i113 1
+R6
 R7
 R8
-R9

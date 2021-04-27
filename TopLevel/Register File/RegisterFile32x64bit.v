@@ -25,6 +25,5 @@ module RegisterFile32x64bit(outA, outB, in, selA, selB, selI, ld, rst, clk);
 		
 		else begin //else do nothing
 		end
-		//to add a read, make a swtich block with the read/write bits and perform the correct action accordingly
 	end
 endmodule
